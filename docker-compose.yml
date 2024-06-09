@@ -102,11 +102,27 @@ services:
     build:
       context: ./docker/grafana
     ports:
-      - '${GRAFANA_PORT}:3000'
+      - ${GRAFANA_PORT}:3000
     volumes:
       - "./docker/grafana/data:/var/lib/grafana"
       - "./docker/grafana:/etc/grafana"
 
+  cadvisor:
+    env_file:
+      - .env
+    container_name: cadvisor
+    image: cadvisor
+    restart: unless-stopped
+    build:
+      context: ./docker/cadvisor
+    ports:
+      - ${CADVISOR_PORT}:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
 
 volumes:
   ci-cd-workflow:
