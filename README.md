@@ -2,11 +2,11 @@
 
 So one docker file
 
-Create a 2 Nginx instances
+[x] Create a 2 Nginx instances
 - staging
 - ⁠production
 
-Create an instance of php that will serve the two servers
+[x] Create an instance of php that will serve the two servers
 
 Create an instance of Jenkins
 

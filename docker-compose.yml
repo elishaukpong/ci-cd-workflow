@@ -1,1 +1,51 @@
 version: "3"
+
+services:
+  staging:
+    env_file:
+      - .env
+    container_name: staging
+    image: 'staging-server'
+    build:
+      context: ./docker/nginx/staging
+    ports:
+      - "${STAGING_PORT}:80"
+    restart: unless-stopped
+    depends_on:
+      - php
+    volumes:
+      - "./docker/nginx/staging/default.conf:/etc/nginx/conf.d/default.conf"
+      - "./docker/nginx/staging/logs/:/var/log/nginx"
+      - "./filesystem/staging:/var/www/html"
+
+  production:
+    env_file:
+      - .env
+    container_name: production
+    image: 'production-server'
+    build:
+      context: ./docker/nginx/production
+    ports:
+      - "${PRODUCTION_PORT}:80"
+    restart: unless-stopped
+    depends_on:
+      - php
+    volumes:
+      - "./docker/nginx/production/default.conf:/etc/nginx/conf.d/default.conf"
+      - "./docker/nginx/production/logs/:/var/log/nginx"
+      - "./filesystem/production:/var/www/html"
+
+  php:
+    env_file:
+      - .env
+    container_name: php
+    image: 'php'
+    build:
+      context: ./docker/php
+    ports:
+      - "${PHP_PORT}:9000"
+    restart: unless-stopped
+    volumes:
+      - "./docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini"
+      - "./filesystem/staging:/var/www/html/staging"
+      - "./filesystem/production:/var/www/html/production"
