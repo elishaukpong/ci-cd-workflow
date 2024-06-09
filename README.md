@@ -10,9 +10,11 @@ So one docker file
 
 [x] Create an instance of Jenkins
 
-Create an instance of Prometheus
+[x] Create an instance of Prometheus
 
 Create an instance of Grafana
+
+Create an instance of Cadvisor
 
 [x] Create an instance of mysql
 

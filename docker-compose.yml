@@ -79,6 +79,20 @@ services:
     volumes:
       - "./docker/jenkins/data:/var/jenkins_home"
 
+  prometheus:
+    env_file:
+      - .env
+    container_name: prometheus
+    image: prometheus
+    restart: unless-stopped
+    build:
+      context: ./docker/prometheus
+    ports:
+      - ${PROMETHEUS_PORT}:9090
+    volumes:
+      - "./docker/prometheus/config:/etc/prometheus"
+      - "./docker/prometheus/data:/prometheus"
+
 
 volumes:
   ci-cd-workflow:
