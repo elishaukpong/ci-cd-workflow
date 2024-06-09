@@ -2,3 +2,4 @@
 ./docker/nginx/*/logs
 ./docker/mysql/logs
 ./docker/jenkins/data
+./docker/grafana/data

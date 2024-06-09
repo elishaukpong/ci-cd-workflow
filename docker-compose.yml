@@ -93,6 +93,20 @@ services:
       - "./docker/prometheus/config:/etc/prometheus"
       - "./docker/prometheus/data:/prometheus"
 
+  grafana:
+    env_file:
+      - .env
+    container_name: grafana
+    image: grafana
+    restart: unless-stopped
+    build:
+      context: ./docker/grafana
+    ports:
+      - '${GRAFANA_PORT}:3000'
+    volumes:
+      - "./docker/grafana/data:/var/lib/grafana"
+      - "./docker/grafana:/etc/grafana"
+
 
 volumes:
   ci-cd-workflow:
