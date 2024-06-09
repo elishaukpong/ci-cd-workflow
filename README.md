@@ -15,12 +15,22 @@ The docker file has 7 services running
 ## What is cAdvisor?
 
 cAdvisor stands for container advisor and was developed then open-sourced by Google.
-It's job is to collect and aggregate data on docker containers - so if you're running your
+Its job is to collect and aggregate data on docker containers - so if you're running your
 application and you need the metrics for the container to probably monitor on a monitoring
 platform like Prometheus (in our case) then cAdvisor gives you every detail you need.
 
 It has a web based interface and can be access at: localhost:{CADVISOR_PORT} (substitute the port number for the one defined in your env file)
 the UI is pretty intuitive.
+
+## What is Jenkins
+
+Jenkins is yet another open source tool that is widely utilized for CI/CD pipelines. It helps to automate
+building, testing and deploying softwares.
+
+It handles all this process to an almost intuitive web interface which can be access at: localhost:{JENKINS_PORT} (substitute the port number for the one defined in your env file)
+
+Setting up Jenkins for the first time would require a password which can be found inside the `./docker/jenkins/secrets/initialAdminPassword` file 
+and then follow the prompts to complete the setup.
 
 ## Steps
 
