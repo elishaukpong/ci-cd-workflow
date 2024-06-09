@@ -65,5 +65,9 @@ services:
     ports:
       - ${MYSQL_PORT}:3306
     volumes:
-      - ./docker/mysql/my.conf:/etc/mysql/conf.d/my.cnf
-      - sq1-db:/var/lib/mysql
+      - "./docker/mysql/my.conf:/etc/mysql/conf.d/my.cnf"
+      - "./docker/mysql/logs:/var/log/mysql"
+      - ci-cd-workflow:/var/lib/mysql
+
+volumes:
+  ci-cd-workflow:

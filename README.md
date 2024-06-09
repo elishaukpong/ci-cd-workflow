@@ -14,7 +14,7 @@ Create an instance of Prometheus
 
 Create an instance of Grafana
 
-Create an instance of mysql
+[x] Create an instance of mysql
 
 Create a dummy laravel app that runs some long queries and all that
 
