@@ -38,8 +38,8 @@ services:
   php:
     env_file:
       - .env
-    container_name: php
-    image: 'php'
+    container_name: php-srv
+    image: php-srv
     build:
       context: ./docker/php
     ports:
@@ -60,7 +60,7 @@ services:
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_USER: ${MYSQL_USER:}
+      MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - ${MYSQL_PORT}:3306
@@ -70,8 +70,10 @@ services:
       - ci-cd-workflow:/var/lib/mysql
 
   jenkins:
+    env_file:
+      - .env
     container_name: jenkins
-    image: jenkins
+    image: jenkins-srv
     build:
       context: ./docker/jenkins
     ports:

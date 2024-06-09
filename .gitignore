@@ -1,6 +1,7 @@
 .idea/*
-./docker/nginx/*/logs
-./docker/mysql/logs
-./docker/jenkins/data
-./docker/grafana/data
-./docker/cadvisor/logs
+docker/nginx/*/logs
+docker/mysql/logs
+docker/jenkins/data
+docker/grafana/data
+docker/cadvisor/logs
+docker/prometheus/data
