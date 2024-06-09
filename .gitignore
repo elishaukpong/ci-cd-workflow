@@ -1,3 +1,4 @@
 .idea/*
 ./docker/nginx/*/logs
 ./docker/mysql/logs
+./docker/jenkins/data

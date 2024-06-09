@@ -69,5 +69,16 @@ services:
       - "./docker/mysql/logs:/var/log/mysql"
       - ci-cd-workflow:/var/lib/mysql
 
+  jenkins:
+    container_name: jenkins
+    image: jenkins
+    build:
+      context: ./docker/jenkins
+    ports:
+      - ${JENKINS_PORT}:8080
+    volumes:
+      - "./docker/jenkins/data:/var/jenkins_home"
+
+
 volumes:
   ci-cd-workflow:

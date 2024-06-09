@@ -8,7 +8,7 @@ So one docker file
 
 [x] Create an instance of php that will serve the two servers
 
-Create an instance of Jenkins
+[x] Create an instance of Jenkins
 
 Create an instance of Prometheus
 
