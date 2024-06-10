@@ -14,9 +14,9 @@ services:
     depends_on:
       - php
     volumes:
-      - "./docker/nginx/staging/default.conf:/etc/nginx/conf.d/default.conf"
-      - "./docker/nginx/staging/logs/:/var/log/nginx"
-      - "./filesystem/staging:/var/www/html"
+      - ./docker/nginx/staging/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/staging/logs/:/var/log/nginx
+      - ./filesystem/staging:/var/www/html/staging:rw
 
   production:
     env_file:
@@ -31,9 +31,9 @@ services:
     depends_on:
       - php
     volumes:
-      - "./docker/nginx/production/default.conf:/etc/nginx/conf.d/default.conf"
-      - "./docker/nginx/production/logs/:/var/log/nginx"
-      - "./filesystem/production:/var/www/html"
+      - ./docker/nginx/production/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/production/logs/:/var/log/nginx
+      - ./filesystem/production:/var/www/html/production:rw
 
   php:
     env_file:
@@ -45,12 +45,13 @@ services:
     ports:
       - ${PHP_PORT}:9000
     restart: unless-stopped
-    volumes:
-      - "./docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini"
-      - "./filesystem/staging:/var/www/html/staging"
-      - "./filesystem/production:/var/www/html/production"
     depends_on:
       - mysql
+    volumes:
+      - ./docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+      - ./filesystem/staging:/var/www/html/staging
+      - ./filesystem/production:/var/www/html/production
+
 
   mysql:
     env_file:

@@ -54,6 +54,8 @@ and then follow the prompts to complete the setup.
 
 So one docker file
 
+expand that php must have access to the files being served and to the same mapping
+
 [x] Create a 2 Nginx instances
 - staging
 - ⁠production
