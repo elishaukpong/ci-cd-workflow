@@ -5,8 +5,7 @@ WORKDIR /var/www
 
 USER root
 
-RUN apt update && apt -f install -y \
-    rsync
+RUN apt update && apt -f install -y
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

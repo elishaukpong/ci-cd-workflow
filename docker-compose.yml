@@ -83,6 +83,7 @@ services:
     volumes:
       - ./docker/jenkins/data:/var/jenkins_home
       - ./application:/var/application:rw
+      - ./filesystem:/var/filesystem:rw
       - /var/run/docker.sock:/var/run/docker.sock:rx
     depends_on:
       - production
