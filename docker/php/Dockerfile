@@ -4,6 +4,10 @@ FROM php:8.2-fpm
 WORKDIR /var/www
 
 USER root
+
+RUN apt update && apt -f install -y \
+    rsync
+
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
