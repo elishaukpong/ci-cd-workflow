@@ -47,6 +47,8 @@ and then follow the prompts to complete the setup.
 ## What is MySQL
 // coming soon
 
+## Setup.sh file
+ Run as sudo 
 
 ## Steps
 
