@@ -9,7 +9,7 @@ scrape_configs:
 
   - job_name: cadvisor
     static_configs:
-      - targets: ['cadvisor:9001']
+      - targets: ['cadvisor:8080']
 
   - job_name: grafana
     static_configs:

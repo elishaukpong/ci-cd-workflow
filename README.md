@@ -32,6 +32,22 @@ It handles all this process to an almost intuitive web interface which can be ac
 Setting up Jenkins for the first time would require a password which can be found inside the `./docker/jenkins/secrets/initialAdminPassword` file 
 and then follow the prompts to complete the setup.
 
+## What is Prometheus
+// coming soon
+
+## What is Grafana
+// coming soon
+
+## What is Nginx
+// coming soon
+
+## What is PHP
+// coming soon
+
+## What is MySQL
+// coming soon
+
+
 ## Steps
 
 So one docker file
