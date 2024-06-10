@@ -52,12 +52,11 @@ services:
       - ./filesystem/staging:/var/www/html/staging
       - ./filesystem/production:/var/www/html/production
 
-
   mysql:
     env_file:
       - .env
     container_name: mysql
-    image: 'mysql'
+    image: mysql
     build:
       context: ./docker/mysql
     environment:
@@ -82,7 +81,9 @@ services:
     ports:
       - ${JENKINS_PORT}:8080
     volumes:
-      - "./docker/jenkins/data:/var/jenkins_home"
+      - ./docker/jenkins/data:/var/jenkins_home
+      - ./application:/var/application:rw
+      - /var/run/docker.sock:/var/run/docker.sock:rx
     depends_on:
       - production
       - staging
