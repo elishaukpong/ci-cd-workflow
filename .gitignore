@@ -9,3 +9,4 @@ filesystem/staging/*
 !filesystem/staging/.gitignore
 filesystem/production/*
 !filesystem/production/.gitignore
+.env
