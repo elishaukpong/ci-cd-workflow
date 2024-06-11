@@ -18,7 +18,7 @@ filesystem at `./filesystem/production` all in this same folder but they will be
 `production.ci-workflow.test:82` and `staging.ci-workflow.test:81` respectfully after we are done setting up.
 
 ## Base Requirements
-While this might sound very intuitive but its worthy of mention that you need to have docker installed
+While this might sound very intuitive but it is worthy of mention that you need to have docker installed
 on the machine you want to run this simulation on.
 
 ## Steps to setup simulation
@@ -27,7 +27,36 @@ on the machine you want to run this simulation on.
 
 ## NGINX Configs for staging and production servers
 
-//coming soon
+We have two instances of Nginx that is sets up to serve the production and staging content,
+the urls are:
+ - `production.ci-workflow.test:{PRODUCTION_PORT}`
+ - `staging.ci-workflow.test:{STAGING_PORT}`
+
+The ports are provided to avoid conflicts on the host machine, you can also use proxy pass to
+avoid specifying the port on the browser but that would need another instance of nginx and we didn't
+want that, at least not now.
+
+### Config for PRODUCTION
+This file can be found at `./docker/nginx/production/default.conf` and the two important configs
+are:
+```
+server_name production.ci-workflow.test;
+root /var/www/html/production/public;
+```
+
+if you want to serve your production contents on another url, please update the server name details
+and to serve the files in a different folder, update the root directory.
+
+### Config for STAGING
+This file can be found at `./docker/nginx/staging/default.conf` and the two important configs
+are:
+```
+server_name staging.ci-workflow.test;
+root /var/www/html/staging/public;
+```
+
+if you want to serve your production contents on another url, please update the server name details
+and to serve the files in a different folder, update the root directory.
 
 ## Dockerfile Services Used
 
