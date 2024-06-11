@@ -53,8 +53,7 @@ On the homepage as above,
 
 On doing the above, you will be redirected to a new page, click n open blue ocean by the side and run the job.
 
-
-#### Note: If youre asked for an admin token while setting up, check `./docker/jenkins/data/secrets/initialAdminPassword`
+Note: If youre asked for an admin token while setting up, check `./docker/jenkins/data/secrets/initialAdminPassword`
 
 ## NGINX Configs for staging and production servers
 
