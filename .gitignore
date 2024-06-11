@@ -5,3 +5,5 @@ docker/jenkins/data
 docker/grafana/data
 docker/cadvisor/logs
 docker/prometheus/data
+filesystem/staging
+filesystem/production

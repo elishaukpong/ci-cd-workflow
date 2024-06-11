@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // Use a PHP Docker image and run commands inside it
                     docker.image('php-srv').inside("--cpus 1.5 --memory 3g -e HOME=$WORKSPACE -e TMPDIR=$WORKSPACE/tmp") {
-                        sh 'composer install --prefer-dist --no-ansi --no-interaction --no-progress -q -o'
+                        sh 'composer install --prefer-dist --no-ansi --no-interaction'
                         sh 'cp .env.example .env'
                         sh 'php artisan key:generate'
                     }
@@ -50,12 +50,14 @@ pipeline {
             steps {
               echo "You picked: ${SERVER}"
 
-              sh "rsync -avzq --exclude=.env --exclude=vendor --delete $WORKSPACE /var/filesystem/{$SERVER}"
-
               script {
-                docker.image('php-srv').inside("--cpus 1.5 --memory 3g -e HOME=/var/filesystem/{$SERVER}") {
-                    dir('./') {
-                        sh 'composer install --prefer-dist --no-ansi --no-interaction --no-progress -q -o'
+                def cwd = pwd()
+
+                sh "rsync -avzq --exclude=.env --exclude=vendor --delete $cwd/ /var/filesystem/$SERVER"
+
+                docker.image('php-srv').inside("--cpus 1.5 --memory 3g -e HOME=/var/filesystem/$SERVER") {
+                    dir("/var/filesystem/$SERVER") {
+                        sh 'composer install --prefer-dist --no-ansi --no-interaction'
                         sh 'cp .env.example .env'
                         sh 'php artisan key:generate'
                     }
