@@ -1,6 +1,29 @@
 # CI/CD Workflow Simulation using Docker
 
-## Dockerfile Services
+This repo is a containerized workflow of an application, a ci-cd pipeline to deploy the application
+to either a staging or production server and also with monitoring setup using prometheus with 
+data aggregated from cAdvisor and Pecona MMS (for monitoring MySQL instance), visualized with Grafana.
+
+It starts the simulation from the `./application` folder, this folder simulates a git repo, a folder
+on your machine, basically where you code or store codes, it is the starting point and this code will be
+delivered to either the staging or production environment using Jenkins as the CI/CD pipeline.
+
+When you access Jenkins, You have access to a dashboard that you can kickstart a blue ocean deployment. 
+This checks out the code, installs all dependencies and setup, runs the tests and then prompts you to 
+choose either the production or staging server and then simulates a deploy to the server which can be 
+accessed on your browser (see more at SETUP section). 
+
+The filesystem for the staging server can be found at `./filesystem/staging` and production server 
+filesystem at `./filesystem/production`.
+
+## Base Requirements
+While this might sound very intuitive but its worthy of mention that you need to have docker installed
+on the machine you want to run this simulation on.
+
+## Steps to setup simulation
+//coming soon
+
+## Dockerfile Services Used
 
 The docker file has 7 services running
 
@@ -46,36 +69,3 @@ and then follow the prompts to complete the setup.
 
 ## What is MySQL
 // coming soon
-
-## Setup.sh file
- Run as sudo 
-
-## Steps
-
-So one docker file
-
-expand that php must have access to the files being served and to the same mapping
-
-[x] Create a 2 Nginx instances
-- staging
-- ⁠production
-
-[x] Create an instance of php that will serve the two servers
-
-[x] Create an instance of Jenkins
-
-[x] Create an instance of Prometheus
-
-[x] Create an instance of Grafana
-
-[x] Create an instance of Cadvisor
-
-[x] Create an instance of mysql
-
-Create a dummy laravel app that runs some long queries and all that
-
-The idea is
-
-Prometheus and Grafana will monitor and visualize the vitals of the two servers
-
-Jenkins will watch a branch and provide an interface to deploy either to staging or production
