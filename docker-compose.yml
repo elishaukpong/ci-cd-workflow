@@ -149,5 +149,22 @@ services:
       - prometheus
       - grafana
 
+  mysqld-exporter:
+    env_file:
+      - .env
+    container_name: mysqld-exporter
+    image: mysqld-exporter
+    restart: unless-stopped
+    build:
+      context: docker/mysqld-exporter
+    ports:
+      - ${MYSQL_EXPORTER_PORT}:9104
+    environment:
+      - DATA_SOURCE_NAME="root:secret@tcp(mysql:3306)/"
+    volumes:
+      - ./docker/mysqld-exporter/my.cnf:/cfg/.my.cnf:ro
+    depends_on:
+      - mysql
+
 volumes:
   ci-cd-workflow:
