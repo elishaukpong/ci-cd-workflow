@@ -6,4 +6,6 @@ docker/grafana/data
 docker/cadvisor/logs
 docker/prometheus/data
 filesystem/staging/*
+!filesystem/staging/.gitignore
 filesystem/production/*
+!filesystem/production/.gitignore
