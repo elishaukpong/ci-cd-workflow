@@ -23,6 +23,8 @@ on the machine you want to run this simulation on.
 ## Steps to setup simulation
 //coming soon
 
+## NGINX Configs
+
 ## Dockerfile Services Used
 
 The docker file has 7 services running
