@@ -22,9 +22,12 @@ While this might sound very intuitive but its worthy of mention that you need to
 on the machine you want to run this simulation on.
 
 ## Steps to setup simulation
+
 //coming soon
 
-## NGINX Configs
+## NGINX Configs for staging and production servers
+
+//coming soon
 
 ## Dockerfile Services Used
 
