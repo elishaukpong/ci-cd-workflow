@@ -40,7 +40,7 @@ and after a few seconds you will see a login screen, input the credentials:
 
 After gaining access to the web interface, you will need to create a new pipeline.
 
-![img.png](img.png)
+![Jenkins Desktop](https://i.ibb.co/vJrxhxH/jenkins.png)
 
 On the homepage as above, 
 - Click on `Create a job`
