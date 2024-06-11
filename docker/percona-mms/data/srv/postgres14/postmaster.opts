@@ -1,1 +1,0 @@
-/usr/pgsql-14/bin/postgres "-D" "/srv/postgres14" "-c" "shared_preload_libraries=pg_stat_statements" "-c" "pg_stat_statements.max=10000" "-c" "pg_stat_statements.track=all" "-c" "pg_stat_statements.save=off" "-c" "logging_collector=off"
