@@ -144,16 +144,25 @@ Setting up Jenkins for the first time would require a password which can be foun
 and then follow the prompts to complete the setup.
 
 ## What is Prometheus
-// coming soon
+Prometheus is a real time time-series data aggregator, it gets data from sources and allows you to work with that data
+either for monitoring or as a muster point to passing multiple data sources as one to another tool, in our case Grafana.
+It is a critical monitoring tool and has gained popularity over time.
 
 ## What is Grafana
-// coming soon
+Grafana is a data monitoring and visualization tool, it's strength is the visualization in my opinion, it has ability to create
+sophisticated dashboards. Metrics monitored can be analyzed and also alerts can be setup for it.
 
 ## What is Nginx
-// coming soon
+Nginx is a popular web server and can also be used as a reverse proxy tool, but we are using it as a 
+web server in this context. 
+
+To see it in use as a reverse proxy, please check this other example i made
+[Using Nginx as load balancer](https://github.com/elishaukpong/load-balancer-docker)
 
 ## What is PHP
-// coming soon
+This is a tool for processing php scripts and very useful in web development and can be embedded into HTML
 
 ## What is MySQL
-// coming soon
+An open-source relational database management system (RDBMS) based on Structured Query Language (SQL). 
+It's widely used for web databases and supports various database operations, including data storage, 
+retrieval, and management.
