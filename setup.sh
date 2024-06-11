@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 env_file_path="./.env"
 env_example_file_path="./.env.example"
@@ -21,3 +21,4 @@ if [ -f "$hosts_file_path" ]; then
     echo "127.0.0.1       staging.ci-workflow.test production.ci-workflow.test" >> $hosts_file_path
 fi
 
+docker-compose -f docker-compose.yml up -d

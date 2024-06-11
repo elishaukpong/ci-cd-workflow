@@ -21,9 +21,11 @@ filesystem at `./filesystem/production` all in this same folder but they will be
 While this might sound very intuitive but it is worthy of mention that you need to have docker installed
 on the machine you want to run this simulation on.
 
-## Steps to setup simulation
+## Steps to set up simulation
 
-//coming soon
+After cloning this repository, it is advised to run the `./setup.sh` script as sudo once.
+this will copy the `.env.example` file to `.env` that has the docker environment keys
+and setup the staging and production url in the hosts file.
 
 ## NGINX Configs for staging and production servers
 
