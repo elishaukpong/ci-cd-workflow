@@ -27,6 +27,35 @@ After cloning this repository, it is advised to run the `./setup.sh` script as s
 this will copy the `.env.example` file to `.env` that has the docker environment keys
 and setup the staging and production url in the hosts file.
 
+## Jenkinsfile
+This project has a `Jenkinsfile` in the root folder and this will be used to create a pipeline. A pipeline
+is a series of stages that will be processed mostly starts from the code repo and ends on the selected server.
+
+To see an explaination of our Jenkinsfile please refer to the Jenkins Config Section.
+
+After bringing the project up, using `docker-compose up -d`, navigate on your browser to `localhost:{JENKINS_PORT}`
+and after a few seconds you will see a login screen, input the credentials:
+- Username: admin
+- Password: admin
+
+After gaining access to the web interface, you will need to create a new pipeline.
+
+![img.png](img.png)
+
+On the homepage as above, 
+- Click on `Create a job`
+- Give the job a name and choose the `Pipeline` option
+- Click Ok
+- On the new page, give a description or leave it empty
+- Scroll to the end of the page and you'll see a Pipeline script textbox
+- Paste in the content of `./Jenkinfile`
+- Click save.
+
+On doing the above, you will be redirected to a new page, click n open blue ocean by the side and run the job.
+
+
+#### Note: If youre asked for an admin token while setting up, check `./docker/jenkins/data/secrets/initialAdminPassword`
+
 ## NGINX Configs for staging and production servers
 
 We have two instances of Nginx that is sets up to serve the production and staging content,
