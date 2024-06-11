@@ -1,0 +1,954 @@
+logger=settings t=2024-06-11T08:39:52.129021263Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:39:52.131696583Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:39:52.132966754Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:39:52.132990675Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:39:52.132996002Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:39:52.133121411Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:39:52.133125917Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:39:52.133129687Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:39:52.133134251Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:39:52.13678619Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:39:52.1691983Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:39:53.797163127Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:39:53.798925868Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:39:53.799239852Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:39:53.799262054Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:39:53.814426723Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:39:53.814596356Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:39:53.814605158Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:39:53.814625905Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:39:53.814631958Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:39:53.81490705Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:39:53.838761093Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:39:55.875841523Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:39:55.876191469Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:39:55.876201958Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:39:55.876390521Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:39:55.876399534Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:39:55.876403305Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:39:55.876406823Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:39:55.876410371Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:39:55.876414052Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:39:55.876542102Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:39:55.895940461Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:39:57.075906919Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:39:57.07609361Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:39:57.07610283Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:39:57.076106937Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:39:57.076110323Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:39:57.076113452Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:39:57.076116549Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:39:57.076119874Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:39:57.076124191Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:39:57.07619153Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:39:57.134294157Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:39:58.827702353Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:39:58.83094137Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:39:58.835468107Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:39:58.835602554Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:39:58.835610521Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:39:58.835614358Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:39:58.835617479Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:39:58.835621069Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:39:58.835625964Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:39:58.835789592Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:39:58.878981705Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:00.697582792Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:00.697917123Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:00.697928581Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:00.697932683Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:00.697936153Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:00.697939478Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:00.697943593Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:00.697976867Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:00.697984333Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:00.698133216Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:00.721592416Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:05.978057553Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:05.978255759Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:05.978265678Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:05.978269511Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:05.97827261Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:05.978275616Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:05.978278783Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:05.978281973Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:05.978285058Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:05.978369677Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:06.007210394Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:07.627720094Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:07.628044113Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:07.628053022Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:07.628056811Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:07.62809047Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:07.62809384Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:07.628096817Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:07.628099852Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:07.628103002Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:07.628203715Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:07.654244003Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:08.929229472Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:08.930317473Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:08.930330282Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:08.930334143Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:08.930337793Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:08.930340764Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:08.930343651Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:08.930346438Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:08.930349473Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:08.930440488Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:08.950892318Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:10.160335835Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:10.164072761Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:10.164641546Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:10.164646573Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:10.164652253Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:10.164655245Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:10.164660967Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:10.164663991Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:10.164667405Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:10.17068894Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:10.210756863Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:12.042031939Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:12.052290982Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:12.052429459Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:12.052434765Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:12.052438183Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:12.052441151Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:12.052444347Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:12.052447303Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:12.052451003Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:12.052537157Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:12.080311562Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:13.116280016Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:13.119681034Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:13.120068564Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:13.120080053Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:13.120083698Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:13.120086639Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:13.120089474Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:13.120092427Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:13.120095652Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:13.122460205Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:13.158997276Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:14.959416218Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:14.959944871Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:14.960215205Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:14.960222127Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:14.960225402Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:14.960229616Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:14.960232427Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:14.960235333Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:14.960238484Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:14.960334682Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:14.995066603Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:17.482661768Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:17.482887347Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:17.483067045Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:17.483074912Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:17.483078374Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:17.483111459Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:17.483114626Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:17.483117803Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:17.483121142Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:17.483216118Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:17.488170194Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:19.089073805Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:19.089245311Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:19.089253626Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:19.089257329Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:19.089262598Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:19.089265587Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:19.089268243Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:19.089271056Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:19.090746263Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:19.090933114Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:19.101694415Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:20.036428849Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:20.040479666Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:20.040717054Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:20.040731029Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:20.040737692Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:20.040742767Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:20.040748909Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:20.040759078Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:20.040766729Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:20.044443506Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:20.158773779Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:22.094607994Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:22.097320368Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:22.100836916Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:22.105845275Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:22.107409556Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:22.107423979Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:22.107427849Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:22.107431474Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:22.107435642Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:22.107516837Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:22.133224873Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:25.522439304Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:25.522654018Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:25.522664414Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:25.522667944Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:25.522670931Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:25.522674195Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:25.522688306Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:25.522694133Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:25.522697394Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:25.522890387Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:25.533316826Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:26.909755345Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:26.910456705Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:26.910470058Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:26.910474522Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:26.910478057Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:26.910483703Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:26.910488206Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:26.910491304Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:26.910495804Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:26.911986803Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:26.994618396Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:27.841257395Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:27.842304958Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:27.842500092Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:27.842510103Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:27.84251372Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:27.842516875Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:27.842841065Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:27.842849205Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:27.842853103Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:27.843191818Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:27.852425474Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: role \"grafana\" does not exist"
+logger=settings t=2024-06-11T08:40:29.702427421Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:40:29.702559665Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:40:29.702567254Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:40:29.702570533Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:40:29.702574929Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:40:29.702577873Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:40:29.702580591Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:40:29.702584448Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:40:29.702587415Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:40:29.702856107Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:40:29.781034957Z level=info msg="Starting DB migrations"
+logger=migrator t=2024-06-11T08:40:29.78372887Z level=info msg="Executing migration" id="create migration_log table"
+logger=migrator t=2024-06-11T08:40:29.916183371Z level=info msg="Executing migration" id="create user table"
+logger=migrator t=2024-06-11T08:40:29.960875257Z level=info msg="Executing migration" id="add unique index user.login"
+logger=migrator t=2024-06-11T08:40:29.991675578Z level=info msg="Executing migration" id="add unique index user.email"
+logger=migrator t=2024-06-11T08:40:30.01970003Z level=info msg="Executing migration" id="drop index UQE_user_login - v1"
+logger=migrator t=2024-06-11T08:40:30.04527328Z level=info msg="Executing migration" id="drop index UQE_user_email - v1"
+logger=migrator t=2024-06-11T08:40:30.074579485Z level=info msg="Executing migration" id="Rename table user to user_v1 - v1"
+logger=migrator t=2024-06-11T08:40:30.07965935Z level=info msg="Executing migration" id="create user table v2"
+logger=migrator t=2024-06-11T08:40:30.117995306Z level=info msg="Executing migration" id="create index UQE_user_login - v2"
+logger=migrator t=2024-06-11T08:40:30.136383525Z level=info msg="Executing migration" id="create index UQE_user_email - v2"
+logger=migrator t=2024-06-11T08:40:30.155275287Z level=info msg="Executing migration" id="copy data_source v1 to v2"
+logger=migrator t=2024-06-11T08:40:30.167483176Z level=info msg="Executing migration" id="Drop old table user_v1"
+logger=migrator t=2024-06-11T08:40:30.199471781Z level=info msg="Executing migration" id="Add column help_flags1 to user table"
+logger=migrator t=2024-06-11T08:40:30.20444525Z level=info msg="Executing migration" id="Update user table charset"
+logger=migrator t=2024-06-11T08:40:30.218472715Z level=info msg="Executing migration" id="Add last_seen_at column to user"
+logger=migrator t=2024-06-11T08:40:30.267550748Z level=info msg="Executing migration" id="Add missing user data"
+logger=migrator t=2024-06-11T08:40:30.290241173Z level=info msg="Executing migration" id="Add is_disabled column to user"
+logger=migrator t=2024-06-11T08:40:30.297589968Z level=info msg="Executing migration" id="Add index user.login/user.email"
+logger=migrator t=2024-06-11T08:40:30.319026574Z level=info msg="Executing migration" id="Add is_service_account column to user"
+logger=migrator t=2024-06-11T08:40:30.324851577Z level=info msg="Executing migration" id="Update is_service_account column to nullable"
+logger=migrator t=2024-06-11T08:40:30.334646543Z level=info msg="Executing migration" id="create temp user table v1-7"
+logger=migrator t=2024-06-11T08:40:30.417444006Z level=info msg="Executing migration" id="create index IDX_temp_user_email - v1-7"
+logger=migrator t=2024-06-11T08:40:30.428418633Z level=info msg="Executing migration" id="create index IDX_temp_user_org_id - v1-7"
+logger=migrator t=2024-06-11T08:40:30.439052523Z level=info msg="Executing migration" id="create index IDX_temp_user_code - v1-7"
+logger=migrator t=2024-06-11T08:40:30.451413137Z level=info msg="Executing migration" id="create index IDX_temp_user_status - v1-7"
+logger=migrator t=2024-06-11T08:40:30.466600879Z level=info msg="Executing migration" id="Update temp_user table charset"
+logger=migrator t=2024-06-11T08:40:30.475560648Z level=info msg="Executing migration" id="drop index IDX_temp_user_email - v1"
+logger=migrator t=2024-06-11T08:40:30.484691851Z level=info msg="Executing migration" id="drop index IDX_temp_user_org_id - v1"
+logger=migrator t=2024-06-11T08:40:30.495400242Z level=info msg="Executing migration" id="drop index IDX_temp_user_code - v1"
+logger=migrator t=2024-06-11T08:40:30.504697439Z level=info msg="Executing migration" id="drop index IDX_temp_user_status - v1"
+logger=migrator t=2024-06-11T08:40:30.518957091Z level=info msg="Executing migration" id="Rename table temp_user to temp_user_tmp_qwerty - v1"
+logger=migrator t=2024-06-11T08:40:30.523481135Z level=info msg="Executing migration" id="create temp_user v2"
+logger=migrator t=2024-06-11T08:40:30.550893127Z level=info msg="Executing migration" id="create index IDX_temp_user_email - v2"
+logger=migrator t=2024-06-11T08:40:30.568431473Z level=info msg="Executing migration" id="create index IDX_temp_user_org_id - v2"
+logger=migrator t=2024-06-11T08:40:30.590846529Z level=info msg="Executing migration" id="create index IDX_temp_user_code - v2"
+logger=migrator t=2024-06-11T08:40:30.639300721Z level=info msg="Executing migration" id="create index IDX_temp_user_status - v2"
+logger=migrator t=2024-06-11T08:40:30.697691621Z level=info msg="Executing migration" id="copy temp_user v1 to v2"
+logger=migrator t=2024-06-11T08:40:30.720147317Z level=info msg="Executing migration" id="drop temp_user_tmp_qwerty"
+logger=migrator t=2024-06-11T08:40:30.7961507Z level=info msg="Executing migration" id="Set created for temp users that will otherwise prematurely expire"
+logger=migrator t=2024-06-11T08:40:30.81609841Z level=info msg="Executing migration" id="create star table"
+logger=migrator t=2024-06-11T08:40:30.860246186Z level=info msg="Executing migration" id="add unique index star.user_id_dashboard_id"
+logger=migrator t=2024-06-11T08:40:30.894229161Z level=info msg="Executing migration" id="create org table v1"
+logger=migrator t=2024-06-11T08:40:30.997009616Z level=info msg="Executing migration" id="create index UQE_org_name - v1"
+logger=migrator t=2024-06-11T08:40:31.05246424Z level=info msg="Executing migration" id="create org_user table v1"
+logger=migrator t=2024-06-11T08:40:31.096166699Z level=info msg="Executing migration" id="create index IDX_org_user_org_id - v1"
+logger=migrator t=2024-06-11T08:40:31.114276508Z level=info msg="Executing migration" id="create index UQE_org_user_org_id_user_id - v1"
+logger=migrator t=2024-06-11T08:40:31.130874881Z level=info msg="Executing migration" id="create index IDX_org_user_user_id - v1"
+logger=migrator t=2024-06-11T08:40:31.145527755Z level=info msg="Executing migration" id="Update org table charset"
+logger=migrator t=2024-06-11T08:40:31.155542344Z level=info msg="Executing migration" id="Update org_user table charset"
+logger=migrator t=2024-06-11T08:40:31.16035482Z level=info msg="Executing migration" id="Migrate all Read Only Viewers to Viewers"
+logger=migrator t=2024-06-11T08:40:31.171563153Z level=info msg="Executing migration" id="create dashboard table"
+logger=migrator t=2024-06-11T08:40:31.216545609Z level=info msg="Executing migration" id="add index dashboard.account_id"
+logger=migrator t=2024-06-11T08:40:31.23755145Z level=info msg="Executing migration" id="add unique index dashboard_account_id_slug"
+logger=migrator t=2024-06-11T08:40:31.269363545Z level=info msg="Executing migration" id="create dashboard_tag table"
+logger=migrator t=2024-06-11T08:40:31.311274826Z level=info msg="Executing migration" id="add unique index dashboard_tag.dasboard_id_term"
+logger=migrator t=2024-06-11T08:40:31.346407795Z level=info msg="Executing migration" id="drop index UQE_dashboard_tag_dashboard_id_term - v1"
+logger=migrator t=2024-06-11T08:40:31.366138396Z level=info msg="Executing migration" id="Rename table dashboard to dashboard_v1 - v1"
+logger=migrator t=2024-06-11T08:40:31.375482966Z level=info msg="Executing migration" id="create dashboard v2"
+logger=migrator t=2024-06-11T08:40:31.408530831Z level=info msg="Executing migration" id="create index IDX_dashboard_org_id - v2"
+logger=migrator t=2024-06-11T08:40:31.4228986Z level=info msg="Executing migration" id="create index UQE_dashboard_org_id_slug - v2"
+logger=migrator t=2024-06-11T08:40:31.442859995Z level=info msg="Executing migration" id="copy dashboard v1 to v2"
+logger=migrator t=2024-06-11T08:40:31.45230679Z level=info msg="Executing migration" id="drop table dashboard_v1"
+logger=migrator t=2024-06-11T08:40:31.490116771Z level=info msg="Executing migration" id="alter dashboard.data to mediumtext v1"
+logger=migrator t=2024-06-11T08:40:31.498124894Z level=info msg="Executing migration" id="Add column updated_by in dashboard - v2"
+logger=migrator t=2024-06-11T08:40:31.524066549Z level=info msg="Executing migration" id="Add column created_by in dashboard - v2"
+logger=migrator t=2024-06-11T08:40:31.536574577Z level=info msg="Executing migration" id="Add column gnetId in dashboard"
+logger=migrator t=2024-06-11T08:40:31.549545866Z level=info msg="Executing migration" id="Add index for gnetId in dashboard"
+logger=migrator t=2024-06-11T08:40:31.633188348Z level=info msg="Executing migration" id="Add column plugin_id in dashboard"
+logger=migrator t=2024-06-11T08:40:31.643981865Z level=info msg="Executing migration" id="Add index for plugin_id in dashboard"
+logger=migrator t=2024-06-11T08:40:31.687130912Z level=info msg="Executing migration" id="Add index for dashboard_id in dashboard_tag"
+logger=migrator t=2024-06-11T08:40:31.710327471Z level=info msg="Executing migration" id="Update dashboard table charset"
+logger=migrator t=2024-06-11T08:40:31.730334792Z level=info msg="Executing migration" id="Update dashboard_tag table charset"
+logger=migrator t=2024-06-11T08:40:31.737707268Z level=info msg="Executing migration" id="Add column folder_id in dashboard"
+logger=migrator t=2024-06-11T08:40:31.744013039Z level=info msg="Executing migration" id="Add column isFolder in dashboard"
+logger=migrator t=2024-06-11T08:40:31.750457472Z level=info msg="Executing migration" id="Add column has_acl in dashboard"
+logger=migrator t=2024-06-11T08:40:31.757749188Z level=info msg="Executing migration" id="Add column uid in dashboard"
+logger=migrator t=2024-06-11T08:40:31.765521573Z level=info msg="Executing migration" id="Update uid column values in dashboard"
+logger=migrator t=2024-06-11T08:40:31.783469925Z level=info msg="Executing migration" id="Add unique index dashboard_org_id_uid"
+logger=migrator t=2024-06-11T08:40:31.798285957Z level=info msg="Executing migration" id="Remove unique index org_id_slug"
+logger=migrator t=2024-06-11T08:40:31.817471604Z level=info msg="Executing migration" id="Update dashboard title length"
+logger=migrator t=2024-06-11T08:40:31.901816223Z level=info msg="Executing migration" id="Add unique index for dashboard_org_id_title_folder_id"
+logger=migrator t=2024-06-11T08:40:31.913059265Z level=info msg="Executing migration" id="create dashboard_provisioning"
+logger=migrator t=2024-06-11T08:40:31.945477586Z level=info msg="Executing migration" id="Rename table dashboard_provisioning to dashboard_provisioning_tmp_qwerty - v1"
+logger=migrator t=2024-06-11T08:40:31.962260806Z level=info msg="Executing migration" id="create dashboard_provisioning v2"
+logger=migrator t=2024-06-11T08:40:31.995192409Z level=info msg="Executing migration" id="create index IDX_dashboard_provisioning_dashboard_id - v2"
+logger=migrator t=2024-06-11T08:40:32.018308438Z level=info msg="Executing migration" id="create index IDX_dashboard_provisioning_dashboard_id_name - v2"
+logger=migrator t=2024-06-11T08:40:32.032811473Z level=info msg="Executing migration" id="copy dashboard_provisioning v1 to v2"
+logger=migrator t=2024-06-11T08:40:32.040843669Z level=info msg="Executing migration" id="drop dashboard_provisioning_tmp_qwerty"
+logger=migrator t=2024-06-11T08:40:32.067096433Z level=info msg="Executing migration" id="Add check_sum column"
+logger=migrator t=2024-06-11T08:40:32.071064658Z level=info msg="Executing migration" id="Add index for dashboard_title"
+logger=migrator t=2024-06-11T08:40:32.086583864Z level=info msg="Executing migration" id="delete tags for deleted dashboards"
+logger=migrator t=2024-06-11T08:40:32.101296751Z level=info msg="Executing migration" id="delete stars for deleted dashboards"
+logger=migrator t=2024-06-11T08:40:32.110660594Z level=info msg="Executing migration" id="Add index for dashboard_is_folder"
+logger=migrator t=2024-06-11T08:40:32.127784509Z level=info msg="Executing migration" id="Add isPublic for dashboard"
+logger=migrator t=2024-06-11T08:40:32.134955987Z level=info msg="Executing migration" id="create data_source table"
+logger=migrator t=2024-06-11T08:40:32.16921482Z level=info msg="Executing migration" id="add index data_source.account_id"
+logger=migrator t=2024-06-11T08:40:32.190033058Z level=info msg="Executing migration" id="add unique index data_source.account_id_name"
+logger=migrator t=2024-06-11T08:40:32.207123659Z level=info msg="Executing migration" id="drop index IDX_data_source_account_id - v1"
+logger=migrator t=2024-06-11T08:40:32.222452114Z level=info msg="Executing migration" id="drop index UQE_data_source_account_id_name - v1"
+logger=migrator t=2024-06-11T08:40:32.23992582Z level=info msg="Executing migration" id="Rename table data_source to data_source_v1 - v1"
+logger=migrator t=2024-06-11T08:40:32.247023707Z level=info msg="Executing migration" id="create data_source table v2"
+logger=migrator t=2024-06-11T08:40:32.282004944Z level=info msg="Executing migration" id="create index IDX_data_source_org_id - v2"
+logger=migrator t=2024-06-11T08:40:32.298321233Z level=info msg="Executing migration" id="create index UQE_data_source_org_id_name - v2"
+logger=migrator t=2024-06-11T08:40:32.347776526Z level=info msg="Executing migration" id="Drop old table data_source_v1 #2"
+logger=migrator t=2024-06-11T08:40:32.435258224Z level=info msg="Executing migration" id="Add column with_credentials"
+logger=migrator t=2024-06-11T08:40:32.441469675Z level=info msg="Executing migration" id="Add secure json data column"
+logger=migrator t=2024-06-11T08:40:32.4551102Z level=info msg="Executing migration" id="Update data_source table charset"
+logger=migrator t=2024-06-11T08:40:32.518002902Z level=info msg="Executing migration" id="Update initial version to 1"
+logger=migrator t=2024-06-11T08:40:32.61668273Z level=info msg="Executing migration" id="Add read_only data column"
+logger=migrator t=2024-06-11T08:40:32.629051005Z level=info msg="Executing migration" id="Migrate logging ds to loki ds"
+logger=migrator t=2024-06-11T08:40:32.645143295Z level=info msg="Executing migration" id="Update json_data with nulls"
+logger=migrator t=2024-06-11T08:40:32.6537825Z level=info msg="Executing migration" id="Add uid column"
+logger=migrator t=2024-06-11T08:40:32.68311441Z level=info msg="Executing migration" id="Update uid value"
+logger=migrator t=2024-06-11T08:40:32.713397461Z level=info msg="Executing migration" id="Add unique index datasource_org_id_uid"
+logger=migrator t=2024-06-11T08:40:32.794951861Z level=info msg="Executing migration" id="add unique index datasource_org_id_is_default"
+logger=migrator t=2024-06-11T08:40:32.811355696Z level=info msg="Executing migration" id="create api_key table"
+logger=migrator t=2024-06-11T08:40:32.852169684Z level=info msg="Executing migration" id="add index api_key.account_id"
+logger=migrator t=2024-06-11T08:40:32.867694485Z level=info msg="Executing migration" id="add index api_key.key"
+logger=migrator t=2024-06-11T08:40:32.89299865Z level=info msg="Executing migration" id="add index api_key.account_id_name"
+logger=migrator t=2024-06-11T08:40:32.933507106Z level=info msg="Executing migration" id="drop index IDX_api_key_account_id - v1"
+logger=migrator t=2024-06-11T08:40:32.952941365Z level=info msg="Executing migration" id="drop index UQE_api_key_key - v1"
+logger=migrator t=2024-06-11T08:40:32.988195602Z level=info msg="Executing migration" id="drop index UQE_api_key_account_id_name - v1"
+logger=migrator t=2024-06-11T08:40:33.046162081Z level=info msg="Executing migration" id="Rename table api_key to api_key_v1 - v1"
+logger=migrator t=2024-06-11T08:40:33.052894088Z level=info msg="Executing migration" id="create api_key table v2"
+logger=migrator t=2024-06-11T08:40:33.087652165Z level=info msg="Executing migration" id="create index IDX_api_key_org_id - v2"
+logger=migrator t=2024-06-11T08:40:33.104087527Z level=info msg="Executing migration" id="create index UQE_api_key_key - v2"
+logger=migrator t=2024-06-11T08:40:33.125581266Z level=info msg="Executing migration" id="create index UQE_api_key_org_id_name - v2"
+logger=migrator t=2024-06-11T08:40:33.151111746Z level=info msg="Executing migration" id="copy api_key v1 to v2"
+logger=migrator t=2024-06-11T08:40:33.177029883Z level=info msg="Executing migration" id="Drop old table api_key_v1"
+logger=migrator t=2024-06-11T08:40:33.213740606Z level=info msg="Executing migration" id="Update api_key table charset"
+logger=migrator t=2024-06-11T08:40:33.222698254Z level=info msg="Executing migration" id="Add expires to api_key table"
+logger=migrator t=2024-06-11T08:40:33.227274134Z level=info msg="Executing migration" id="Add service account foreign key"
+logger=migrator t=2024-06-11T08:40:33.233592311Z level=info msg="Executing migration" id="set service account foreign key to nil if 0"
+logger=migrator t=2024-06-11T08:40:33.246318107Z level=info msg="Executing migration" id="Add last_used_at to api_key table"
+logger=migrator t=2024-06-11T08:40:33.254530485Z level=info msg="Executing migration" id="Add is_revoked column to api_key table"
+logger=migrator t=2024-06-11T08:40:33.268834601Z level=info msg="Executing migration" id="create dashboard_snapshot table v4"
+logger=migrator t=2024-06-11T08:40:33.357550107Z level=info msg="Executing migration" id="drop table dashboard_snapshot_v4 #1"
+logger=migrator t=2024-06-11T08:40:33.398718095Z level=info msg="Executing migration" id="create dashboard_snapshot table v5 #2"
+logger=migrator t=2024-06-11T08:40:33.514889202Z level=info msg="Executing migration" id="create index UQE_dashboard_snapshot_key - v5"
+logger=migrator t=2024-06-11T08:40:33.551355352Z level=info msg="Executing migration" id="create index UQE_dashboard_snapshot_delete_key - v5"
+logger=migrator t=2024-06-11T08:40:33.588644359Z level=info msg="Executing migration" id="create index IDX_dashboard_snapshot_user_id - v5"
+logger=migrator t=2024-06-11T08:40:33.616003128Z level=info msg="Executing migration" id="alter dashboard_snapshot to mediumtext v2"
+logger=migrator t=2024-06-11T08:40:33.621564579Z level=info msg="Executing migration" id="Update dashboard_snapshot table charset"
+logger=migrator t=2024-06-11T08:40:33.641467517Z level=info msg="Executing migration" id="Add column external_delete_url to dashboard_snapshots table"
+logger=migrator t=2024-06-11T08:40:33.678149757Z level=info msg="Executing migration" id="Add encrypted dashboard json column"
+logger=migrator t=2024-06-11T08:40:33.71252637Z level=info msg="Executing migration" id="Change dashboard_encrypted column to MEDIUMBLOB"
+logger=migrator t=2024-06-11T08:40:33.719715583Z level=info msg="Executing migration" id="create quota table v1"
+logger=migrator t=2024-06-11T08:40:33.753219698Z level=info msg="Executing migration" id="create index UQE_quota_org_id_user_id_target - v1"
+logger=migrator t=2024-06-11T08:40:33.777230544Z level=info msg="Executing migration" id="Update quota table charset"
+logger=migrator t=2024-06-11T08:40:33.785692204Z level=info msg="Executing migration" id="create plugin_setting table"
+logger=migrator t=2024-06-11T08:40:33.826643106Z level=info msg="Executing migration" id="create index UQE_plugin_setting_org_id_plugin_id - v1"
+logger=migrator t=2024-06-11T08:40:33.845425622Z level=info msg="Executing migration" id="Add column plugin_version to plugin_settings"
+logger=migrator t=2024-06-11T08:40:33.866842969Z level=info msg="Executing migration" id="Update plugin_setting table charset"
+logger=migrator t=2024-06-11T08:40:33.882417544Z level=info msg="Executing migration" id="create session table"
+logger=migrator t=2024-06-11T08:40:33.912521917Z level=info msg="Executing migration" id="Drop old table playlist table"
+logger=migrator t=2024-06-11T08:40:33.918881319Z level=info msg="Executing migration" id="Drop old table playlist_item table"
+logger=migrator t=2024-06-11T08:40:33.931606501Z level=info msg="Executing migration" id="create playlist table v2"
+logger=migrator t=2024-06-11T08:40:33.982776233Z level=info msg="Executing migration" id="create playlist item table v2"
+logger=migrator t=2024-06-11T08:40:34.028997172Z level=info msg="Executing migration" id="Update playlist table charset"
+logger=migrator t=2024-06-11T08:40:34.042629077Z level=info msg="Executing migration" id="Update playlist_item table charset"
+logger=migrator t=2024-06-11T08:40:34.056523729Z level=info msg="Executing migration" id="drop preferences table v2"
+logger=migrator t=2024-06-11T08:40:34.073272777Z level=info msg="Executing migration" id="drop preferences table v3"
+logger=migrator t=2024-06-11T08:40:34.084033883Z level=info msg="Executing migration" id="create preferences table v3"
+logger=migrator t=2024-06-11T08:40:34.108149205Z level=info msg="Executing migration" id="Update preferences table charset"
+logger=migrator t=2024-06-11T08:40:34.113510745Z level=info msg="Executing migration" id="Add column team_id in preferences"
+logger=migrator t=2024-06-11T08:40:34.120343315Z level=info msg="Executing migration" id="Update team_id column values in preferences"
+logger=migrator t=2024-06-11T08:40:34.132151683Z level=info msg="Executing migration" id="Add column week_start in preferences"
+logger=migrator t=2024-06-11T08:40:34.140085066Z level=info msg="Executing migration" id="Add column preferences.json_data"
+logger=migrator t=2024-06-11T08:40:34.160215089Z level=info msg="Executing migration" id="alter preferences.json_data to mediumtext v1"
+logger=migrator t=2024-06-11T08:40:34.167143268Z level=info msg="Executing migration" id="create alert table v1"
+logger=migrator t=2024-06-11T08:40:34.231738787Z level=info msg="Executing migration" id="add index alert org_id & id "
+logger=migrator t=2024-06-11T08:40:34.250340055Z level=info msg="Executing migration" id="add index alert state"
+logger=migrator t=2024-06-11T08:40:34.263562893Z level=info msg="Executing migration" id="add index alert dashboard_id"
+logger=migrator t=2024-06-11T08:40:34.282104341Z level=info msg="Executing migration" id="Create alert_rule_tag table v1"
+logger=migrator t=2024-06-11T08:40:34.296392552Z level=info msg="Executing migration" id="Add unique index alert_rule_tag.alert_id_tag_id"
+logger=migrator t=2024-06-11T08:40:34.312762057Z level=info msg="Executing migration" id="drop index UQE_alert_rule_tag_alert_id_tag_id - v1"
+logger=migrator t=2024-06-11T08:40:34.337513634Z level=info msg="Executing migration" id="Rename table alert_rule_tag to alert_rule_tag_v1 - v1"
+logger=migrator t=2024-06-11T08:40:34.348502507Z level=info msg="Executing migration" id="Create alert_rule_tag table v2"
+logger=migrator t=2024-06-11T08:40:34.373240243Z level=info msg="Executing migration" id="create index UQE_alert_rule_tag_alert_id_tag_id - Add unique index alert_rule_tag.alert_id_tag_id V2"
+logger=migrator t=2024-06-11T08:40:34.387044644Z level=info msg="Executing migration" id="copy alert_rule_tag v1 to v2"
+logger=migrator t=2024-06-11T08:40:34.400160787Z level=info msg="Executing migration" id="drop table alert_rule_tag_v1"
+logger=migrator t=2024-06-11T08:40:34.416008382Z level=info msg="Executing migration" id="create alert_notification table v1"
+logger=migrator t=2024-06-11T08:40:34.455191139Z level=info msg="Executing migration" id="Add column is_default"
+logger=migrator t=2024-06-11T08:40:34.46169629Z level=info msg="Executing migration" id="Add column frequency"
+logger=migrator t=2024-06-11T08:40:34.466869842Z level=info msg="Executing migration" id="Add column send_reminder"
+logger=migrator t=2024-06-11T08:40:34.471221609Z level=info msg="Executing migration" id="Add column disable_resolve_message"
+logger=migrator t=2024-06-11T08:40:34.47481969Z level=info msg="Executing migration" id="add index alert_notification org_id & name"
+logger=migrator t=2024-06-11T08:40:34.494024259Z level=info msg="Executing migration" id="Update alert table charset"
+logger=migrator t=2024-06-11T08:40:34.502138496Z level=info msg="Executing migration" id="Update alert_notification table charset"
+logger=migrator t=2024-06-11T08:40:34.511600629Z level=info msg="Executing migration" id="create notification_journal table v1"
+logger=migrator t=2024-06-11T08:40:34.557678721Z level=info msg="Executing migration" id="add index notification_journal org_id & alert_id & notifier_id"
+logger=migrator t=2024-06-11T08:40:34.57644911Z level=info msg="Executing migration" id="drop alert_notification_journal"
+logger=migrator t=2024-06-11T08:40:34.604361253Z level=info msg="Executing migration" id="create alert_notification_state table v1"
+logger=migrator t=2024-06-11T08:40:34.633402318Z level=info msg="Executing migration" id="add index alert_notification_state org_id & alert_id & notifier_id"
+logger=migrator t=2024-06-11T08:40:34.668576468Z level=info msg="Executing migration" id="Add for to alert table"
+logger=migrator t=2024-06-11T08:40:34.680406028Z level=info msg="Executing migration" id="Add column uid in alert_notification"
+logger=migrator t=2024-06-11T08:40:34.691635552Z level=info msg="Executing migration" id="Update uid column values in alert_notification"
+logger=migrator t=2024-06-11T08:40:34.70210818Z level=info msg="Executing migration" id="Add unique index alert_notification_org_id_uid"
+logger=migrator t=2024-06-11T08:40:34.716230059Z level=info msg="Executing migration" id="Remove unique index org_id_name"
+logger=migrator t=2024-06-11T08:40:34.730372762Z level=info msg="Executing migration" id="Add column secure_settings in alert_notification"
+logger=migrator t=2024-06-11T08:40:34.734178429Z level=info msg="Executing migration" id="alter alert.settings to mediumtext"
+logger=migrator t=2024-06-11T08:40:34.741468827Z level=info msg="Executing migration" id="Add non-unique index alert_notification_state_alert_id"
+logger=migrator t=2024-06-11T08:40:34.754297157Z level=info msg="Executing migration" id="Add non-unique index alert_rule_tag_alert_id"
+logger=migrator t=2024-06-11T08:40:34.765772618Z level=info msg="Executing migration" id="Drop old annotation table v4"
+logger=migrator t=2024-06-11T08:40:34.769887518Z level=info msg="Executing migration" id="create annotation table v5"
+logger=migrator t=2024-06-11T08:40:34.800852358Z level=info msg="Executing migration" id="add index annotation 0 v3"
+logger=migrator t=2024-06-11T08:40:34.819147338Z level=info msg="Executing migration" id="add index annotation 1 v3"
+logger=migrator t=2024-06-11T08:40:34.835857533Z level=info msg="Executing migration" id="add index annotation 2 v3"
+logger=migrator t=2024-06-11T08:40:34.854095142Z level=info msg="Executing migration" id="add index annotation 3 v3"
+logger=migrator t=2024-06-11T08:40:34.871451584Z level=info msg="Executing migration" id="add index annotation 4 v3"
+logger=migrator t=2024-06-11T08:40:34.884853148Z level=info msg="Executing migration" id="Update annotation table charset"
+logger=migrator t=2024-06-11T08:40:34.895773871Z level=info msg="Executing migration" id="Add column region_id to annotation table"
+logger=migrator t=2024-06-11T08:40:34.900871052Z level=info msg="Executing migration" id="Drop category_id index"
+logger=migrator t=2024-06-11T08:40:34.914764743Z level=info msg="Executing migration" id="Add column tags to annotation table"
+logger=migrator t=2024-06-11T08:40:34.920020532Z level=info msg="Executing migration" id="Create annotation_tag table v2"
+logger=migrator t=2024-06-11T08:40:34.929115129Z level=info msg="Executing migration" id="Add unique index annotation_tag.annotation_id_tag_id"
+logger=migrator t=2024-06-11T08:40:34.942111628Z level=info msg="Executing migration" id="drop index UQE_annotation_tag_annotation_id_tag_id - v2"
+logger=migrator t=2024-06-11T08:40:34.957579287Z level=info msg="Executing migration" id="Rename table annotation_tag to annotation_tag_v2 - v2"
+logger=migrator t=2024-06-11T08:40:34.96585288Z level=info msg="Executing migration" id="Create annotation_tag table v3"
+logger=migrator t=2024-06-11T08:40:35.023076799Z level=info msg="Executing migration" id="create index UQE_annotation_tag_annotation_id_tag_id - Add unique index annotation_tag.annotation_id_tag_id V3"
+logger=migrator t=2024-06-11T08:40:35.077643297Z level=info msg="Executing migration" id="copy annotation_tag v2 to v3"
+logger=migrator t=2024-06-11T08:40:35.097080317Z level=info msg="Executing migration" id="drop table annotation_tag_v2"
+logger=migrator t=2024-06-11T08:40:35.121714968Z level=info msg="Executing migration" id="Update alert annotations and set TEXT to empty"
+logger=migrator t=2024-06-11T08:40:35.135967961Z level=info msg="Executing migration" id="Add created time to annotation table"
+logger=migrator t=2024-06-11T08:40:35.14012774Z level=info msg="Executing migration" id="Add updated time to annotation table"
+logger=migrator t=2024-06-11T08:40:35.145707474Z level=info msg="Executing migration" id="Add index for created in annotation table"
+logger=migrator t=2024-06-11T08:40:35.155178596Z level=info msg="Executing migration" id="Add index for updated in annotation table"
+logger=migrator t=2024-06-11T08:40:35.165933829Z level=info msg="Executing migration" id="Convert existing annotations from seconds to milliseconds"
+logger=migrator t=2024-06-11T08:40:35.172212209Z level=info msg="Executing migration" id="Add epoch_end column"
+logger=migrator t=2024-06-11T08:40:35.175930393Z level=info msg="Executing migration" id="Add index for epoch_end"
+logger=migrator t=2024-06-11T08:40:35.186222261Z level=info msg="Executing migration" id="Make epoch_end the same as epoch"
+logger=migrator t=2024-06-11T08:40:35.191331887Z level=info msg="Executing migration" id="Move region to single row"
+logger=migrator t=2024-06-11T08:40:35.197169669Z level=info msg="Executing migration" id="Remove index org_id_epoch from annotation table"
+logger=migrator t=2024-06-11T08:40:35.206539872Z level=info msg="Executing migration" id="Remove index org_id_dashboard_id_panel_id_epoch from annotation table"
+logger=migrator t=2024-06-11T08:40:35.218363327Z level=info msg="Executing migration" id="Add index for org_id_dashboard_id_epoch_end_epoch on annotation table"
+logger=migrator t=2024-06-11T08:40:35.228440531Z level=info msg="Executing migration" id="Add index for org_id_epoch_end_epoch on annotation table"
+logger=migrator t=2024-06-11T08:40:35.238529459Z level=info msg="Executing migration" id="Remove index org_id_epoch_epoch_end from annotation table"
+logger=migrator t=2024-06-11T08:40:35.248240998Z level=info msg="Executing migration" id="Add index for alert_id on annotation table"
+logger=migrator t=2024-06-11T08:40:35.257427514Z level=info msg="Executing migration" id="Increase tags column to length 4096"
+logger=migrator t=2024-06-11T08:40:35.261512761Z level=info msg="Executing migration" id="create test_data table"
+logger=migrator t=2024-06-11T08:40:35.279376582Z level=info msg="Executing migration" id="create dashboard_version table v1"
+logger=migrator t=2024-06-11T08:40:35.301479488Z level=info msg="Executing migration" id="add index dashboard_version.dashboard_id"
+logger=migrator t=2024-06-11T08:40:35.313122198Z level=info msg="Executing migration" id="add unique index dashboard_version.dashboard_id and dashboard_version.version"
+logger=migrator t=2024-06-11T08:40:35.322202407Z level=info msg="Executing migration" id="Set dashboard version to 1 where 0"
+logger=migrator t=2024-06-11T08:40:35.33115265Z level=info msg="Executing migration" id="save existing dashboard data in dashboard_version table v1"
+logger=migrator t=2024-06-11T08:40:35.334873092Z level=info msg="Executing migration" id="alter dashboard_version.data to mediumtext v1"
+logger=migrator t=2024-06-11T08:40:35.336995828Z level=info msg="Executing migration" id="create team table"
+logger=migrator t=2024-06-11T08:40:35.353769596Z level=info msg="Executing migration" id="add index team.org_id"
+logger=migrator t=2024-06-11T08:40:35.364901701Z level=info msg="Executing migration" id="add unique index team_org_id_name"
+logger=migrator t=2024-06-11T08:40:35.376563329Z level=info msg="Executing migration" id="create team member table"
+logger=migrator t=2024-06-11T08:40:35.391430032Z level=info msg="Executing migration" id="add index team_member.org_id"
+logger=migrator t=2024-06-11T08:40:35.400655886Z level=info msg="Executing migration" id="add unique index team_member_org_id_team_id_user_id"
+logger=migrator t=2024-06-11T08:40:35.41303625Z level=info msg="Executing migration" id="add index team_member.team_id"
+logger=migrator t=2024-06-11T08:40:35.422717919Z level=info msg="Executing migration" id="Add column email to team table"
+logger=migrator t=2024-06-11T08:40:35.426179098Z level=info msg="Executing migration" id="Add column external to team_member table"
+logger=migrator t=2024-06-11T08:40:35.429021617Z level=info msg="Executing migration" id="Add column permission to team_member table"
+logger=migrator t=2024-06-11T08:40:35.432564298Z level=info msg="Executing migration" id="create dashboard acl table"
+logger=migrator t=2024-06-11T08:40:35.450316666Z level=info msg="Executing migration" id="add index dashboard_acl_dashboard_id"
+logger=migrator t=2024-06-11T08:40:35.46196553Z level=info msg="Executing migration" id="add unique index dashboard_acl_dashboard_id_user_id"
+logger=migrator t=2024-06-11T08:40:35.471946884Z level=info msg="Executing migration" id="add unique index dashboard_acl_dashboard_id_team_id"
+logger=migrator t=2024-06-11T08:40:35.481562625Z level=info msg="Executing migration" id="add index dashboard_acl_user_id"
+logger=migrator t=2024-06-11T08:40:35.491101325Z level=info msg="Executing migration" id="add index dashboard_acl_team_id"
+logger=migrator t=2024-06-11T08:40:35.500469476Z level=info msg="Executing migration" id="add index dashboard_acl_org_id_role"
+logger=migrator t=2024-06-11T08:40:35.51403568Z level=info msg="Executing migration" id="add index dashboard_permission"
+logger=migrator t=2024-06-11T08:40:35.530200874Z level=info msg="Executing migration" id="save default acl rules in dashboard_acl table"
+logger=migrator t=2024-06-11T08:40:35.588391161Z level=info msg="Executing migration" id="delete acl rules for deleted dashboards and folders"
+logger=migrator t=2024-06-11T08:40:35.62368752Z level=info msg="Executing migration" id="create tag table"
+logger=migrator t=2024-06-11T08:40:35.673495476Z level=info msg="Executing migration" id="add index tag.key_value"
+logger=migrator t=2024-06-11T08:40:35.69095861Z level=info msg="Executing migration" id="create login attempt table"
+logger=migrator t=2024-06-11T08:40:35.746962513Z level=info msg="Executing migration" id="add index login_attempt.username"
+logger=migrator t=2024-06-11T08:40:35.783406664Z level=info msg="Executing migration" id="drop index IDX_login_attempt_username - v1"
+logger=migrator t=2024-06-11T08:40:35.796844104Z level=info msg="Executing migration" id="Rename table login_attempt to login_attempt_tmp_qwerty - v1"
+logger=migrator t=2024-06-11T08:40:35.801582897Z level=info msg="Executing migration" id="create login_attempt v2"
+logger=migrator t=2024-06-11T08:40:35.825532245Z level=info msg="Executing migration" id="create index IDX_login_attempt_username - v2"
+logger=migrator t=2024-06-11T08:40:35.834710307Z level=info msg="Executing migration" id="copy login_attempt v1 to v2"
+logger=migrator t=2024-06-11T08:40:35.840874195Z level=info msg="Executing migration" id="drop login_attempt_tmp_qwerty"
+logger=migrator t=2024-06-11T08:40:35.870229805Z level=info msg="Executing migration" id="create user auth table"
+logger=migrator t=2024-06-11T08:40:35.885161263Z level=info msg="Executing migration" id="create index IDX_user_auth_auth_module_auth_id - v1"
+logger=migrator t=2024-06-11T08:40:35.896154266Z level=info msg="Executing migration" id="alter user_auth.auth_id to length 190"
+logger=migrator t=2024-06-11T08:40:35.902458167Z level=info msg="Executing migration" id="Add OAuth access token to user_auth"
+logger=migrator t=2024-06-11T08:40:35.916351153Z level=info msg="Executing migration" id="Add OAuth refresh token to user_auth"
+logger=migrator t=2024-06-11T08:40:35.920539751Z level=info msg="Executing migration" id="Add OAuth token type to user_auth"
+logger=migrator t=2024-06-11T08:40:35.924914114Z level=info msg="Executing migration" id="Add OAuth expiry to user_auth"
+logger=migrator t=2024-06-11T08:40:35.928475432Z level=info msg="Executing migration" id="Add index to user_id column in user_auth"
+logger=migrator t=2024-06-11T08:40:35.940178384Z level=info msg="Executing migration" id="Add OAuth ID token to user_auth"
+logger=migrator t=2024-06-11T08:40:35.944302885Z level=info msg="Executing migration" id="create server_lock table"
+logger=migrator t=2024-06-11T08:40:35.96211669Z level=info msg="Executing migration" id="add index server_lock.operation_uid"
+logger=migrator t=2024-06-11T08:40:35.973024705Z level=info msg="Executing migration" id="create user auth token table"
+logger=migrator t=2024-06-11T08:40:36.000854993Z level=info msg="Executing migration" id="add unique index user_auth_token.auth_token"
+logger=migrator t=2024-06-11T08:40:36.023016081Z level=info msg="Executing migration" id="add unique index user_auth_token.prev_auth_token"
+logger=migrator t=2024-06-11T08:40:36.042228587Z level=info msg="Executing migration" id="add index user_auth_token.user_id"
+logger=migrator t=2024-06-11T08:40:36.07492721Z level=info msg="Executing migration" id="Add revoked_at to the user auth token"
+logger=migrator t=2024-06-11T08:40:36.083912339Z level=info msg="Executing migration" id="create cache_data table"
+logger=migrator t=2024-06-11T08:40:36.115682649Z level=info msg="Executing migration" id="add unique index cache_data.cache_key"
+logger=migrator t=2024-06-11T08:40:36.128888004Z level=info msg="Executing migration" id="create short_url table v1"
+logger=migrator t=2024-06-11T08:40:36.156557208Z level=info msg="Executing migration" id="add index short_url.org_id-uid"
+logger=migrator t=2024-06-11T08:40:36.168013338Z level=info msg="Executing migration" id="alter table short_url alter column created_by type to bigint"
+logger=migrator t=2024-06-11T08:40:36.211370302Z level=info msg="Executing migration" id="delete alert_definition table"
+logger=migrator t=2024-06-11T08:40:36.216470033Z level=info msg="Executing migration" id="recreate alert_definition table"
+logger=migrator t=2024-06-11T08:40:36.246278844Z level=info msg="Executing migration" id="add index in alert_definition on org_id and title columns"
+logger=migrator t=2024-06-11T08:40:36.256492952Z level=info msg="Executing migration" id="add index in alert_definition on org_id and uid columns"
+logger=migrator t=2024-06-11T08:40:36.26813096Z level=info msg="Executing migration" id="alter alert_definition table data column to mediumtext in mysql"
+logger=migrator t=2024-06-11T08:40:36.271138482Z level=info msg="Executing migration" id="drop index in alert_definition on org_id and title columns"
+logger=migrator t=2024-06-11T08:40:36.297110284Z level=info msg="Executing migration" id="drop index in alert_definition on org_id and uid columns"
+logger=migrator t=2024-06-11T08:40:36.310843747Z level=info msg="Executing migration" id="add unique index in alert_definition on org_id and title columns"
+logger=migrator t=2024-06-11T08:40:36.351658355Z level=info msg="Executing migration" id="add unique index in alert_definition on org_id and uid columns"
+logger=migrator t=2024-06-11T08:40:36.363405782Z level=info msg="Executing migration" id="Add column paused in alert_definition"
+logger=migrator t=2024-06-11T08:40:36.368736412Z level=info msg="Executing migration" id="drop alert_definition table"
+logger=migrator t=2024-06-11T08:40:36.389295306Z level=info msg="Executing migration" id="delete alert_definition_version table"
+logger=migrator t=2024-06-11T08:40:36.393662551Z level=info msg="Executing migration" id="recreate alert_definition_version table"
+logger=migrator t=2024-06-11T08:40:36.418102567Z level=info msg="Executing migration" id="add index in alert_definition_version table on alert_definition_id and version columns"
+logger=migrator t=2024-06-11T08:40:36.429191596Z level=info msg="Executing migration" id="add index in alert_definition_version table on alert_definition_uid and version columns"
+logger=migrator t=2024-06-11T08:40:36.444884451Z level=info msg="Executing migration" id="alter alert_definition_version table data column to mediumtext in mysql"
+logger=migrator t=2024-06-11T08:40:36.447158175Z level=info msg="Executing migration" id="drop alert_definition_version table"
+logger=migrator t=2024-06-11T08:40:36.476053864Z level=info msg="Executing migration" id="create alert_instance table"
+logger=migrator t=2024-06-11T08:40:36.499241076Z level=info msg="Executing migration" id="add index in alert_instance table on def_org_id, def_uid and current_state columns"
+logger=migrator t=2024-06-11T08:40:36.5114182Z level=info msg="Executing migration" id="add index in alert_instance table on def_org_id, current_state columns"
+logger=migrator t=2024-06-11T08:40:36.522340712Z level=info msg="Executing migration" id="add column current_state_end to alert_instance"
+logger=migrator t=2024-06-11T08:40:36.526170642Z level=info msg="Executing migration" id="remove index def_org_id, def_uid, current_state on alert_instance"
+logger=migrator t=2024-06-11T08:40:36.539281258Z level=info msg="Executing migration" id="remove index def_org_id, current_state on alert_instance"
+logger=migrator t=2024-06-11T08:40:36.549343478Z level=info msg="Executing migration" id="rename def_org_id to rule_org_id in alert_instance"
+logger=migrator t=2024-06-11T08:40:36.553817864Z level=info msg="Executing migration" id="rename def_uid to rule_uid in alert_instance"
+logger=migrator t=2024-06-11T08:40:36.559162035Z level=info msg="Executing migration" id="add index rule_org_id, rule_uid, current_state on alert_instance"
+logger=migrator t=2024-06-11T08:40:36.570478346Z level=info msg="Executing migration" id="add index rule_org_id, current_state on alert_instance"
+logger=migrator t=2024-06-11T08:40:36.58270045Z level=info msg="Executing migration" id="add current_reason column related to current_state"
+logger=migrator t=2024-06-11T08:40:36.586477848Z level=info msg="Executing migration" id="create alert_rule table"
+logger=migrator t=2024-06-11T08:40:36.61127545Z level=info msg="Executing migration" id="add index in alert_rule on org_id and title columns"
+logger=migrator t=2024-06-11T08:40:36.620468161Z level=info msg="Executing migration" id="add index in alert_rule on org_id and uid columns"
+logger=migrator t=2024-06-11T08:40:36.630759427Z level=info msg="Executing migration" id="add index in alert_rule on org_id, namespace_uid, group_uid columns"
+logger=migrator t=2024-06-11T08:40:36.645929673Z level=info msg="Executing migration" id="alter alert_rule table data column to mediumtext in mysql"
+logger=migrator t=2024-06-11T08:40:36.648023901Z level=info msg="Executing migration" id="add column for to alert_rule"
+logger=migrator t=2024-06-11T08:40:36.651609026Z level=info msg="Executing migration" id="add column annotations to alert_rule"
+logger=migrator t=2024-06-11T08:40:36.656308975Z level=info msg="Executing migration" id="add column labels to alert_rule"
+logger=migrator t=2024-06-11T08:40:36.662572393Z level=info msg="Executing migration" id="remove unique index from alert_rule on org_id, title columns"
+logger=migrator t=2024-06-11T08:40:36.673879197Z level=info msg="Executing migration" id="add index in alert_rule on org_id, namespase_uid and title columns"
+logger=migrator t=2024-06-11T08:40:36.68819165Z level=info msg="Executing migration" id="add dashboard_uid column to alert_rule"
+logger=migrator t=2024-06-11T08:40:36.694914317Z level=info msg="Executing migration" id="add panel_id column to alert_rule"
+logger=migrator t=2024-06-11T08:40:36.738699996Z level=info msg="Executing migration" id="add index in alert_rule on org_id, dashboard_uid and panel_id columns"
+logger=migrator t=2024-06-11T08:40:36.759566749Z level=info msg="Executing migration" id="add rule_group_idx column to alert_rule"
+logger=migrator t=2024-06-11T08:40:36.764760381Z level=info msg="Executing migration" id="create alert_rule_version table"
+logger=migrator t=2024-06-11T08:40:36.790563538Z level=info msg="Executing migration" id="add index in alert_rule_version table on rule_org_id, rule_uid and version columns"
+logger=migrator t=2024-06-11T08:40:36.801688384Z level=info msg="Executing migration" id="add index in alert_rule_version table on rule_org_id, rule_namespace_uid and rule_group columns"
+logger=migrator t=2024-06-11T08:40:36.813420737Z level=info msg="Executing migration" id="alter alert_rule_version table data column to mediumtext in mysql"
+logger=migrator t=2024-06-11T08:40:36.815989022Z level=info msg="Executing migration" id="add column for to alert_rule_version"
+logger=migrator t=2024-06-11T08:40:36.820367544Z level=info msg="Executing migration" id="add column annotations to alert_rule_version"
+logger=migrator t=2024-06-11T08:40:36.824356093Z level=info msg="Executing migration" id="add column labels to alert_rule_version"
+logger=migrator t=2024-06-11T08:40:36.827735453Z level=info msg="Executing migration" id="add rule_group_idx column to alert_rule_version"
+logger=migrator t=2024-06-11T08:40:36.831719649Z level=info msg="Executing migration" id=create_alert_configuration_table
+logger=migrator t=2024-06-11T08:40:36.861441771Z level=info msg="Executing migration" id="Add column default in alert_configuration"
+logger=migrator t=2024-06-11T08:40:36.867248426Z level=info msg="Executing migration" id="alert alert_configuration alertmanager_configuration column from TEXT to MEDIUMTEXT if mysql"
+logger=migrator t=2024-06-11T08:40:36.870179007Z level=info msg="Executing migration" id="add column org_id in alert_configuration"
+logger=migrator t=2024-06-11T08:40:36.87523789Z level=info msg="Executing migration" id="add index in alert_configuration table on org_id column"
+logger=migrator t=2024-06-11T08:40:36.888639667Z level=info msg="Executing migration" id="add configuration_hash column to alert_configuration"
+logger=migrator t=2024-06-11T08:40:36.896803357Z level=info msg="Executing migration" id=create_ngalert_configuration_table
+logger=migrator t=2024-06-11T08:40:36.932027932Z level=info msg="Executing migration" id="add index in ngalert_configuration on org_id column"
+logger=migrator t=2024-06-11T08:40:36.945902321Z level=info msg="Executing migration" id="add column send_alerts_to in ngalert_configuration"
+logger=migrator t=2024-06-11T08:40:36.951901238Z level=info msg="Executing migration" id="create provenance_type table"
+logger=migrator t=2024-06-11T08:40:36.984572255Z level=info msg="Executing migration" id="add index to uniquify (record_key, record_type, org_id) columns"
+logger=migrator t=2024-06-11T08:40:36.999031587Z level=info msg="Executing migration" id="create alert_image table"
+logger=migrator t=2024-06-11T08:40:37.039563416Z level=info msg="Executing migration" id="add unique index on token to alert_image table"
+logger=migrator t=2024-06-11T08:40:37.056098936Z level=info msg="Executing migration" id="support longer URLs in alert_image table"
+logger=migrator t=2024-06-11T08:40:37.064780285Z level=info msg="Executing migration" id="clear migration entry \"remove unified alerting data\""
+logger=migrator t=2024-06-11T08:40:37.071861004Z level=info msg="Executing migration" id="move dashboard alerts to unified alerting"
+logger=migrator t=2024-06-11T08:40:37.088102299Z level=info msg="alerts found to migrate" alerts=0
+logger=migrator t=2024-06-11T08:40:37.105965628Z level=info msg="Executing migration" id="create library_element table v1"
+logger=migrator t=2024-06-11T08:40:37.148678688Z level=info msg="Executing migration" id="add index library_element org_id-folder_id-name-kind"
+logger=migrator t=2024-06-11T08:40:37.16635917Z level=info msg="Executing migration" id="create library_element_connection table v1"
+logger=migrator t=2024-06-11T08:40:37.193488858Z level=info msg="Executing migration" id="add index library_element_connection element_id-kind-connection_id"
+logger=migrator t=2024-06-11T08:40:37.211235695Z level=info msg="Executing migration" id="add unique index library_element org_id_uid"
+logger=migrator t=2024-06-11T08:40:37.230760596Z level=info msg="Executing migration" id="increase max description length to 2048"
+logger=migrator t=2024-06-11T08:40:37.23850665Z level=info msg="Executing migration" id="clone move dashboard alerts to unified alerting"
+logger=migrator t=2024-06-11T08:40:37.251857443Z level=info msg="Executing migration" id="create data_keys table"
+logger=migrator t=2024-06-11T08:40:37.29537815Z level=info msg="Executing migration" id="create secrets table"
+logger=migrator t=2024-06-11T08:40:37.340109071Z level=info msg="Executing migration" id="rename data_keys name column to id"
+logger=migrator t=2024-06-11T08:40:37.349121308Z level=info msg="Executing migration" id="add name column into data_keys"
+logger=migrator t=2024-06-11T08:40:37.356499706Z level=info msg="Executing migration" id="copy data_keys id column values into name"
+logger=migrator t=2024-06-11T08:40:37.381634706Z level=info msg="Executing migration" id="rename data_keys name column to label"
+logger=migrator t=2024-06-11T08:40:37.395839173Z level=info msg="Executing migration" id="rename data_keys id column back to name"
+logger=migrator t=2024-06-11T08:40:37.402663599Z level=info msg="Executing migration" id="create kv_store table v1"
+logger=migrator t=2024-06-11T08:40:37.47826601Z level=info msg="Executing migration" id="add index kv_store.org_id-namespace-key"
+logger=migrator t=2024-06-11T08:40:37.524945771Z level=info msg="Executing migration" id="update dashboard_uid and panel_id from existing annotations"
+logger=migrator t=2024-06-11T08:40:37.555754006Z level=info msg="Executing migration" id="create permission table"
+logger=migrator t=2024-06-11T08:40:37.582926062Z level=info msg="Executing migration" id="add unique index permission.role_id"
+logger=migrator t=2024-06-11T08:40:37.60743875Z level=info msg="Executing migration" id="add unique index role_id_action_scope"
+logger=migrator t=2024-06-11T08:40:37.632537991Z level=info msg="Executing migration" id="create role table"
+logger=migrator t=2024-06-11T08:40:37.662109423Z level=info msg="Executing migration" id="add column display_name"
+logger=migrator t=2024-06-11T08:40:37.666416138Z level=info msg="Executing migration" id="add column group_name"
+logger=migrator t=2024-06-11T08:40:37.670474805Z level=info msg="Executing migration" id="add index role.org_id"
+logger=migrator t=2024-06-11T08:40:37.686371058Z level=info msg="Executing migration" id="add unique index role_org_id_name"
+logger=migrator t=2024-06-11T08:40:37.696549253Z level=info msg="Executing migration" id="add index role_org_id_uid"
+logger=migrator t=2024-06-11T08:40:37.706735078Z level=info msg="Executing migration" id="create team role table"
+logger=migrator t=2024-06-11T08:40:37.728951804Z level=info msg="Executing migration" id="add index team_role.org_id"
+logger=migrator t=2024-06-11T08:40:37.744764179Z level=info msg="Executing migration" id="add unique index team_role_org_id_team_id_role_id"
+logger=migrator t=2024-06-11T08:40:37.754719263Z level=info msg="Executing migration" id="add index team_role.team_id"
+logger=migrator t=2024-06-11T08:40:37.764265229Z level=info msg="Executing migration" id="create user role table"
+logger=migrator t=2024-06-11T08:40:37.792941876Z level=info msg="Executing migration" id="add index user_role.org_id"
+logger=migrator t=2024-06-11T08:40:37.807469844Z level=info msg="Executing migration" id="add unique index user_role_org_id_user_id_role_id"
+logger=migrator t=2024-06-11T08:40:37.818492819Z level=info msg="Executing migration" id="add index user_role.user_id"
+logger=migrator t=2024-06-11T08:40:37.829637743Z level=info msg="Executing migration" id="create builtin role table"
+logger=migrator t=2024-06-11T08:40:37.845242445Z level=info msg="Executing migration" id="add index builtin_role.role_id"
+logger=migrator t=2024-06-11T08:40:37.854723421Z level=info msg="Executing migration" id="add index builtin_role.name"
+logger=migrator t=2024-06-11T08:40:37.866746415Z level=info msg="Executing migration" id="Add column org_id to builtin_role table"
+logger=migrator t=2024-06-11T08:40:37.871456937Z level=info msg="Executing migration" id="add index builtin_role.org_id"
+logger=migrator t=2024-06-11T08:40:37.882102158Z level=info msg="Executing migration" id="add unique index builtin_role_org_id_role_id_role"
+logger=migrator t=2024-06-11T08:40:37.890959706Z level=info msg="Executing migration" id="Remove unique index role_org_id_uid"
+logger=migrator t=2024-06-11T08:40:37.899686616Z level=info msg="Executing migration" id="add unique index role.uid"
+logger=migrator t=2024-06-11T08:40:37.909319933Z level=info msg="Executing migration" id="create seed assignment table"
+logger=migrator t=2024-06-11T08:40:37.919236856Z level=info msg="Executing migration" id="add unique index builtin_role_role_name"
+logger=migrator t=2024-06-11T08:40:37.928379552Z level=info msg="Executing migration" id="add column hidden to role table"
+logger=migrator t=2024-06-11T08:40:37.932982166Z level=info msg="Executing migration" id="create query_history table v1"
+logger=migrator t=2024-06-11T08:40:37.961883428Z level=info msg="Executing migration" id="add index query_history.org_id-created_by-datasource_uid"
+logger=migrator t=2024-06-11T08:40:37.97499105Z level=info msg="Executing migration" id="alter table query_history alter column created_by type to bigint"
+logger=migrator t=2024-06-11T08:40:38.027139625Z level=info msg="Executing migration" id="teams permissions migration"
+logger=migrator t=2024-06-11T08:40:38.037524995Z level=info msg="Executing migration" id="dashboard permissions"
+logger=migrator t=2024-06-11T08:40:38.042730302Z level=info msg="Executing migration" id="dashboard permissions uid scopes"
+logger=migrator t=2024-06-11T08:40:38.057178268Z level=info msg="Executing migration" id="drop managed folder create actions"
+logger=migrator t=2024-06-11T08:40:38.059066409Z level=info msg="Executing migration" id="alerting notification permissions"
+logger=migrator t=2024-06-11T08:40:38.0626599Z level=info msg="Executing migration" id="create query_history_star table v1"
+logger=migrator t=2024-06-11T08:40:38.087497344Z level=info msg="Executing migration" id="add index query_history.user_id-query_uid"
+logger=migrator t=2024-06-11T08:40:38.098151396Z level=info msg="Executing migration" id="add column org_id in query_history_star"
+logger=migrator t=2024-06-11T08:40:38.1016622Z level=info msg="Executing migration" id="alter table query_history_star_mig column user_id type to bigint"
+logger=migrator t=2024-06-11T08:40:38.138815245Z level=info msg="Executing migration" id="create correlation table v1"
+logger=migrator t=2024-06-11T08:40:38.167320218Z level=info msg="Executing migration" id="add index correlations.uid"
+logger=migrator t=2024-06-11T08:40:38.179218324Z level=info msg="Executing migration" id="add index correlations.source_uid"
+logger=migrator t=2024-06-11T08:40:38.188192965Z level=info msg="Executing migration" id="create entity_events table"
+logger=migrator t=2024-06-11T08:40:38.21021026Z level=info msg="Executing migration" id="create dashboard public config v1"
+logger=migrator t=2024-06-11T08:40:38.23319265Z level=info msg="Executing migration" id="drop index UQE_dashboard_public_config_uid - v1"
+logger=migrator t=2024-06-11T08:40:38.235226357Z level=warn msg="Skipping migration: Already executed, but not recorded in migration log" id="drop index UQE_dashboard_public_config_uid - v1"
+logger=migrator t=2024-06-11T08:40:38.236986232Z level=info msg="Executing migration" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v1"
+logger=migrator t=2024-06-11T08:40:38.238491998Z level=warn msg="Skipping migration: Already executed, but not recorded in migration log" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v1"
+logger=migrator t=2024-06-11T08:40:38.240259781Z level=info msg="Executing migration" id="Drop old dashboard public config table"
+logger=migrator t=2024-06-11T08:40:38.257987124Z level=info msg="Executing migration" id="recreate dashboard public config v1"
+logger=migrator t=2024-06-11T08:40:38.274771919Z level=info msg="Executing migration" id="create index UQE_dashboard_public_config_uid - v1"
+logger=migrator t=2024-06-11T08:40:38.28464509Z level=info msg="Executing migration" id="create index IDX_dashboard_public_config_org_id_dashboard_uid - v1"
+logger=migrator t=2024-06-11T08:40:38.293949557Z level=info msg="Executing migration" id="drop index UQE_dashboard_public_config_uid - v2"
+logger=migrator t=2024-06-11T08:40:38.305575857Z level=info msg="Executing migration" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v2"
+logger=migrator t=2024-06-11T08:40:38.320047378Z level=info msg="Executing migration" id="Drop public config table"
+logger=migrator t=2024-06-11T08:40:38.350370983Z level=info msg="Executing migration" id="Recreate dashboard public config v2"
+logger=migrator t=2024-06-11T08:40:38.374030714Z level=info msg="Executing migration" id="create index UQE_dashboard_public_config_uid - v2"
+logger=migrator t=2024-06-11T08:40:38.384140381Z level=info msg="Executing migration" id="create index IDX_dashboard_public_config_org_id_dashboard_uid - v2"
+logger=migrator t=2024-06-11T08:40:38.39370667Z level=info msg="Executing migration" id="create index UQE_dashboard_public_config_access_token - v2"
+logger=migrator t=2024-06-11T08:40:38.405592534Z level=info msg="Executing migration" id="Rename table dashboard_public_config to dashboard_public - v2"
+logger=migrator t=2024-06-11T08:40:38.40916234Z level=info msg="Executing migration" id="create default alerting folders"
+logger=migrator t=2024-06-11T08:40:38.426844888Z level=info msg="Executing migration" id="create file table"
+logger=migrator t=2024-06-11T08:40:38.464605388Z level=info msg="Executing migration" id="file table idx: path natural pk"
+logger=migrator t=2024-06-11T08:40:38.482581613Z level=info msg="Executing migration" id="file table idx: parent_folder_path_hash fast folder retrieval"
+logger=migrator t=2024-06-11T08:40:38.494982878Z level=info msg="Executing migration" id="create file_meta table"
+logger=migrator t=2024-06-11T08:40:38.511365292Z level=info msg="Executing migration" id="file table idx: path key"
+logger=migrator t=2024-06-11T08:40:38.524676606Z level=info msg="Executing migration" id="set path collation in file table"
+logger=migrator t=2024-06-11T08:40:38.534234061Z level=info msg="Executing migration" id="managed permissions migration"
+logger=migrator t=2024-06-11T08:40:38.543163915Z level=info msg="Executing migration" id="managed folder permissions alert actions migration"
+logger=migrator t=2024-06-11T08:40:38.548219767Z level=info msg="Executing migration" id="RBAC action name migrator"
+logger=migrator t=2024-06-11T08:40:38.556099155Z level=info msg="Executing migration" id="Add UID column to playlist"
+logger=migrator t=2024-06-11T08:40:38.561563163Z level=info msg="Executing migration" id="Update uid column values in playlist"
+logger=migrator t=2024-06-11T08:40:38.568462703Z level=info msg="Executing migration" id="Add index for uid in playlist"
+logger=migrator t=2024-06-11T08:40:38.581841531Z level=info msg="Executing migration" id="update group index for alert rules"
+logger=migrator t=2024-06-11T08:40:38.585098075Z level=info msg="Executing migration" id="managed folder permissions alert actions repeated migration"
+logger=migrator t=2024-06-11T08:40:38.586915694Z level=info msg="Executing migration" id="admin only folder/dashboard permission"
+logger=migrator t=2024-06-11T08:40:38.591173324Z level=info msg="Executing migration" id="managed folder permissions alert actions repeated fixed migration"
+logger=migrator t=2024-06-11T08:40:38.592847701Z level=info msg="migrations completed" performed=456 skipped=0 duration=8.810750439s
+logger=sqlstore t=2024-06-11T08:40:38.647130668Z level=info msg="Created default admin" user=admin
+logger=sqlstore t=2024-06-11T08:40:38.64803497Z level=info msg="Created default organization"
+logger=plugin.finder t=2024-06-11T08:40:38.697445454Z level=warn msg="Skipping finding plugins as directory does not exist" path=/usr/share/grafana/plugins-bundled
+logger=plugin.signature.validator t=2024-06-11T08:40:39.785660057Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-app pluginDir=/srv/grafana/plugins/pmm-app/dist
+logger=plugin.pmm-app t=2024-06-11T08:40:39.793879725Z level=warn msg="Included dashboard is missing a UID field"
+logger=plugin.signature.validator t=2024-06-11T08:40:39.795388767Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-pt-summary-panel pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-pt-summary/panel
+logger=plugin.signature.validator t=2024-06-11T08:40:39.796572322Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-qan-app-panel pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-qan
+logger=plugin.signature.validator t=2024-06-11T08:40:39.796679936Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=grafana-polystat-panel pluginDir=/srv/grafana/plugins/grafana-polystat-panel
+logger=plugin.signature.validator t=2024-06-11T08:40:39.797933206Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-pt-summary-datasource pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-pt-summary/datasource
+logger=plugin.loader t=2024-06-11T08:40:39.79804679Z level=info msg="Plugin registered" pluginID=camptocamp-prometheus-alertmanager-datasource
+logger=plugin.loader t=2024-06-11T08:40:39.798057452Z level=info msg="Plugin registered" pluginID=grafana-clickhouse-datasource
+logger=plugin.loader t=2024-06-11T08:40:39.824959313Z level=info msg="Plugin registered" pluginID=jdbranham-diagram-panel
+logger=plugin.loader t=2024-06-11T08:40:39.824977122Z level=info msg="Plugin registered" pluginID=pmm-app
+logger=plugin.loader t=2024-06-11T08:40:39.824981825Z level=info msg="Plugin registered" pluginID=grafana-piechart-panel
+logger=plugin.loader t=2024-06-11T08:40:39.824985658Z level=info msg="Plugin registered" pluginID=grafana-worldmap-panel
+logger=plugin.loader t=2024-06-11T08:40:39.824989034Z level=info msg="Plugin registered" pluginID=pmm-pt-summary-panel
+logger=plugin.loader t=2024-06-11T08:40:39.824992531Z level=info msg="Plugin registered" pluginID=natel-discrete-panel
+logger=plugin.loader t=2024-06-11T08:40:39.824995803Z level=info msg="Plugin registered" pluginID=pmm-qan-app-panel
+logger=plugin.loader t=2024-06-11T08:40:39.825001341Z level=info msg="Plugin registered" pluginID=grafana-polystat-panel
+logger=plugin.loader t=2024-06-11T08:40:39.825004558Z level=info msg="Plugin registered" pluginID=petrslavotinek-carpetplot-panel
+logger=plugin.loader t=2024-06-11T08:40:39.825007836Z level=info msg="Plugin registered" pluginID=pmm-pt-summary-datasource
+logger=secrets t=2024-06-11T08:40:39.825042424Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=query_data t=2024-06-11T08:40:39.832341311Z level=info msg="Query Service initialization"
+logger=live.push_http t=2024-06-11T08:40:39.837122661Z level=info msg="Live Push Gateway initialization"
+logger=infra.usagestats.collector t=2024-06-11T08:40:40.007949715Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.datasources t=2024-06-11T08:40:40.020733895Z level=info msg="inserting datasource from configuration " name=Metrics uid=PA58DA793C7250F1B
+logger=provisioning.datasources t=2024-06-11T08:40:40.063485185Z level=info msg="inserting datasource from configuration " name=PostgreSQL uid=PCC52D03280B7034C
+logger=provisioning.datasources t=2024-06-11T08:40:40.060218501Z level=info msg="inserting datasource from configuration " name=PTSummary uid=P868FB76EF57C7129
+logger=provisioning.datasources t=2024-06-11T08:40:40.069657096Z level=info msg="inserting datasource from configuration " name="Prometheus AlertManager" uid=PBD63CB2FF111D437
+logger=provisioning.datasources t=2024-06-11T08:40:40.079241506Z level=info msg="inserting datasource from configuration " name=ClickHouse uid=PDEE91DDB90597936
+logger=provisioning.plugins t=2024-06-11T08:40:40.09106641Z level=info msg="Updating app from configuration " type=pmm-app enabled=true
+logger=plugindashboards t=2024-06-11T08:40:40.099982018Z level=info msg="Plugin state changed" pluginId=pmm-app enabled=true
+logger=plugindashboards t=2024-06-11T08:40:40.100084943Z level=info msg="Syncing plugin dashboards to DB" pluginId=pmm-app
+logger=plugindashboards t=2024-06-11T08:40:40.595370826Z level=error msg="Failed to load app dashboards" error="open /srv/grafana/plugins/pmm-app/dist/dashboards/Experimental/Environment_Summary.json: no such file or directory"
+logger=provisioning.alerting t=2024-06-11T08:40:40.596814192Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2024-06-11T08:40:40.597011069Z level=info msg="finished to provision alerting"
+logger=http.server t=2024-06-11T08:40:40.613618438Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl=/graph socket=
+logger=ngalert t=2024-06-11T08:40:40.6138328Z level=info msg="warming cache for startup"
+logger=grafanaStorageLogger t=2024-06-11T08:40:40.628523017Z level=info msg="storage starting"
+logger=ticker t=2024-06-11T08:40:40.630187786Z level=info msg=starting first_tick=2024-06-11T08:40:50Z
+logger=ngalert.multiorg.alertmanager t=2024-06-11T08:40:40.631357825Z level=info msg="starting MultiOrg Alertmanager"
+logger=searchIndex t=2024-06-11T08:40:40.746719995Z level=info msg="Initializing SearchV2" dashboardLoadingBatchSize=200 fullReindexInterval=5m0s indexUpdateInterval=10s
+logger=searchIndex t=2024-06-11T08:40:40.770970459Z level=info msg="Start building in-memory indexes"
+logger=searchIndex t=2024-06-11T08:40:40.771002717Z level=info msg="Start building org index" orgId=1
+logger=searchIndex t=2024-06-11T08:40:40.828710234Z level=info msg="Finish loading org dashboards" elapsed=57.708888ms orgId=1
+logger=searchIndex t=2024-06-11T08:40:40.834714159Z level=info msg="Finish inserting docs into index" elapsed=4.942759ms
+logger=searchIndex t=2024-06-11T08:40:40.836184395Z level=info msg="Finish building index" totalElapsed=6.412513ms
+logger=searchIndex t=2024-06-11T08:40:40.83636997Z level=info msg="Re-indexed dashboards for organization" orgId=1 orgSearchIndexLoadTime=57.708888ms orgSearchIndexBuildTime=7.657879ms orgSearchIndexTotalTime=65.366767ms orgSearchDashboardCount=1
+logger=searchIndex t=2024-06-11T08:40:40.841972417Z level=info msg="Indexing for org finished" orgIndexElapsed=70.972437ms orgId=1 numDashboards=1
+logger=searchIndex t=2024-06-11T08:40:40.842151998Z level=info msg="Finish building in-memory indexes" elapsed=71.180996ms
+logger=searchIndex t=2024-06-11T08:40:43.292539379Z level=info msg="Full re-indexing due to external signal"
+logger=searchIndex t=2024-06-11T08:40:43.293051186Z level=info msg="Start re-indexing"
+logger=searchIndex t=2024-06-11T08:40:43.293437122Z level=info msg="Start building org index" orgId=1
+logger=searchIndex t=2024-06-11T08:40:43.36734909Z level=info msg="Finish loading org dashboards" elapsed=73.91178ms orgId=1
+logger=searchIndex t=2024-06-11T08:40:43.574870935Z level=info msg="Finish inserting docs into index" elapsed=207.319117ms
+logger=searchIndex t=2024-06-11T08:40:43.582656066Z level=info msg="Finish building index" totalElapsed=215.102461ms
+logger=searchIndex t=2024-06-11T08:40:43.582927124Z level=info msg="Re-indexed dashboards for organization" orgId=1 orgSearchIndexLoadTime=73.91178ms orgSearchIndexBuildTime=215.575222ms orgSearchIndexTotalTime=289.487002ms orgSearchDashboardCount=76
+logger=searchIndex t=2024-06-11T08:40:43.583005582Z level=info msg="Full re-indexing finished" fullReIndexElapsed=289.956592ms
+logger=searchIndex t=2024-06-11T08:40:52.326598475Z level=info msg="Index updates applied" indexEventsAppliedElapsed=1.574034322s numEvents=75
+logger=server t=2024-06-11T08:41:31.92881982Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=ticker t=2024-06-11T08:41:31.928884432Z level=info msg=stopped last_tick=2024-06-11T08:41:30Z
+logger=tracing t=2024-06-11T08:41:31.92892978Z level=info msg="Closing tracing"
+logger=settings t=2024-06-11T08:41:46.742716145Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:41:46.744460743Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:41:46.744481946Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:41:46.744487313Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:41:46.744490163Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:41:46.744492641Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:41:46.744495091Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:41:46.744497643Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:41:46.744501268Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:41:46.744585251Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:41:47.362466558Z level=info msg="Starting DB migrations"
+logger=migrator t=2024-06-11T08:41:47.389579921Z level=info msg="migrations completed" performed=0 skipped=452 duration=6.089045ms
+logger=plugin.finder t=2024-06-11T08:41:47.947574767Z level=warn msg="Skipping finding plugins as directory does not exist" path=/usr/share/grafana/plugins-bundled
+logger=plugin.signature.validator t=2024-06-11T08:41:54.195971522Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-app pluginDir=/srv/grafana/plugins/pmm-app/dist
+logger=plugin.pmm-app t=2024-06-11T08:41:54.312281829Z level=warn msg="Included dashboard is missing a UID field"
+logger=plugin.signature.validator t=2024-06-11T08:41:54.312524775Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-pt-summary-datasource pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-pt-summary/datasource
+logger=plugin.signature.validator t=2024-06-11T08:41:54.341277297Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=grafana-polystat-panel pluginDir=/srv/grafana/plugins/grafana-polystat-panel
+logger=plugin.signature.validator t=2024-06-11T08:41:54.346255743Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-qan-app-panel pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-qan
+logger=plugin.signature.validator t=2024-06-11T08:41:54.378237237Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-pt-summary-panel pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-pt-summary/panel
+logger=plugin.loader t=2024-06-11T08:41:54.378915985Z level=info msg="Plugin registered" pluginID=grafana-worldmap-panel
+logger=plugin.loader t=2024-06-11T08:41:54.378964576Z level=info msg="Plugin registered" pluginID=natel-discrete-panel
+logger=plugin.loader t=2024-06-11T08:41:54.378973856Z level=info msg="Plugin registered" pluginID=pmm-app
+logger=plugin.loader t=2024-06-11T08:41:54.37897799Z level=info msg="Plugin registered" pluginID=pmm-pt-summary-datasource
+logger=plugin.loader t=2024-06-11T08:41:54.378982103Z level=info msg="Plugin registered" pluginID=grafana-clickhouse-datasource
+logger=plugin.loader t=2024-06-11T08:41:55.335237447Z level=info msg="Plugin registered" pluginID=grafana-piechart-panel
+logger=plugin.loader t=2024-06-11T08:41:55.33525982Z level=info msg="Plugin registered" pluginID=grafana-polystat-panel
+logger=plugin.loader t=2024-06-11T08:41:55.335265672Z level=info msg="Plugin registered" pluginID=pmm-qan-app-panel
+logger=plugin.loader t=2024-06-11T08:41:55.335272104Z level=info msg="Plugin registered" pluginID=camptocamp-prometheus-alertmanager-datasource
+logger=plugin.loader t=2024-06-11T08:41:55.33575066Z level=info msg="Plugin registered" pluginID=jdbranham-diagram-panel
+logger=plugin.loader t=2024-06-11T08:41:55.336837696Z level=info msg="Plugin registered" pluginID=petrslavotinek-carpetplot-panel
+logger=plugin.loader t=2024-06-11T08:41:55.338209941Z level=info msg="Plugin registered" pluginID=pmm-pt-summary-panel
+logger=secrets t=2024-06-11T08:41:55.338257562Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=query_data t=2024-06-11T08:41:55.350483246Z level=info msg="Query Service initialization"
+logger=live.push_http t=2024-06-11T08:41:55.375683856Z level=info msg="Live Push Gateway initialization"
+logger=plugindashboards t=2024-06-11T08:41:57.445262805Z level=info msg="Syncing plugin dashboards to DB" pluginId=pmm-app
+logger=plugindashboards t=2024-06-11T08:42:00.567427424Z level=error msg="Failed to load app dashboards" error="open /srv/grafana/plugins/pmm-app/dist/dashboards/Experimental/Environment_Summary.json: no such file or directory"
+logger=infra.usagestats.collector t=2024-06-11T08:42:00.567842692Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.datasources t=2024-06-11T08:42:00.823959568Z level=info msg="deleted correlations based on configuration" ds_name=ClickHouse
+logger=provisioning.datasources t=2024-06-11T08:42:00.824011116Z level=info msg="deleted datasource based on configuration" name=ClickHouse
+logger=provisioning.datasources t=2024-06-11T08:42:01.350298996Z level=info msg="inserting datasource from configuration " name=ClickHouse uid=PDEE91DDB90597936
+logger=provisioning.plugins t=2024-06-11T08:42:01.398897502Z level=info msg="Updating app from configuration " type=pmm-app enabled=true
+logger=provisioning.alerting t=2024-06-11T08:42:01.410520503Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2024-06-11T08:42:01.411136889Z level=info msg="finished to provision alerting"
+logger=grafanaStorageLogger t=2024-06-11T08:42:01.416114784Z level=info msg="storage starting"
+logger=ngalert t=2024-06-11T08:42:01.431312219Z level=info msg="warming cache for startup"
+logger=http.server t=2024-06-11T08:42:01.430676846Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl=/graph socket=
+logger=searchIndex t=2024-06-11T08:42:01.668277876Z level=info msg="Initializing SearchV2" dashboardLoadingBatchSize=200 fullReindexInterval=5m0s indexUpdateInterval=10s
+logger=searchIndex t=2024-06-11T08:42:01.880867225Z level=info msg="Start building in-memory indexes"
+logger=searchIndex t=2024-06-11T08:42:01.88090515Z level=info msg="Start building org index" orgId=1
+logger=ticker t=2024-06-11T08:42:01.90932346Z level=info msg=starting first_tick=2024-06-11T08:42:10Z
+logger=ngalert.multiorg.alertmanager t=2024-06-11T08:42:01.90937848Z level=info msg="starting MultiOrg Alertmanager"
+logger=searchIndex t=2024-06-11T08:42:02.943249851Z level=info msg="Finish loading org dashboards" elapsed=1.062346025s orgId=1
+logger=searchIndex t=2024-06-11T08:42:04.435117968Z level=info msg="Finish inserting docs into index" elapsed=1.49050266s
+logger=searchIndex t=2024-06-11T08:42:04.435178732Z level=info msg="Finish building index" totalElapsed=1.490565214s
+logger=searchIndex t=2024-06-11T08:42:04.435195928Z level=info msg="Re-indexed dashboards for organization" orgId=1 orgSearchIndexLoadTime=1.062346025s orgSearchIndexBuildTime=1.491944121s orgSearchIndexTotalTime=2.554290146s orgSearchDashboardCount=76
+logger=searchIndex t=2024-06-11T08:42:04.435228908Z level=info msg="Indexing for org finished" orgIndexElapsed=2.55433214s orgId=1 numDashboards=76
+logger=searchIndex t=2024-06-11T08:42:04.435240747Z level=info msg="Finish building in-memory indexes" elapsed=2.554376966s
+logger=searchIndex t=2024-06-11T08:42:04.435247442Z level=info msg="Full re-indexing due to external signal"
+logger=searchIndex t=2024-06-11T08:42:04.435666079Z level=info msg="Start re-indexing"
+logger=searchIndex t=2024-06-11T08:42:04.435696037Z level=info msg="Start building org index" orgId=1
+logger=searchIndex t=2024-06-11T08:42:04.870919236Z level=info msg="Finish loading org dashboards" elapsed=435.222188ms orgId=1
+logger=searchIndex t=2024-06-11T08:42:05.456704928Z level=info msg="Finish inserting docs into index" elapsed=585.674011ms
+logger=searchIndex t=2024-06-11T08:42:05.461224744Z level=info msg="Finish building index" totalElapsed=590.192665ms
+logger=searchIndex t=2024-06-11T08:42:05.461248708Z level=info msg="Re-indexed dashboards for organization" orgId=1 orgSearchIndexLoadTime=435.222188ms orgSearchIndexBuildTime=590.329494ms orgSearchIndexTotalTime=1.025551682s orgSearchDashboardCount=76
+logger=searchIndex t=2024-06-11T08:42:05.461297534Z level=info msg="Full re-indexing finished" fullReIndexElapsed=1.025620819s
+logger=server t=2024-06-11T08:42:45.077179076Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=tracing t=2024-06-11T08:42:45.078097848Z level=info msg="Closing tracing"
+logger=ticker t=2024-06-11T08:42:45.078877388Z level=info msg=stopped last_tick=2024-06-11T08:42:40Z
+logger=settings t=2024-06-11T08:43:14.566997636Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:43:14.568937822Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:43:14.568956525Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:43:14.568962816Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:43:14.568967507Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:43:14.568971828Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:43:14.568976096Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:43:14.568983211Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:43:14.568988146Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:43:14.569131952Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:43:16.239617737Z level=info msg="Starting DB migrations"
+logger=migrator t=2024-06-11T08:43:16.273870608Z level=info msg="migrations completed" performed=0 skipped=452 duration=2.396975ms
+logger=plugin.finder t=2024-06-11T08:43:16.732927461Z level=warn msg="Skipping finding plugins as directory does not exist" path=/usr/share/grafana/plugins-bundled
+logger=settings t=2024-06-11T08:52:59.575597987Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:52:59.581619763Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:52:59.581773262Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:52:59.581780725Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:52:59.581783616Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:52:59.581785914Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:52:59.581788472Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:52:59.581791217Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:52:59.581793929Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:52:59.583142714Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:52:59.616596214Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: the database system is starting up"
+logger=settings t=2024-06-11T08:53:00.281505545Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:53:00.281639987Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:53:00.281647471Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:53:00.281650204Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:53:00.2816526Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:53:00.28165498Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:53:00.281657321Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:53:00.281659665Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:53:00.281663116Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:53:00.281734593Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:53:00.294383968Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: the database system is starting up"
+logger=settings t=2024-06-11T08:53:02.065287099Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:53:02.065517912Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:53:02.065525669Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:53:02.065528581Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:53:02.065531324Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:53:02.065533672Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:53:02.065535892Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:53:02.065538244Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:53:02.06554063Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:53:02.065596934Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:53:02.081170313Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: the database system is starting up"
+logger=settings t=2024-06-11T08:53:04.673288264Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:53:04.674641595Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:53:04.67593667Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:53:04.675946511Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:53:04.675950027Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:53:04.675952899Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:53:04.675960452Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:53:04.675963829Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:53:04.675967349Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:53:04.677133754Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:53:04.705438154Z level=error msg="alert migration failure: could not get migration log" error="failed to check table existence: pq: the database system is starting up"
+logger=settings t=2024-06-11T08:53:08.064258126Z level=info msg="Starting Grafana" version=9.2.20 commit=9.2.20 branch=main compiled=2023-06-27T00:00:00Z
+logger=settings t=2024-06-11T08:53:08.064396802Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2024-06-11T08:53:08.064403664Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+logger=settings t=2024-06-11T08:53:08.064406887Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2024-06-11T08:53:08.064409465Z level=info msg="Path Data" path=/srv/grafana
+logger=settings t=2024-06-11T08:53:08.064411933Z level=info msg="Path Logs" path=/srv/logs
+logger=settings t=2024-06-11T08:53:08.064414422Z level=info msg="Path Plugins" path=/srv/grafana/plugins
+logger=settings t=2024-06-11T08:53:08.064417148Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2024-06-11T08:53:08.064419778Z level=info msg="App mode production"
+logger=sqlstore t=2024-06-11T08:53:08.064562136Z level=info msg="Connecting to DB" dbtype=postgres
+logger=migrator t=2024-06-11T08:53:08.222026523Z level=info msg="Starting DB migrations"
+logger=migrator t=2024-06-11T08:53:08.232159697Z level=info msg="migrations completed" performed=0 skipped=452 duration=533.467µs
+logger=plugin.finder t=2024-06-11T08:53:08.352611092Z level=warn msg="Skipping finding plugins as directory does not exist" path=/usr/share/grafana/plugins-bundled
+logger=plugin.signature.validator t=2024-06-11T08:53:10.055696992Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-qan-app-panel pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-qan
+logger=plugin.signature.validator t=2024-06-11T08:53:10.057279671Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-app pluginDir=/srv/grafana/plugins/pmm-app/dist
+logger=plugin.pmm-app t=2024-06-11T08:53:10.092807142Z level=warn msg="Included dashboard is missing a UID field"
+logger=plugin.signature.validator t=2024-06-11T08:53:10.095790624Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=grafana-polystat-panel pluginDir=/srv/grafana/plugins/grafana-polystat-panel
+logger=plugin.signature.validator t=2024-06-11T08:53:10.096939603Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-pt-summary-panel pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-pt-summary/panel
+logger=plugin.signature.validator t=2024-06-11T08:53:10.097993126Z level=warn msg="Permitting unsigned plugin. This is not recommended" pluginID=pmm-pt-summary-datasource pluginDir=/srv/grafana/plugins/pmm-app/dist/pmm-pt-summary/datasource
+logger=plugin.loader t=2024-06-11T08:53:10.098176473Z level=info msg="Plugin registered" pluginID=natel-discrete-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098208603Z level=info msg="Plugin registered" pluginID=pmm-qan-app-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098214714Z level=info msg="Plugin registered" pluginID=petrslavotinek-carpetplot-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098217673Z level=info msg="Plugin registered" pluginID=jdbranham-diagram-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098220362Z level=info msg="Plugin registered" pluginID=pmm-app
+logger=plugin.loader t=2024-06-11T08:53:10.098223021Z level=info msg="Plugin registered" pluginID=camptocamp-prometheus-alertmanager-datasource
+logger=plugin.loader t=2024-06-11T08:53:10.098225739Z level=info msg="Plugin registered" pluginID=grafana-piechart-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098228648Z level=info msg="Plugin registered" pluginID=grafana-polystat-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098231438Z level=info msg="Plugin registered" pluginID=grafana-worldmap-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098235033Z level=info msg="Plugin registered" pluginID=pmm-pt-summary-panel
+logger=plugin.loader t=2024-06-11T08:53:10.098237655Z level=info msg="Plugin registered" pluginID=grafana-clickhouse-datasource
+logger=plugin.loader t=2024-06-11T08:53:10.134945753Z level=info msg="Plugin registered" pluginID=pmm-pt-summary-datasource
+logger=secrets t=2024-06-11T08:53:10.135007074Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=query_data t=2024-06-11T08:53:10.143327516Z level=info msg="Query Service initialization"
+logger=live.push_http t=2024-06-11T08:53:10.154795839Z level=info msg="Live Push Gateway initialization"
+logger=plugindashboards t=2024-06-11T08:53:10.447644379Z level=info msg="Syncing plugin dashboards to DB" pluginId=pmm-app
+logger=plugindashboards t=2024-06-11T08:53:10.98782365Z level=error msg="Failed to load app dashboards" error="open /srv/grafana/plugins/pmm-app/dist/dashboards/Experimental/Environment_Summary.json: no such file or directory"
+logger=infra.usagestats.collector t=2024-06-11T08:53:10.987857993Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.datasources t=2024-06-11T08:53:11.057496983Z level=info msg="deleted correlations based on configuration" ds_name=ClickHouse
+logger=provisioning.datasources t=2024-06-11T08:53:11.057536629Z level=info msg="deleted datasource based on configuration" name=ClickHouse
+logger=provisioning.datasources t=2024-06-11T08:53:11.262857138Z level=info msg="inserting datasource from configuration " name=ClickHouse uid=PDEE91DDB90597936
+logger=provisioning.plugins t=2024-06-11T08:53:11.29612761Z level=info msg="Updating app from configuration " type=pmm-app enabled=true
+logger=provisioning.alerting t=2024-06-11T08:53:11.307855626Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2024-06-11T08:53:11.30787364Z level=info msg="finished to provision alerting"
+logger=ngalert t=2024-06-11T08:53:11.311321011Z level=info msg="warming cache for startup"
+logger=grafanaStorageLogger t=2024-06-11T08:53:11.312987348Z level=info msg="storage starting"
+logger=http.server t=2024-06-11T08:53:11.339657884Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl=/graph socket=
+logger=searchIndex t=2024-06-11T08:53:11.37919407Z level=info msg="Initializing SearchV2" dashboardLoadingBatchSize=200 fullReindexInterval=5m0s indexUpdateInterval=10s
+logger=searchIndex t=2024-06-11T08:53:11.389218781Z level=info msg="Start building in-memory indexes"
+logger=searchIndex t=2024-06-11T08:53:11.389243468Z level=info msg="Start building org index" orgId=1
+logger=ngalert.multiorg.alertmanager t=2024-06-11T08:53:11.395165839Z level=info msg="starting MultiOrg Alertmanager"
+logger=ticker t=2024-06-11T08:53:11.396237196Z level=info msg=starting first_tick=2024-06-11T08:53:20Z
+logger=searchIndex t=2024-06-11T08:53:11.675501562Z level=info msg="Finish loading org dashboards" elapsed=286.257065ms orgId=1
+logger=searchIndex t=2024-06-11T08:53:12.159794707Z level=info msg="Finish inserting docs into index" elapsed=482.439249ms
+logger=searchIndex t=2024-06-11T08:53:12.161577163Z level=info msg="Finish building index" totalElapsed=484.224367ms
+logger=searchIndex t=2024-06-11T08:53:12.161614901Z level=info msg="Re-indexed dashboards for organization" orgId=1 orgSearchIndexLoadTime=286.257065ms orgSearchIndexBuildTime=486.110973ms orgSearchIndexTotalTime=772.368038ms orgSearchDashboardCount=76
+logger=searchIndex t=2024-06-11T08:53:12.162278876Z level=info msg="Indexing for org finished" orgIndexElapsed=773.034975ms orgId=1 numDashboards=76
+logger=searchIndex t=2024-06-11T08:53:12.16230911Z level=info msg="Finish building in-memory indexes" elapsed=773.090777ms
+logger=searchIndex t=2024-06-11T08:53:12.291942622Z level=info msg="Full re-indexing due to external signal"
+logger=searchIndex t=2024-06-11T08:53:12.292032799Z level=info msg="Start re-indexing"
+logger=searchIndex t=2024-06-11T08:53:12.292431491Z level=info msg="Start building org index" orgId=1
+logger=searchIndex t=2024-06-11T08:53:12.382538947Z level=info msg="Finish loading org dashboards" elapsed=90.10721ms orgId=1
+logger=searchIndex t=2024-06-11T08:53:12.593020308Z level=info msg="Finish inserting docs into index" elapsed=210.361865ms
+logger=searchIndex t=2024-06-11T08:53:12.593063195Z level=info msg="Finish building index" totalElapsed=210.406942ms
+logger=searchIndex t=2024-06-11T08:53:12.593110752Z level=info msg="Re-indexed dashboards for organization" orgId=1 orgSearchIndexLoadTime=90.10721ms orgSearchIndexBuildTime=210.574812ms orgSearchIndexTotalTime=300.682022ms orgSearchDashboardCount=76
+logger=searchIndex t=2024-06-11T08:53:12.593136798Z level=info msg="Full re-indexing finished" fullReIndexElapsed=301.106043ms
+logger=context t=2024-06-11T08:54:08.582695424Z level=warn msg="failed to look up session from cookie" error="user token not found"
+logger=context userId=0 orgId=0 uname= t=2024-06-11T08:54:08.616398669Z level=info msg="Request Completed" method=GET path=/ status=302 remote_addr=127.0.0.1 time_ms=43 duration=43.900553ms size=59 referer= handler=/
+logger=http.server t=2024-06-11T08:54:31.807383525Z level=info msg="Successful Login" User=admin@localhost
+logger=context userId=1 orgId=1 uname=admin t=2024-06-11T08:54:37.664666212Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=127.0.0.1 time_ms=16 duration=16.748566ms size=0 referer= handler=/api/live/ws
+logger=context userId=1 orgId=1 uname=admin t=2024-06-11T08:54:37.971035142Z level=error msg="Request Completed" method=GET path=/percona-api/user/oauth-token status=500 remote_addr=127.0.0.1 time_ms=19 duration=19.242548ms size=57 referer= handler=/percona-api/user/oauth-token
+logger=http.server t=2024-06-11T08:54:38.785405625Z level=error msg="Failed to receive response from resource call" err="context canceled"
+logger=http.server t=2024-06-11T08:54:38.786100105Z level=warn msg="Failed to close plugin resource stream" err="cannot close a closed stream"
+logger=live t=2024-06-11T08:54:38.821810546Z level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/pmm-home address=grafana/dashboard/uid/pmm-home
+logger=live t=2024-06-11T08:55:10.224924046Z level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/prometheus-status address=grafana/dashboard/uid/prometheus-status
+logger=context userId=1 orgId=1 uname=admin t=2024-06-11T08:57:20.913460562Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=127.0.0.1 time_ms=2 duration=2.762715ms size=0 referer= handler=/api/live/ws
+logger=context userId=1 orgId=1 uname=admin t=2024-06-11T08:57:21.088025632Z level=error msg="Request Completed" method=GET path=/percona-api/user/oauth-token status=500 remote_addr=127.0.0.1 time_ms=5 duration=5.022896ms size=57 referer= handler=/percona-api/user/oauth-token

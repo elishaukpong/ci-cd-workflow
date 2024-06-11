@@ -1,0 +1,281 @@
+2024-06-11 08:39:47,417 INFO Included extra file "/etc/supervisord.d/alertmanager.ini" during parsing
+2024-06-11 08:39:47,419 INFO Included extra file "/etc/supervisord.d/dbaas-controller.ini" during parsing
+2024-06-11 08:39:47,420 INFO Included extra file "/etc/supervisord.d/grafana.ini" during parsing
+2024-06-11 08:39:47,421 INFO Included extra file "/etc/supervisord.d/pmm.ini" during parsing
+2024-06-11 08:39:47,422 INFO Included extra file "/etc/supervisord.d/prometheus.ini" during parsing
+2024-06-11 08:39:47,423 INFO Included extra file "/etc/supervisord.d/qan-api2.ini" during parsing
+2024-06-11 08:39:47,424 INFO Included extra file "/etc/supervisord.d/supervisord.ini" during parsing
+2024-06-11 08:39:47,425 INFO Included extra file "/etc/supervisord.d/victoriametrics.ini" during parsing
+2024-06-11 08:39:47,426 INFO Included extra file "/etc/supervisord.d/vmalert.ini" during parsing
+2024-06-11 08:39:47,427 INFO Included extra file "/etc/supervisord.d/vmproxy.ini" during parsing
+2024-06-11 08:39:47,428 INFO Set uid to user 0 succeeded
+2024-06-11 08:39:47,436 INFO RPC interface 'supervisor' initialized
+2024-06-11 08:39:47,438 INFO supervisord started with pid 1
+2024-06-11 08:39:48,445 INFO spawned: 'pmm-update-perform-init' with pid 125
+2024-06-11 08:39:48,456 INFO spawned: 'postgresql' with pid 126
+2024-06-11 08:39:48,473 INFO spawned: 'clickhouse' with pid 127
+2024-06-11 08:39:48,496 INFO spawned: 'grafana' with pid 132
+2024-06-11 08:39:48,545 INFO spawned: 'nginx' with pid 136
+2024-06-11 08:39:48,611 INFO spawned: 'victoriametrics' with pid 137
+2024-06-11 08:39:48,660 INFO spawned: 'vmalert' with pid 138
+2024-06-11 08:39:48,725 INFO spawned: 'alertmanager' with pid 143
+2024-06-11 08:39:48,757 INFO spawned: 'vmproxy' with pid 144
+2024-06-11 08:39:48,817 INFO spawned: 'qan-api2' with pid 148
+2024-06-11 08:39:48,888 INFO spawned: 'pmm-managed' with pid 149
+2024-06-11 08:39:49,473 INFO success: pmm-update-perform-init entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,530 INFO success: postgresql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,554 INFO success: clickhouse entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,555 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,567 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,568 INFO success: victoriametrics entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,570 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:39:49,745 INFO success: vmalert entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,765 INFO success: alertmanager entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,792 INFO success: vmproxy entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:49,853 INFO success: pmm-managed entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:50,631 INFO spawned: 'qan-api2' with pid 192
+2024-06-11 08:39:51,225 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:39:52,276 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:39:52,352 INFO spawned: 'grafana' with pid 210
+2024-06-11 08:39:53,391 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:53,414 INFO spawned: 'qan-api2' with pid 217
+2024-06-11 08:39:53,719 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:39:53,952 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:39:54,075 INFO spawned: 'grafana' with pid 391
+2024-06-11 08:39:55,068 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:55,954 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:39:55,961 INFO spawned: 'grafana' with pid 489
+2024-06-11 08:39:57,076 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:57,097 INFO spawned: 'qan-api2' with pid 506
+2024-06-11 08:39:57,154 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:39:57,284 INFO spawned: 'grafana' with pid 512
+2024-06-11 08:39:58,171 INFO success: qan-api2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:58,828 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:39:58,901 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:39:59,007 INFO spawned: 'grafana' with pid 533
+2024-06-11 08:40:00,058 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:01,241 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:02,194 INFO spawned: 'grafana' with pid 565
+2024-06-11 08:40:03,230 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:06,068 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:06,133 INFO spawned: 'grafana' with pid 612
+2024-06-11 08:40:06,273 INFO spawned: 'pmm-agent' with pid 613
+2024-06-11 08:40:07,628 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:07,629 INFO success: pmm-agent entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:08,035 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:08,057 INFO spawned: 'grafana' with pid 652
+2024-06-11 08:40:09,058 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:09,061 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:09,073 INFO spawned: 'grafana' with pid 681
+2024-06-11 08:40:10,161 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:10,460 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:10,473 INFO spawned: 'grafana' with pid 710
+2024-06-11 08:40:11,536 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:12,153 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:12,160 INFO spawned: 'grafana' with pid 747
+2024-06-11 08:40:13,157 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:13,187 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:14,078 INFO spawned: 'grafana' with pid 776
+2024-06-11 08:40:15,021 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:16,663 INFO spawned: 'grafana' with pid 828
+2024-06-11 08:40:18,126 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:18,128 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:18,135 INFO spawned: 'grafana' with pid 842
+2024-06-11 08:40:19,399 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:19,401 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:19,423 INFO spawned: 'grafana' with pid 870
+2024-06-11 08:40:20,201 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:21,702 INFO spawned: 'grafana' with pid 914
+2024-06-11 08:40:22,182 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:24,648 INFO spawned: 'grafana' with pid 960
+2024-06-11 08:40:25,626 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:25,632 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:25,673 INFO spawned: 'grafana' with pid 979
+2024-06-11 08:40:26,727 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:27,011 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:27,137 INFO spawned: 'grafana' with pid 997
+2024-06-11 08:40:27,866 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:40:28,876 INFO spawned: 'grafana' with pid 1018
+2024-06-11 08:40:29,917 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:40:37,680 INFO exited: pmm-update-perform-init (exit status 0; expected)
+2024-06-11 08:41:29,806 WARN received SIGTERM indicating exit request
+2024-06-11 08:41:29,810 INFO waiting for postgresql, clickhouse, grafana, nginx, victoriametrics, vmalert, alertmanager, vmproxy, qan-api2, pmm-managed, pmm-agent to die
+2024-06-11 08:41:29,885 INFO stopped: pmm-agent (exit status 0)
+2024-06-11 08:41:29,918 INFO reaped unknown pid 1418 (terminated by SIGKILL)
+2024-06-11 08:41:29,933 INFO stopped: pmm-managed (exit status 0)
+2024-06-11 08:41:29,949 INFO stopped: qan-api2 (exit status 0)
+2024-06-11 08:41:29,951 INFO stopped: vmproxy (terminated by SIGINT)
+2024-06-11 08:41:29,974 INFO stopped: alertmanager (exit status 0)
+2024-06-11 08:41:29,978 INFO stopped: vmalert (exit status 0)
+2024-06-11 08:41:31,762 INFO stopped: victoriametrics (exit status 0)
+2024-06-11 08:41:31,927 INFO stopped: nginx (exit status 0)
+2024-06-11 08:41:31,952 INFO stopped: grafana (exit status 0)
+2024-06-11 08:41:33,252 INFO waiting for postgresql, clickhouse to die
+2024-06-11 08:41:33,373 INFO stopped: clickhouse (exit status 0)
+2024-06-11 08:41:34,189 INFO stopped: postgresql (exit status 0)
+2024-06-11 08:41:44,225 INFO Included extra file "/etc/supervisord.d/alertmanager.ini" during parsing
+2024-06-11 08:41:44,225 INFO Included extra file "/etc/supervisord.d/dbaas-controller.ini" during parsing
+2024-06-11 08:41:44,226 INFO Included extra file "/etc/supervisord.d/grafana.ini" during parsing
+2024-06-11 08:41:44,226 INFO Included extra file "/etc/supervisord.d/pmm.ini" during parsing
+2024-06-11 08:41:44,227 INFO Included extra file "/etc/supervisord.d/prometheus.ini" during parsing
+2024-06-11 08:41:44,228 INFO Included extra file "/etc/supervisord.d/qan-api2.ini" during parsing
+2024-06-11 08:41:44,228 INFO Included extra file "/etc/supervisord.d/supervisord.ini" during parsing
+2024-06-11 08:41:44,229 INFO Included extra file "/etc/supervisord.d/victoriametrics.ini" during parsing
+2024-06-11 08:41:44,229 INFO Included extra file "/etc/supervisord.d/vmalert.ini" during parsing
+2024-06-11 08:41:44,229 INFO Included extra file "/etc/supervisord.d/vmproxy.ini" during parsing
+2024-06-11 08:41:44,230 INFO Set uid to user 0 succeeded
+2024-06-11 08:41:44,235 INFO RPC interface 'supervisor' initialized
+2024-06-11 08:41:44,237 INFO supervisord started with pid 1
+2024-06-11 08:41:45,241 INFO spawned: 'pmm-update-perform-init' with pid 11
+2024-06-11 08:41:45,256 INFO spawned: 'postgresql' with pid 18
+2024-06-11 08:41:45,273 INFO spawned: 'clickhouse' with pid 19
+2024-06-11 08:41:45,291 INFO spawned: 'grafana' with pid 20
+2024-06-11 08:41:45,297 INFO spawned: 'nginx' with pid 21
+2024-06-11 08:41:45,329 INFO spawned: 'victoriametrics' with pid 22
+2024-06-11 08:41:45,375 INFO spawned: 'vmalert' with pid 23
+2024-06-11 08:41:45,415 INFO spawned: 'alertmanager' with pid 27
+2024-06-11 08:41:45,480 INFO spawned: 'vmproxy' with pid 35
+2024-06-11 08:41:45,544 INFO spawned: 'qan-api2' with pid 42
+2024-06-11 08:41:45,581 INFO spawned: 'pmm-managed' with pid 45
+2024-06-11 08:41:45,915 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:41:46,261 INFO success: pmm-update-perform-init entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,262 INFO success: postgresql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,264 INFO success: clickhouse entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,305 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,316 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,336 INFO success: victoriametrics entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,347 INFO success: vmalert entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,481 INFO success: alertmanager entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,482 INFO success: vmproxy entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:46,745 INFO success: pmm-managed entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:47,041 INFO spawned: 'qan-api2' with pid 84
+2024-06-11 08:41:47,242 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:41:49,489 INFO spawned: 'qan-api2' with pid 388
+2024-06-11 08:41:49,597 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:41:52,087 INFO spawned: 'pmm-agent' with pid 468
+2024-06-11 08:41:52,689 INFO spawned: 'qan-api2' with pid 475
+2024-06-11 08:41:53,088 INFO success: pmm-agent entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:41:53,733 INFO success: qan-api2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:42:28,119 INFO exited: pmm-update-perform-init (exit status 0; expected)
+2024-06-11 08:42:41,683 WARN received SIGTERM indicating exit request
+2024-06-11 08:42:41,685 INFO waiting for postgresql, clickhouse, grafana, nginx, victoriametrics, vmalert, alertmanager, vmproxy, qan-api2, pmm-managed, pmm-agent to die
+2024-06-11 08:42:41,753 INFO stopped: pmm-agent (exit status 0)
+2024-06-11 08:42:41,864 INFO stopped: pmm-managed (exit status 0)
+2024-06-11 08:42:41,883 INFO reaped unknown pid 1005 (terminated by SIGKILL)
+2024-06-11 08:42:42,030 INFO stopped: qan-api2 (exit status 0)
+2024-06-11 08:42:42,039 INFO stopped: vmproxy (terminated by SIGINT)
+2024-06-11 08:42:42,105 INFO stopped: alertmanager (exit status 0)
+2024-06-11 08:42:42,119 INFO stopped: vmalert (exit status 0)
+2024-06-11 08:42:44,045 INFO stopped: victoriametrics (exit status 0)
+2024-06-11 08:42:45,049 INFO waiting for postgresql, clickhouse, grafana, nginx to die
+2024-06-11 08:42:45,074 INFO stopped: nginx (exit status 0)
+2024-06-11 08:42:46,127 INFO stopped: grafana (exit status 0)
+2024-06-11 08:42:48,139 INFO waiting for postgresql, clickhouse to die
+2024-06-11 08:42:48,146 INFO stopped: clickhouse (exit status 0)
+2024-06-11 08:42:48,813 INFO stopped: postgresql (exit status 0)
+2024-06-11 08:43:10,920 INFO Included extra file "/etc/supervisord.d/alertmanager.ini" during parsing
+2024-06-11 08:43:10,922 INFO Included extra file "/etc/supervisord.d/dbaas-controller.ini" during parsing
+2024-06-11 08:43:10,923 INFO Included extra file "/etc/supervisord.d/grafana.ini" during parsing
+2024-06-11 08:43:10,924 INFO Included extra file "/etc/supervisord.d/pmm.ini" during parsing
+2024-06-11 08:43:10,925 INFO Included extra file "/etc/supervisord.d/prometheus.ini" during parsing
+2024-06-11 08:43:10,926 INFO Included extra file "/etc/supervisord.d/qan-api2.ini" during parsing
+2024-06-11 08:43:10,927 INFO Included extra file "/etc/supervisord.d/supervisord.ini" during parsing
+2024-06-11 08:43:10,929 INFO Included extra file "/etc/supervisord.d/victoriametrics.ini" during parsing
+2024-06-11 08:43:10,931 INFO Included extra file "/etc/supervisord.d/vmalert.ini" during parsing
+2024-06-11 08:43:10,933 INFO Included extra file "/etc/supervisord.d/vmproxy.ini" during parsing
+2024-06-11 08:43:10,935 INFO Set uid to user 0 succeeded
+2024-06-11 08:43:10,948 INFO RPC interface 'supervisor' initialized
+2024-06-11 08:43:10,951 INFO supervisord started with pid 1
+2024-06-11 08:43:11,959 INFO spawned: 'pmm-update-perform-init' with pid 10
+2024-06-11 08:43:11,975 INFO spawned: 'postgresql' with pid 14
+2024-06-11 08:43:12,002 INFO spawned: 'clickhouse' with pid 18
+2024-06-11 08:43:12,024 INFO spawned: 'grafana' with pid 19
+2024-06-11 08:43:12,048 INFO spawned: 'nginx' with pid 20
+2024-06-11 08:43:12,076 INFO spawned: 'victoriametrics' with pid 21
+2024-06-11 08:43:12,101 INFO spawned: 'vmalert' with pid 22
+2024-06-11 08:43:12,123 INFO spawned: 'alertmanager' with pid 23
+2024-06-11 08:43:12,167 INFO spawned: 'vmproxy' with pid 29
+2024-06-11 08:43:12,225 INFO spawned: 'qan-api2' with pid 33
+2024-06-11 08:43:12,263 INFO spawned: 'pmm-managed' with pid 40
+2024-06-11 08:43:12,569 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:43:13,176 INFO success: pmm-update-perform-init entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,179 INFO success: postgresql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,183 INFO success: clickhouse entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,186 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,188 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,190 INFO success: victoriametrics entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,193 INFO success: vmalert entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,194 INFO success: alertmanager entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,196 INFO success: vmproxy entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,399 INFO success: pmm-managed entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:13,684 INFO spawned: 'qan-api2' with pid 72
+2024-06-11 08:43:14,415 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:43:16,431 INFO spawned: 'qan-api2' with pid 328
+2024-06-11 08:43:16,528 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:43:19,955 INFO spawned: 'qan-api2' with pid 420
+2024-06-11 08:43:20,363 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:43:21,412 INFO spawned: 'pmm-agent' with pid 441
+2024-06-11 08:43:22,334 INFO success: pmm-agent entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:43:24,485 INFO spawned: 'qan-api2' with pid 499
+2024-06-11 08:43:24,646 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:43:30,054 INFO spawned: 'qan-api2' with pid 564
+2024-06-11 08:43:31,858 INFO success: qan-api2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:45:07,602 WARN received SIGTERM indicating exit request
+2024-06-11 08:45:07,604 INFO waiting for pmm-update-perform-init, postgresql, clickhouse, grafana, nginx, victoriametrics, vmalert, alertmanager, vmproxy, qan-api2, pmm-managed, pmm-agent to die
+2024-06-11 08:45:10,674 INFO waiting for pmm-update-perform-init, postgresql, clickhouse, grafana, nginx, victoriametrics, vmalert, alertmanager, vmproxy, qan-api2, pmm-managed, pmm-agent to die
+2024-06-11 08:45:13,753 INFO waiting for pmm-update-perform-init, postgresql, clickhouse, grafana, nginx, victoriametrics, vmalert, alertmanager, vmproxy, qan-api2, pmm-managed, pmm-agent to die
+2024-06-11 08:52:56,739 INFO Included extra file "/etc/supervisord.d/alertmanager.ini" during parsing
+2024-06-11 08:52:56,740 INFO Included extra file "/etc/supervisord.d/dbaas-controller.ini" during parsing
+2024-06-11 08:52:56,740 INFO Included extra file "/etc/supervisord.d/grafana.ini" during parsing
+2024-06-11 08:52:56,741 INFO Included extra file "/etc/supervisord.d/pmm.ini" during parsing
+2024-06-11 08:52:56,742 INFO Included extra file "/etc/supervisord.d/prometheus.ini" during parsing
+2024-06-11 08:52:56,742 INFO Included extra file "/etc/supervisord.d/qan-api2.ini" during parsing
+2024-06-11 08:52:56,743 INFO Included extra file "/etc/supervisord.d/supervisord.ini" during parsing
+2024-06-11 08:52:56,744 INFO Included extra file "/etc/supervisord.d/victoriametrics.ini" during parsing
+2024-06-11 08:52:56,745 INFO Included extra file "/etc/supervisord.d/vmalert.ini" during parsing
+2024-06-11 08:52:56,746 INFO Included extra file "/etc/supervisord.d/vmproxy.ini" during parsing
+2024-06-11 08:52:56,746 INFO Set uid to user 0 succeeded
+2024-06-11 08:52:57,055 INFO RPC interface 'supervisor' initialized
+2024-06-11 08:52:57,056 INFO supervisord started with pid 1
+2024-06-11 08:52:58,060 INFO spawned: 'pmm-update-perform-init' with pid 12
+2024-06-11 08:52:58,065 INFO spawned: 'postgresql' with pid 13
+2024-06-11 08:52:58,071 INFO spawned: 'clickhouse' with pid 15
+2024-06-11 08:52:58,078 INFO spawned: 'grafana' with pid 19
+2024-06-11 08:52:58,084 INFO spawned: 'nginx' with pid 22
+2024-06-11 08:52:58,091 INFO spawned: 'victoriametrics' with pid 23
+2024-06-11 08:52:58,102 INFO spawned: 'vmalert' with pid 24
+2024-06-11 08:52:58,111 INFO spawned: 'alertmanager' with pid 25
+2024-06-11 08:52:58,119 INFO spawned: 'vmproxy' with pid 26
+2024-06-11 08:52:58,127 INFO spawned: 'qan-api2' with pid 27
+2024-06-11 08:52:58,137 INFO spawned: 'pmm-managed' with pid 28
+2024-06-11 08:52:58,610 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:52:59,178 INFO success: pmm-update-perform-init entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,182 INFO success: postgresql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,186 INFO success: clickhouse entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,191 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,192 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,193 INFO success: victoriametrics entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,194 INFO success: vmalert entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,197 INFO success: alertmanager entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,203 INFO success: vmproxy entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,208 INFO success: pmm-managed entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:52:59,641 INFO spawned: 'qan-api2' with pid 79
+2024-06-11 08:52:59,645 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:52:59,678 INFO spawned: 'grafana' with pid 80
+2024-06-11 08:52:59,727 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:53:00,312 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:53:01,328 INFO spawned: 'grafana' with pid 102
+2024-06-11 08:53:01,741 INFO spawned: 'qan-api2' with pid 353
+2024-06-11 08:53:01,887 INFO exited: qan-api2 (exit status 1; not expected)
+2024-06-11 08:53:02,107 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:53:04,285 INFO spawned: 'grafana' with pid 459
+2024-06-11 08:53:04,716 INFO exited: grafana (exit status 1; not expected)
+2024-06-11 08:53:05,081 INFO spawned: 'qan-api2' with pid 485
+2024-06-11 08:53:06,315 INFO success: qan-api2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:53:07,896 INFO spawned: 'grafana' with pid 602
+2024-06-11 08:53:08,894 INFO success: grafana entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:53:09,694 INFO spawned: 'pmm-agent' with pid 667
+2024-06-11 08:53:10,988 INFO success: pmm-agent entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-11 08:53:13,477 INFO exited: pmm-update-perform-init (exit status 0; expected)
+2024-06-11 08:55:09,979 INFO reaped unknown pid 1277 (terminated by SIGKILL)
+2024-06-11 08:55:57,161 INFO reaped unknown pid 1525 (terminated by SIGKILL)

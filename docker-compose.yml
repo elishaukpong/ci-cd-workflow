@@ -149,5 +149,20 @@ services:
       - prometheus
       - grafana
 
+  percona:
+    env_file:
+      - .env
+    container_name: percona
+    image: percona
+    restart: always
+    build:
+      context: docker/percona-mms
+    ports:
+      - ${PERCONA_HOST_SSL}:443
+      - ${PERCONA_HOST}:80
+    volumes:
+      - ./docker/percona-mms/data/srv:/srv
+    depends_on:
+      - mysql
 volumes:
   ci-cd-workflow:

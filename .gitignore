@@ -10,3 +10,4 @@ filesystem/staging/*
 filesystem/production/*
 !filesystem/production/.gitignore
 .env
+percona-mms/data

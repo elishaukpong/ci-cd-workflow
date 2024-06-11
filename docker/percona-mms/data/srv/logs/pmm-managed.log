@@ -1,0 +1,888 @@
+time="2024-06-11T08:39:51.223+00:00" level=info msg="Log level: info."
+time="2024-06-11T08:39:51.224+00:00" level=info msg="Using default metrics config" component=config
+time="2024-06-11T08:39:51.289+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:39:51.294+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:39:55.295+00:00" level=warning msg="Failed to migrate database: couldn't connect to database with provided credentials. Tried to create user and database. Error: pq: role \"pmm-managed\" does not exist: pq: syntax error at or near \"$1\"." component=migration
+time="2024-06-11T08:39:56.295+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:40:00.419+00:00" level=info msg="Creating /srv/alertmanager/alertmanager.base.yml" component=alertmanager
+time="2024-06-11T08:40:00.426+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:40:00.427+00:00" level=info msg="Environment variable \"PERCONA_PLATFORM_API_TIMEOUT\" is not set, using \"30s\" as a default timeout for platform API." component="portal client"
+time="2024-06-11T08:40:00.632+00:00" level=info msg="Downloading templates from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:40:02.184+00:00" level=info msg="Updating settings..." component=setup
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"CADVISOR_PORT=9001\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"GRAFANA_PORT=3000\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"JENKINS_PORT=8080\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"MYSQL_DATABASE=cd-workflow\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"MYSQL_PASSWORD=secret\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"MYSQL_PORT=3305\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"MYSQL_ROOT_PASSWORD=secret\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"MYSQL_USER=monitoring\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"PERCONA_HOST=443\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"PHP_PORT=9000\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"PRODUCTION_PORT=82\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"PROMETHEUS_PORT=9090\"" component=server
+time="2024-06-11T08:40:02.184+00:00" level=warning msg="unknown environment variable \"STAGING_PORT=81\"" component=server
+time="2024-06-11T08:40:02.193+00:00" level=info msg="Updating supervisord configuration..." component=setup
+time="2024-06-11T08:40:02.198+00:00" level=info msg="vmproxy configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.198+00:00" level=info msg="alertmanager configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.198+00:00" level=info msg="vmalert configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.199+00:00" level=info msg="qan-api2 configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.199+00:00" level=info msg="grafana configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.200+00:00" level=info msg="dbaas-controller configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.200+00:00" level=info msg="prometheus configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.200+00:00" level=info msg="victoriametrics configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:40:02.200+00:00" level=info msg="Checking VictoriaMetrics..." component=setup
+time="2024-06-11T08:40:02.203+00:00" level=info msg="Checking VMAlert..." component=setup
+time="2024-06-11T08:40:02.205+00:00" level=info msg="Checking Alertmanager..." component=setup
+time="2024-06-11T08:40:02.211+00:00" level=info msg="Setup completed." component=setup
+time="2024-06-11T08:40:02.213+00:00" level=info msg="Starting services..." component=main
+time="2024-06-11T08:40:02.214+00:00" level=info msg="Starting  scheduler" component=ha-services
+time="2024-06-11T08:40:02.215+00:00" level=info msg=Starting... component=vmalert
+time="2024-06-11T08:40:02.215+00:00" level=info msg="Starting  versionCache" component=ha-services
+time="2024-06-11T08:40:02.215+00:00" level=info msg="Starting  cleaner" component=ha-services
+time="2024-06-11T08:40:02.216+00:00" level=info msg="Starting server on http://127.0.0.1:7773/debug\nRegistered handlers:\n\thttp://127.0.0.1:7773/debug/metrics\n\thttp://127.0.0.1:7773/debug/vars\n\thttp://127.0.0.1:7773/debug/requests\n\thttp://127.0.0.1:7773/debug/events\n\thttp://127.0.0.1:7773/debug/pprof" component=debug
+time="2024-06-11T08:40:02.217+00:00" level=info msg=Starting... component=victoriametrics
+time="2024-06-11T08:40:02.217+00:00" level=info msg="Starting  agentsRegistry" component=ha-services
+time="2024-06-11T08:40:02.217+00:00" level=info msg="Starting  pmm-agent-runner" component=ha-services
+time="2024-06-11T08:40:02.224+00:00" level=info msg=Starting... component=alertmanager
+time="2024-06-11T08:40:02.225+00:00" level=info msg="Starting  checks" component=ha-services
+time="2024-06-11T08:40:02.238+00:00" level=info msg=Starting... component=checks
+time="2024-06-11T08:40:02.225+00:00" level=info msg="Starting  telemetry" component=ha-services
+time="2024-06-11T08:40:02.245+00:00" level=info msg="Starting server on http://127.0.0.1:7771/ ..." component=gRPC
+time="2024-06-11T08:40:02.247+00:00" level=info msg="Starting  dbaas-register" component=ha-services
+time="2024-06-11T08:40:02.248+00:00" level=info msg="Starting server on http://127.0.0.1:7772/ ..." component=JSON
+time="2024-06-11T08:40:02.724+00:00" level=info msg="Downloading advisors from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:40:03.241+00:00" level=info msg="Configuration reloaded." component=vmalert
+time="2024-06-11T08:40:03.623+00:00" level=info msg="Configuration reloaded." component=alertmanager
+time="2024-06-11T08:40:04.210+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:40:04.946+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3350e7da-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:04.949+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:04.950+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:04.954+00:00" level=warning msg="RPC /server.Server/Readiness done in 8.08607ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=3350e7da-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:06.668+00:00" level=info msg="Starting Stream /agent.Agent/Connect ..." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:06.716+00:00" level=info msg="Connected pmm-agent: &{ID:pmm-server Version:2.42.0 MetricsPort:0}." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:06.716+00:00" level=info msg="Starting runStateChangeHandler ..." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:08.566+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=35795371-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:08.571+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:08.572+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:08.572+00:00" level=warning msg="RPC /server.Server/Readiness done in 5.576265ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=35795371-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:08.622+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:10.032+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:40:10.459+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:11.533+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:40:12.151+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:12.194+00:00" level=info msg=Starting... component=version-cache
+time="2024-06-11T08:40:12.194+00:00" level=info msg="Updating versions..." component=version-cache
+time="2024-06-11T08:40:12.212+00:00" level=info msg="Done. Next check in 24h0m0s." component=version-cache
+time="2024-06-11T08:40:12.228+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=37a82155-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:12.228+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:12.229+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:12.230+00:00" level=warning msg="RPC /server.Server/Readiness done in 1.982265ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=37a82155-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:15.455+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=39948771-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:15.458+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:15.459+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:15.461+00:00" level=warning msg="RPC /server.Server/Readiness done in 5.258328ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=39948771-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:18.889+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3ba08868-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:18.891+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:18.891+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:18.892+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.629411ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=3ba08868-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:20.379+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:20.379+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:20.382+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:20.384+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:22.181+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3d96cd94-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:22.188+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:22.188+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:22.191+00:00" level=warning msg="RPC /server.Server/Readiness done in 10.316992ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=3d96cd94-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:25.856+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3fc7a2dd-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:25.867+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:25.867+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:25.875+00:00" level=warning msg="RPC /server.Server/Readiness done in 18.629674ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=3fc7a2dd-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:26.832+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:26.833+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:26.841+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:26.841+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:40:29.261+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=41cf30f6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:29.266+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:29.266+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:29.268+00:00" level=warning msg="RPC /server.Server/Readiness done in 6.712041ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=41cf30f6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:33.016+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=440c1139-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:33.018+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:33.021+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:33.023+00:00" level=warning msg="RPC /server.Server/Readiness done in 7.041299ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=440c1139-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:36.278+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=45fdcc23-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:36.278+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:36.278+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:36.280+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.28327ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=45fdcc23-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:39.505+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=47ea43b5-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:39.506+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:40:39.506+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:40:39.507+00:00" level=warning msg="RPC /server.Server/Readiness done in 1.379487ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=47ea43b5-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:42.622+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=49c5dd9b-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:42.627+00:00" level=info msg="RPC /server.Server/Readiness done in 5.447877ms." request=49c5dd9b-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:45.715+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=4b9ddf7c-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:45.718+00:00" level=info msg="RPC /server.Server/Readiness done in 2.257831ms." request=4b9ddf7c-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:48.792+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=4d735a4c-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:48.796+00:00" level=info msg="RPC /server.Server/Readiness done in 3.646303ms." request=4d735a4c-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:51.885+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=4f4b46c7-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:51.887+00:00" level=info msg="RPC /server.Server/Readiness done in 2.150675ms." request=4f4b46c7-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:54.954+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=511f90ef-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:54.957+00:00" level=info msg="RPC /server.Server/Readiness done in 2.953615ms." request=511f90ef-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:58.033+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=52f5546d-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:40:58.034+00:00" level=info msg="RPC /server.Server/Readiness done in 1.892719ms." request=52f5546d-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:01.101+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=54c9958d-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:01.104+00:00" level=info msg="RPC /server.Server/Readiness done in 3.01898ms." request=54c9958d-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:03.840+00:00" level=info msg="Downloading advisors from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:41:04.181+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=569f8a50-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:04.184+00:00" level=info msg="RPC /server.Server/Readiness done in 2.349127ms." request=569f8a50-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:04.917+00:00" level=info msg="Executing check: mysql_unsupported_version_check with interval: standard" component=checks
+time="2024-06-11T08:41:04.920+00:00" level=info msg="Executing check: mysql_version_eol_57 with interval: standard" component=checks
+time="2024-06-11T08:41:04.921+00:00" level=info msg="Executing check: mysql_version with interval: standard" component=checks
+time="2024-06-11T08:41:04.923+00:00" level=info msg="Executing check: postgresql_eol_check with interval: standard" component=checks
+time="2024-06-11T08:41:04.923+00:00" level=info msg="Executing check: postgresql_version_check with interval: standard" component=checks
+time="2024-06-11T08:41:04.924+00:00" level=info msg="Executing check: postgresql_cve_check with interval: standard" component=checks
+time="2024-06-11T08:41:04.925+00:00" level=info msg="Executing check: postgresql_unsupported_check with interval: standard" component=checks
+time="2024-06-11T08:41:04.927+00:00" level=info msg="Executing check: postgresql_extension_check with interval: standard" component=checks
+time="2024-06-11T08:41:04.928+00:00" level=info msg="Executing check: mongodb_EOL with interval: standard" component=checks
+time="2024-06-11T08:41:04.928+00:00" level=info msg="Executing check: mongodb_unsupported_version with interval: standard" component=checks
+time="2024-06-11T08:41:04.929+00:00" level=info msg="Executing check: mongodb_cve_version with interval: standard" component=checks
+time="2024-06-11T08:41:04.930+00:00" level=info msg="Executing check: mongodb_version with interval: standard" component=checks
+time="2024-06-11T08:41:07.254+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=58745a41-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:07.257+00:00" level=info msg="RPC /server.Server/Readiness done in 3.842815ms." request=58745a41-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:10.333+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5a4a3014-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:10.336+00:00" level=info msg="RPC /server.Server/Readiness done in 2.982473ms." request=5a4a3014-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:13.419+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5c212a77-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:13.422+00:00" level=info msg="RPC /server.Server/Readiness done in 3.05721ms." request=5c212a77-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:16.487+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5df54e79-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:16.490+00:00" level=info msg="RPC /server.Server/Readiness done in 2.718231ms." request=5df54e79-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:19.547+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5fc830e4-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:19.550+00:00" level=info msg="RPC /server.Server/Readiness done in 3.364687ms." request=5fc830e4-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:22.633+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=619f204b-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:22.637+00:00" level=info msg="RPC /server.Server/Readiness done in 3.446608ms." request=619f204b-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:25.709+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=63745d52-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:25.715+00:00" level=info msg="RPC /server.Server/Readiness done in 6.18221ms." request=63745d52-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:28.798+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=654bb904-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:28.801+00:00" level=info msg="RPC /server.Server/Readiness done in 3.281767ms." request=654bb904-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:29.832+00:00" level=info msg="Done runStateChangeHandler." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:29.832+00:00" level=error msg="failed to receive message: rpc error: code = Canceled desc = context canceled" agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:29.832+00:00" level=info msg="Disconnecting client: done." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:29.832+00:00" level=warning msg="Stream /agent.Agent/Connect done in 1m23.229263452s (quite long)." agent_id=pmm-server request=3457c7c6-27ce-11ef-a33a-0242c0a89003
+time="2024-06-11T08:41:29.891+00:00" level=warning msg="Got SIGTERM, shutting down..." component=main
+time="2024-06-11T08:41:29.891+00:00" level=info msg=Done. component=victoriametrics
+time="2024-06-11T08:41:29.891+00:00" level=info msg=Done. component=alertmanager
+time="2024-06-11T08:41:29.891+00:00" level=info msg=Done. component=vmalert
+time="2024-06-11T08:41:29.891+00:00" level=info msg="Server stopped." component=JSON
+time="2024-06-11T08:41:29.891+00:00" level=info msg="Stopping  &{pmm-agent-runner 0x273c860 0x273c7a0}" component=ha-services
+time="2024-06-11T08:41:29.894+00:00" level=info msg="Server stopped." component=debug
+time="2024-06-11T08:41:29.894+00:00" level=info msg=Done. component=checks
+time="2024-06-11T08:41:29.894+00:00" level=info msg=Done. component=version-cache
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{checks 0x273bfa0 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{telemetry 0x273bd80 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{scheduler 0x273bd20 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{dbaas-register 0x272ef00 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{versionCache 0x273bcc0 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{cleaner 0x273b360 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:41:29.896+00:00" level=info msg="Stopping  &{agentsRegistry 0x273cc60 0x273c8e0}" component=ha-services
+time="2024-06-11T08:41:29.903+00:00" level=error msg="/usr/local/bin/supervisorctl maintail -f: wait failed: signal: killed" component=supervisord
+time="2024-06-11T08:41:29.904+00:00" level=info msg="Server stopped." component=gRPC
+time="2024-06-11T08:41:29.912+00:00" level=info msg=Done. component=main
+time="2024-06-11T08:41:46.258+00:00" level=info msg="Log level: info."
+time="2024-06-11T08:41:46.260+00:00" level=info msg="Using default metrics config" component=config
+time="2024-06-11T08:41:46.274+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:41:46.276+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:41:46.281+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:41:47.282+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:41:48.675+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:41:48.675+00:00" level=info msg="Environment variable \"PERCONA_PLATFORM_API_TIMEOUT\" is not set, using \"30s\" as a default timeout for platform API." component="portal client"
+time="2024-06-11T08:41:48.699+00:00" level=warning msg="ClickHouse DB is not reachable [tcp://127.0.0.1:9000/pmm]: dial tcp 127.0.0.1:9000: connect: connection refused" component=telemetry
+time="2024-06-11T08:41:48.772+00:00" level=info msg="Downloading templates from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:41:50.008+00:00" level=info msg="Updating settings..." component=setup
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"CADVISOR_PORT=9001\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"GRAFANA_PORT=3000\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"JENKINS_PORT=8080\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"MYSQL_DATABASE=cd-workflow\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"MYSQL_PASSWORD=secret\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"MYSQL_PORT=3305\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"MYSQL_ROOT_PASSWORD=secret\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"MYSQL_USER=monitoring\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"PERCONA_HOST=443\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"PHP_PORT=9000\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"PRODUCTION_PORT=82\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"PROMETHEUS_PORT=9090\"" component=server
+time="2024-06-11T08:41:50.008+00:00" level=warning msg="unknown environment variable \"STAGING_PORT=81\"" component=server
+time="2024-06-11T08:41:50.014+00:00" level=info msg="Updating supervisord configuration..." component=setup
+time="2024-06-11T08:41:50.017+00:00" level=info msg="grafana configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="vmproxy configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="qan-api2 configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="dbaas-controller configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="prometheus configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="victoriametrics configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="vmalert configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="alertmanager configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:41:50.017+00:00" level=info msg="Checking VictoriaMetrics..." component=setup
+time="2024-06-11T08:41:50.019+00:00" level=info msg="Checking VMAlert..." component=setup
+time="2024-06-11T08:41:50.023+00:00" level=info msg="Checking Alertmanager..." component=setup
+time="2024-06-11T08:41:50.024+00:00" level=info msg="Setup completed." component=setup
+time="2024-06-11T08:41:50.025+00:00" level=info msg="Starting services..." component=main
+time="2024-06-11T08:41:50.025+00:00" level=info msg=Starting... component=victoriametrics
+time="2024-06-11T08:41:50.025+00:00" level=info msg="Starting  versionCache" component=ha-services
+time="2024-06-11T08:41:50.026+00:00" level=info msg="Starting server on http://127.0.0.1:7771/ ..." component=gRPC
+time="2024-06-11T08:41:50.026+00:00" level=info msg="Starting server on http://127.0.0.1:7772/ ..." component=JSON
+time="2024-06-11T08:41:50.027+00:00" level=info msg="Starting server on http://127.0.0.1:7773/debug\nRegistered handlers:\n\thttp://127.0.0.1:7773/debug/metrics\n\thttp://127.0.0.1:7773/debug/vars\n\thttp://127.0.0.1:7773/debug/requests\n\thttp://127.0.0.1:7773/debug/events\n\thttp://127.0.0.1:7773/debug/pprof" component=debug
+time="2024-06-11T08:41:50.027+00:00" level=info msg="Starting  cleaner" component=ha-services
+time="2024-06-11T08:41:50.027+00:00" level=info msg="Starting  agentsRegistry" component=ha-services
+time="2024-06-11T08:41:50.027+00:00" level=info msg="Starting  pmm-agent-runner" component=ha-services
+time="2024-06-11T08:41:50.027+00:00" level=info msg=Starting... component=vmalert
+time="2024-06-11T08:41:50.025+00:00" level=info msg=Starting... component=alertmanager
+time="2024-06-11T08:41:50.027+00:00" level=info msg="Starting  checks" component=ha-services
+time="2024-06-11T08:41:50.027+00:00" level=info msg=Starting... component=checks
+time="2024-06-11T08:41:50.028+00:00" level=info msg="Starting  telemetry" component=ha-services
+time="2024-06-11T08:41:50.028+00:00" level=info msg="Starting  scheduler" component=ha-services
+time="2024-06-11T08:41:50.028+00:00" level=info msg="Starting  dbaas-register" component=ha-services
+time="2024-06-11T08:41:50.147+00:00" level=info msg="Downloading advisors from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:41:50.821+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=726c41d9-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:50.824+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:41:50.824+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:41:50.826+00:00" level=warning msg="RPC /server.Server/Readiness done in 4.166881ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=726c41d9-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:51.035+00:00" level=info msg="Configuration reloaded." component=vmalert
+time="2024-06-11T08:41:51.332+00:00" level=info msg="Configuration reloaded." component=alertmanager
+time="2024-06-11T08:41:51.836+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:41:52.967+00:00" level=info msg="Starting Stream /agent.Agent/Connect ..." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:53.121+00:00" level=info msg="Connected pmm-agent: &{ID:pmm-server Version:2.42.0 MetricsPort:0}." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:53.121+00:00" level=info msg="Starting runStateChangeHandler ..." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:54.848+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=74d2ad37-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:54.908+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:41:54.918+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:41:54.919+00:00" level=warning msg="RPC /server.Server/Readiness done in 69.952241ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=74d2ad37-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:56.616+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:56.616+00:00" level=warning msg="sendSetStateRequest took 2.49425568s." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:59.123+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:41:59.123+00:00" level=warning msg="updateConfiguration took 1.684294043s." component=victoriametrics
+time="2024-06-11T08:41:59.198+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=776a5aab-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:59.199+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:41:59.199+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:41:59.213+00:00" level=warning msg="RPC /server.Server/Readiness done in 15.646788ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=776a5aab-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:59.599+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:41:59.600+00:00" level=warning msg="sendSetStateRequest took 1.983194963s." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:00.042+00:00" level=info msg=Starting... component=version-cache
+time="2024-06-11T08:42:00.042+00:00" level=info msg="Updating versions..." component=version-cache
+time="2024-06-11T08:42:00.052+00:00" level=info msg="Done. Next check in 24h0m0s." component=version-cache
+time="2024-06-11T08:42:00.852+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:42:01.881+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:01.881+00:00" level=warning msg="sendSetStateRequest took 1.27980499s." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:02.641+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7977ca6f-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:02.683+00:00" level=info msg="RPC /server.Server/Readiness done in 42.284798ms." request=7977ca6f-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:06.030+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7b7cddef-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:06.037+00:00" level=info msg="RPC /server.Server/Readiness done in 7.691299ms." request=7b7cddef-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:09.419+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7d8217bd-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:09.436+00:00" level=info msg="RPC /server.Server/Readiness done in 16.98658ms." request=7d8217bd-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:12.711+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7f784f9b-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:12.722+00:00" level=info msg="RPC /server.Server/Readiness done in 11.187991ms." request=7f784f9b-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:16.289+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=819a4920-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:16.299+00:00" level=info msg="RPC /server.Server/Readiness done in 10.542681ms." request=819a4920-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:19.666+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=839d93d3-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:19.675+00:00" level=info msg="RPC /server.Server/Readiness done in 9.213982ms." request=839d93d3-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:23.004+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=859ae9b7-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:23.034+00:00" level=info msg="RPC /server.Server/Readiness done in 29.329212ms." request=859ae9b7-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:26.280+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=878ee075-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:26.297+00:00" level=info msg="RPC /server.Server/Readiness done in 16.469169ms." request=878ee075-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:29.623+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=898ce9f2-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:29.629+00:00" level=info msg="RPC /server.Server/Readiness done in 5.985309ms." request=898ce9f2-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:32.921+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8b8421b5-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:32.928+00:00" level=info msg="RPC /server.Server/Readiness done in 7.572349ms." request=8b8421b5-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:36.110+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8d6ab20e-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:36.114+00:00" level=info msg="RPC /server.Server/Readiness done in 4.171579ms." request=8d6ab20e-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:39.280+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8f4e6f8e-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:39.288+00:00" level=info msg="RPC /server.Server/Readiness done in 7.724164ms." request=8f4e6f8e-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:41.702+00:00" level=info msg="Done runStateChangeHandler." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:41.702+00:00" level=error msg="failed to receive message: rpc error: code = Canceled desc = context canceled" agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:41.702+00:00" level=info msg="Disconnecting client: done." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:41.702+00:00" level=warning msg="Stream /agent.Agent/Connect done in 48.779245568s (quite long)." agent_id=pmm-server request=73b39e64-27ce-11ef-ab98-0242c0a8a003
+time="2024-06-11T08:42:41.755+00:00" level=warning msg="Got SIGTERM, shutting down..." component=main
+time="2024-06-11T08:42:41.755+00:00" level=info msg=Done. component=version-cache
+time="2024-06-11T08:42:41.755+00:00" level=info msg=Done. component=victoriametrics
+time="2024-06-11T08:42:41.755+00:00" level=info msg=Done. component=alertmanager
+time="2024-06-11T08:42:41.755+00:00" level=info msg=Done. component=vmalert
+time="2024-06-11T08:42:41.755+00:00" level=info msg="Server stopped." component=JSON
+time="2024-06-11T08:42:41.756+00:00" level=info msg="Stopping  &{telemetry 0x273bd80 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:42:41.756+00:00" level=info msg="Server stopped." component=debug
+time="2024-06-11T08:42:41.756+00:00" level=info msg=Done. component=checks
+time="2024-06-11T08:42:41.757+00:00" level=info msg="Stopping  &{scheduler 0x273bd20 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:42:41.757+00:00" level=info msg="Stopping  &{versionCache 0x273bcc0 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:42:41.757+00:00" level=info msg="Stopping  &{dbaas-register 0x272ef00 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:42:41.757+00:00" level=info msg="Stopping  &{cleaner 0x273b360 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:42:41.757+00:00" level=info msg="Stopping  &{agentsRegistry 0x273cc60 0x273c8e0}" component=ha-services
+time="2024-06-11T08:42:41.757+00:00" level=info msg="Stopping  &{pmm-agent-runner 0x273c860 0x273c7a0}" component=ha-services
+time="2024-06-11T08:42:41.771+00:00" level=info msg="Stopping  &{checks 0x273bfa0 {0 0} 0x4b4fc0}" component=ha-services
+time="2024-06-11T08:42:41.778+00:00" level=error msg="/usr/local/bin/supervisorctl maintail -f: wait failed: signal: killed" component=supervisord
+time="2024-06-11T08:42:41.780+00:00" level=info msg="Server stopped." component=gRPC
+time="2024-06-11T08:42:41.792+00:00" level=info msg=Done. component=main
+time="2024-06-11T08:43:13.390+00:00" level=info msg="Log level: info."
+time="2024-06-11T08:43:13.400+00:00" level=info msg="Using default metrics config" component=config
+time="2024-06-11T08:43:13.439+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:43:13.443+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:43:15.322+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:43:15.322+00:00" level=info msg="Environment variable \"PERCONA_PLATFORM_API_TIMEOUT\" is not set, using \"30s\" as a default timeout for platform API." component="portal client"
+time="2024-06-11T08:43:15.515+00:00" level=warning msg="ClickHouse DB is not reachable [tcp://127.0.0.1:9000/pmm]: dial tcp 127.0.0.1:9000: connect: connection refused" component=telemetry
+time="2024-06-11T08:43:15.770+00:00" level=info msg="Downloading templates from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:43:17.153+00:00" level=info msg="Updating settings..." component=setup
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"CADVISOR_PORT=9001\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"GRAFANA_PORT=3000\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"JENKINS_PORT=8080\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"MYSQL_DATABASE=cd-workflow\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"MYSQL_PASSWORD=secret\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"MYSQL_PORT=3305\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"MYSQL_ROOT_PASSWORD=secret\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"MYSQL_USER=monitoring\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"PERCONA_HOST=8081\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"PERCONA_HOST_SSL=443\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"PHP_PORT=9000\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"PRODUCTION_PORT=82\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"PROMETHEUS_PORT=9090\"" component=server
+time="2024-06-11T08:43:17.154+00:00" level=warning msg="unknown environment variable \"STAGING_PORT=81\"" component=server
+time="2024-06-11T08:43:17.181+00:00" level=info msg="Updating supervisord configuration..." component=setup
+time="2024-06-11T08:43:17.214+00:00" level=info msg="prometheus configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.214+00:00" level=info msg="vmalert configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="vmproxy configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="qan-api2 configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="dbaas-controller configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="alertmanager configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="victoriametrics configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="grafana configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:43:17.215+00:00" level=info msg="Checking VictoriaMetrics..." component=setup
+time="2024-06-11T08:43:17.224+00:00" level=info msg="Checking VMAlert..." component=setup
+time="2024-06-11T08:43:17.231+00:00" level=info msg="Checking Alertmanager..." component=setup
+time="2024-06-11T08:43:17.235+00:00" level=info msg="Setup completed." component=setup
+time="2024-06-11T08:43:17.236+00:00" level=info msg="Starting services..." component=main
+time="2024-06-11T08:43:17.236+00:00" level=info msg="Starting  versionCache" component=ha-services
+time="2024-06-11T08:43:17.236+00:00" level=info msg=Starting... component=vmalert
+time="2024-06-11T08:43:17.236+00:00" level=info msg=Starting... component=victoriametrics
+time="2024-06-11T08:43:17.241+00:00" level=info msg="Starting  cleaner" component=ha-services
+time="2024-06-11T08:43:17.245+00:00" level=info msg=Starting... component=alertmanager
+time="2024-06-11T08:43:17.249+00:00" level=info msg="Starting  agentsRegistry" component=ha-services
+time="2024-06-11T08:43:17.249+00:00" level=info msg="Starting  pmm-agent-runner" component=ha-services
+time="2024-06-11T08:43:17.266+00:00" level=info msg="Starting  checks" component=ha-services
+time="2024-06-11T08:43:17.266+00:00" level=info msg=Starting... component=checks
+time="2024-06-11T08:43:17.267+00:00" level=info msg="Starting  telemetry" component=ha-services
+time="2024-06-11T08:43:17.267+00:00" level=info msg="Starting  scheduler" component=ha-services
+time="2024-06-11T08:43:17.269+00:00" level=info msg="Starting server on http://127.0.0.1:7771/ ..." component=gRPC
+time="2024-06-11T08:43:17.270+00:00" level=info msg="Starting server on http://127.0.0.1:7772/ ..." component=JSON
+time="2024-06-11T08:43:17.270+00:00" level=info msg="Starting server on http://127.0.0.1:7773/debug\nRegistered handlers:\n\thttp://127.0.0.1:7773/debug/metrics\n\thttp://127.0.0.1:7773/debug/vars\n\thttp://127.0.0.1:7773/debug/requests\n\thttp://127.0.0.1:7773/debug/events\n\thttp://127.0.0.1:7773/debug/pprof" component=debug
+time="2024-06-11T08:43:17.270+00:00" level=info msg="Starting  dbaas-register" component=ha-services
+time="2024-06-11T08:43:17.567+00:00" level=info msg="Downloading advisors from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:43:18.239+00:00" level=info msg="Configuration reloaded." component=vmalert
+time="2024-06-11T08:43:18.861+00:00" level=info msg="Configuration reloaded." component=alertmanager
+time="2024-06-11T08:43:19.020+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a6fe145a-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:19.026+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:19.026+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:19.029+00:00" level=warning msg="RPC /server.Server/Readiness done in 9.302182ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=a6fe145a-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:20.389+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:43:20.389+00:00" level=warning msg="updateConfiguration took 1.934345103s." component=victoriametrics
+time="2024-06-11T08:43:21.694+00:00" level=info msg="Starting Stream /agent.Agent/Connect ..." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:22.423+00:00" level=info msg="Connected pmm-agent: &{ID:pmm-server Version:2.42.0 MetricsPort:0}." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:22.423+00:00" level=info msg="Starting runStateChangeHandler ..." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:22.449+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a9098d69-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:22.455+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:22.455+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:22.456+00:00" level=warning msg="RPC /server.Server/Readiness done in 7.209381ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=a9098d69-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:24.114+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:26.039+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:43:27.108+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=abd05db1-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:27.112+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:27.116+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:27.136+00:00" level=warning msg="RPC /server.Server/Readiness done in 27.637205ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=abd05db1-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:27.240+00:00" level=info msg=Starting... component=version-cache
+time="2024-06-11T08:43:27.259+00:00" level=info msg="Updating versions..." component=version-cache
+time="2024-06-11T08:43:27.356+00:00" level=info msg="Done. Next check in 24h0m0s." component=version-cache
+time="2024-06-11T08:43:27.473+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:27.477+00:00" level=warning msg="sendSetStateRequest took 2.36056732s." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:28.386+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:43:28.386+00:00" level=warning msg="updateConfiguration took 1.344796653s." component=victoriametrics
+time="2024-06-11T08:43:30.008+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:30.008+00:00" level=warning msg="sendSetStateRequest took 1.523514156s." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:30.545+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=addce4b3-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:30.547+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:30.547+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:30.550+00:00" level=warning msg="RPC /server.Server/Readiness done in 4.526423ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=addce4b3-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:34.378+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=b025cc2d-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:34.381+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:34.381+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:34.387+00:00" level=warning msg="RPC /server.Server/Readiness done in 8.197587ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=b025cc2d-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:35.669+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:35.676+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:35.712+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:35.712+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:37.642+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=b217c022-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:37.645+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:37.645+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:37.648+00:00" level=warning msg="RPC /server.Server/Readiness done in 6.430643ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=b217c022-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:40.794+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=b3f8adc5-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:40.797+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:40.797+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:40.799+00:00" level=warning msg="RPC /server.Server/Readiness done in 5.793421ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=b3f8adc5-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:43.952+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=b5daadd5-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:43.955+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:43.955+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:43.959+00:00" level=warning msg="RPC /server.Server/Readiness done in 6.618937ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=b5daadd5-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:47.093+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=b7b9f268-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:47.096+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:47.096+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:47.098+00:00" level=warning msg="RPC /server.Server/Readiness done in 4.388729ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=b7b9f268-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:49.005+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:49.007+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:49.010+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:49.012+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:43:50.285+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=b9a104ce-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:50.290+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:50.290+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:50.291+00:00" level=warning msg="RPC /server.Server/Readiness done in 5.521934ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=b9a104ce-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:53.436+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=bb81d856-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:53.440+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:53.440+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:53.443+00:00" level=warning msg="RPC /server.Server/Readiness done in 6.156897ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=bb81d856-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:56.589+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=bd62d29d-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:56.591+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:56.591+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:56.593+00:00" level=warning msg="RPC /server.Server/Readiness done in 4.593921ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=bd62d29d-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:59.731+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=bf422df3-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:43:59.734+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:43:59.734+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:43:59.736+00:00" level=warning msg="RPC /server.Server/Readiness done in 5.023217ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=bf422df3-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:02.851+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=c11e67c4-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:02.853+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:02.853+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:02.855+00:00" level=warning msg="RPC /server.Server/Readiness done in 4.225504ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=c11e67c4-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:05.974+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=c2faea7f-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:05.978+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:05.979+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:05.982+00:00" level=warning msg="RPC /server.Server/Readiness done in 7.657506ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=c2faea7f-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:09.111+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=c4d999d3-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:09.115+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:09.115+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:09.118+00:00" level=warning msg="RPC /server.Server/Readiness done in 6.893757ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=c4d999d3-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:12.196+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=c6b05195-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:12.198+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:12.198+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:12.200+00:00" level=warning msg="RPC /server.Server/Readiness done in 4.17172ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=c6b05195-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:15.296+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=c88947ac-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:15.297+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:15.297+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:15.299+00:00" level=warning msg="RPC /server.Server/Readiness done in 3.285721ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=c88947ac-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:18.388+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=ca6113d4-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:18.389+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:18.389+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:18.390+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.479531ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=ca6113d4-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:21.237+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:44:21.237+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:44:21.238+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:44:21.239+00:00" level=warning msg="Get \"http://127.0.0.1:3000/api/user\": dial tcp 127.0.0.1:3000: connect: connection refused" component=grafana/auth req="GET /favicon.ico"
+time="2024-06-11T08:44:21.475+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=cc3831e6-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:21.477+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:21.477+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:21.477+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.35999ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=cc3831e6-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:24.553+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=ce0dcc11-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:24.555+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:24.555+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:24.556+00:00" level=warning msg="RPC /server.Server/Readiness done in 3.428053ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=ce0dcc11-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:27.625+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=cfe285bc-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:27.625+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:27.625+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:27.627+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.108951ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=cfe285bc-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:30.697+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=d1b7508f-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:30.698+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:30.698+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:30.698+00:00" level=warning msg="RPC /server.Server/Readiness done in 1.410963ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=d1b7508f-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:33.769+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=d38c29c4-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:33.770+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:33.770+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:33.772+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.987181ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=d38c29c4-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:36.840+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=d560bd48-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:36.841+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:36.841+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:36.843+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.251393ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=d560bd48-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:39.892+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=d73260c8-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:39.893+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:39.893+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:39.894+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.072232ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=d73260c8-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:42.972+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=d9086365-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:42.974+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:42.974+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:42.975+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.434453ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=d9086365-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:46.036+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=dadbda26-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:46.037+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:46.037+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:46.038+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.33222ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=dadbda26-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:49.102+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=dcafc209-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:49.104+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:49.105+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:49.105+00:00" level=warning msg="RPC /server.Server/Readiness done in 3.040285ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=dcafc209-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:51.102+00:00" level=warning msg="Failed to get artifacts: context deadline exceeded" component=backups/metrics
+time="2024-06-11T08:44:52.185+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=de8639cb-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:52.187+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:52.187+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:52.187+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.007313ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=de8639cb-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:55.249+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=e059b4c5-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:55.251+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:55.251+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:55.252+00:00" level=warning msg="RPC /server.Server/Readiness done in 3.129681ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=e059b4c5-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:58.318+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=e22def56-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:44:58.319+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:44:58.319+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:44:58.321+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.670639ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=e22def56-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:01.100+00:00" level=warning msg="Failed to get artifacts: context deadline exceeded" component=backups/metrics
+time="2024-06-11T08:45:01.100+00:00" level=error msg="context deadline exceeded" request=inventoryMetrics
+time="2024-06-11T08:45:01.432+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=e4091329-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:01.434+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:45:01.434+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:45:01.437+00:00" level=warning msg="RPC /server.Server/Readiness done in 5.383815ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=e4091329-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:04.521+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=e5e08c9a-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:04.522+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:45:04.522+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:45:04.523+00:00" level=warning msg="RPC /server.Server/Readiness done in 1.751328ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=e5e08c9a-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:07.609+00:00" level=info msg="Done runStateChangeHandler." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:07.609+00:00" level=error msg="failed to receive message: rpc error: code = Canceled desc = context canceled" agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:07.609+00:00" level=info msg="Disconnecting client: done." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:07.609+00:00" level=warning msg="Stream /agent.Agent/Connect done in 1m45.980898469s (quite long)." agent_id=pmm-server request=a8964f91-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:07.622+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=e7b9b8b7-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:07.623+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:45:07.623+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:45:07.625+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.106143ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=e7b9b8b7-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:10.673+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=e98b2b26-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:10.674+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:45:10.674+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:45:10.676+00:00" level=warning msg="RPC /server.Server/Readiness done in 3.568709ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=e98b2b26-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:11.080+00:00" level=warning msg="Failed to get artifacts: context deadline exceeded" component=backups/metrics
+time="2024-06-11T08:45:11.080+00:00" level=error msg="context deadline exceeded" request=inventoryMetrics
+time="2024-06-11T08:45:13.751+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=eb60cabc-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:45:13.752+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:45:13.752+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:45:13.754+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.734443ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=eb60cabc-27ce-11ef-8ca9-0242c0a8b004
+time="2024-06-11T08:52:59.199+00:00" level=info msg="Log level: info."
+time="2024-06-11T08:52:59.210+00:00" level=info msg="Using default metrics config" component=config
+time="2024-06-11T08:52:59.240+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:52:59.244+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:52:59.294+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:00.295+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:00.310+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:01.311+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:01.313+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:02.314+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:02.322+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:03.323+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:03.324+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:04.324+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:04.343+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:05.344+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:05.348+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:06.349+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:06.351+00:00" level=warning msg="Failed to migrate database: pq: the database system is starting up." component=migration
+time="2024-06-11T08:53:07.352+00:00" level=info msg="Migrating database..." component=migration
+time="2024-06-11T08:53:07.557+00:00" level=info msg="Using default Percona Platform address \"https://check.percona.com\"."
+time="2024-06-11T08:53:07.557+00:00" level=info msg="Environment variable \"PERCONA_PLATFORM_API_TIMEOUT\" is not set, using \"30s\" as a default timeout for platform API." component="portal client"
+time="2024-06-11T08:53:07.598+00:00" level=info msg="Downloading templates from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:53:08.509+00:00" level=info msg="Updating settings..." component=setup
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"CADVISOR_PORT=9001\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"GRAFANA_PORT=3000\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"JENKINS_PORT=8080\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"MYSQL_DATABASE=cd-workflow\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"MYSQL_PASSWORD=secret\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"MYSQL_PORT=3305\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"MYSQL_ROOT_PASSWORD=secret\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"MYSQL_USER=monitoring\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"PERCONA_HOST=8081\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"PERCONA_HOST_SSL=443\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"PHP_PORT=9000\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"PRODUCTION_PORT=82\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"PROMETHEUS_PORT=9090\"" component=server
+time="2024-06-11T08:53:08.509+00:00" level=warning msg="unknown environment variable \"STAGING_PORT=81\"" component=server
+time="2024-06-11T08:53:08.510+00:00" level=info msg="Updating supervisord configuration..." component=setup
+time="2024-06-11T08:53:08.512+00:00" level=info msg="victoriametrics configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="vmproxy configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="alertmanager configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="dbaas-controller configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="prometheus configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="vmalert configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="grafana configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="qan-api2 configuration not changed, doing nothing." component=supervisord
+time="2024-06-11T08:53:08.512+00:00" level=info msg="Checking VictoriaMetrics..." component=setup
+time="2024-06-11T08:53:08.513+00:00" level=info msg="Checking VMAlert..." component=setup
+time="2024-06-11T08:53:08.514+00:00" level=info msg="Checking Alertmanager..." component=setup
+time="2024-06-11T08:53:08.515+00:00" level=info msg="Setup completed." component=setup
+time="2024-06-11T08:53:08.516+00:00" level=info msg="Starting services..." component=main
+time="2024-06-11T08:53:08.516+00:00" level=info msg=Starting... component=alertmanager
+time="2024-06-11T08:53:08.516+00:00" level=info msg=Starting... component=vmalert
+time="2024-06-11T08:53:08.516+00:00" level=info msg=Starting... component=victoriametrics
+time="2024-06-11T08:53:08.516+00:00" level=info msg="Starting  telemetry" component=ha-services
+time="2024-06-11T08:53:08.516+00:00" level=info msg="Starting server on http://127.0.0.1:7771/ ..." component=gRPC
+time="2024-06-11T08:53:08.516+00:00" level=info msg="Starting server on http://127.0.0.1:7772/ ..." component=JSON
+time="2024-06-11T08:53:08.518+00:00" level=info msg="Starting server on http://127.0.0.1:7773/debug\nRegistered handlers:\n\thttp://127.0.0.1:7773/debug/metrics\n\thttp://127.0.0.1:7773/debug/vars\n\thttp://127.0.0.1:7773/debug/requests\n\thttp://127.0.0.1:7773/debug/events\n\thttp://127.0.0.1:7773/debug/pprof" component=debug
+time="2024-06-11T08:53:08.518+00:00" level=info msg="Starting  scheduler" component=ha-services
+time="2024-06-11T08:53:08.518+00:00" level=info msg="Starting  versionCache" component=ha-services
+time="2024-06-11T08:53:08.518+00:00" level=info msg="Starting  cleaner" component=ha-services
+time="2024-06-11T08:53:08.518+00:00" level=info msg="Starting  agentsRegistry" component=ha-services
+time="2024-06-11T08:53:08.518+00:00" level=info msg="Starting  pmm-agent-runner" component=ha-services
+time="2024-06-11T08:53:08.519+00:00" level=info msg="Starting  checks" component=ha-services
+time="2024-06-11T08:53:08.519+00:00" level=info msg=Starting... component=checks
+time="2024-06-11T08:53:08.533+00:00" level=info msg="Starting  dbaas-register" component=ha-services
+time="2024-06-11T08:53:08.674+00:00" level=info msg="Downloading advisors from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:53:08.891+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=06956846-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:08.891+00:00" level=error msg="grafana status check failed: Get \"http://127.0.0.1:3000/api/health\": dial tcp 127.0.0.1:3000: connect: connection refused"
+time="2024-06-11T08:53:08.891+00:00" level=error msg="grafana readiness check failed: cannot reach Grafana API" component=server
+time="2024-06-11T08:53:08.893+00:00" level=warning msg="RPC /server.Server/Readiness done in 2.444513ms with gRPC error: rpc error: code = Internal desc = PMM Server is not ready yet." request=06956846-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:09.518+00:00" level=info msg="Configuration reloaded." component=vmalert
+time="2024-06-11T08:53:09.766+00:00" level=info msg="Configuration reloaded." component=alertmanager
+time="2024-06-11T08:53:10.076+00:00" level=info msg="Starting Stream /agent.Agent/Connect ..." agent_id=pmm-server request=074a5140-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:10.086+00:00" level=info msg="Connected pmm-agent: &{ID:pmm-server Version:2.42.0 MetricsPort:0}." agent_id=pmm-server request=074a5140-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:10.086+00:00" level=info msg="Starting runStateChangeHandler ..." agent_id=pmm-server request=074a5140-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:10.104+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:53:11.732+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=074a5140-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:12.012+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=0871be21-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:12.027+00:00" level=info msg="RPC /server.Server/Readiness done in 15.074751ms." request=0871be21-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:12.766+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:53:12.882+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=074a5140-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:13.817+00:00" level=info msg="Configuration reloaded." component=victoriametrics
+time="2024-06-11T08:53:14.010+00:00" level=info msg="SetState response: ." agent_id=pmm-server request=074a5140-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:15.112+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=0a4ac06d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:15.117+00:00" level=info msg="RPC /server.Server/Readiness done in 5.043919ms." request=0a4ac06d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:18.207+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=0c2306e1-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:18.210+00:00" level=info msg="RPC /server.Server/Readiness done in 2.507831ms." request=0c2306e1-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:18.519+00:00" level=info msg=Starting... component=version-cache
+time="2024-06-11T08:53:18.519+00:00" level=info msg="Updating versions..." component=version-cache
+time="2024-06-11T08:53:18.527+00:00" level=info msg="Done. Next check in 24h0m0s." component=version-cache
+time="2024-06-11T08:53:21.282+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=0df83e9d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:21.286+00:00" level=info msg="RPC /server.Server/Readiness done in 3.33237ms." request=0df83e9d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:24.362+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=0fce2913-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:24.365+00:00" level=info msg="RPC /server.Server/Readiness done in 3.260038ms." request=0fce2913-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:27.434+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=11a2f6fa-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:27.437+00:00" level=info msg="RPC /server.Server/Readiness done in 2.21257ms." request=11a2f6fa-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:30.509+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=137825c4-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:30.512+00:00" level=info msg="RPC /server.Server/Readiness done in 2.693043ms." request=137825c4-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:33.612+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=1551ab67-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:33.614+00:00" level=info msg="RPC /server.Server/Readiness done in 1.616664ms." request=1551ab67-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:36.720+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=172bdc42-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:36.724+00:00" level=info msg="RPC /server.Server/Readiness done in 3.834338ms." request=172bdc42-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:39.796+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=1901278b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:39.798+00:00" level=info msg="RPC /server.Server/Readiness done in 2.359898ms." request=1901278b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:42.869+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=1ad60a47-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:42.872+00:00" level=info msg="RPC /server.Server/Readiness done in 3.005205ms." request=1ad60a47-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:46.103+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=1cc39aa2-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:46.120+00:00" level=info msg="RPC /server.Server/Readiness done in 16.483062ms." request=1cc39aa2-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:49.314+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=1ead97b6-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:49.321+00:00" level=info msg="RPC /server.Server/Readiness done in 6.692401ms." request=1ead97b6-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:52.447+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=208b94d1-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:52.472+00:00" level=info msg="RPC /server.Server/Readiness done in 25.314863ms." request=208b94d1-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:55.654+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=2274e211-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:55.665+00:00" level=info msg="RPC /server.Server/Readiness done in 11.340483ms." request=2274e211-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:58.782+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=24524bbf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:53:58.788+00:00" level=info msg="RPC /server.Server/Readiness done in 5.519694ms." request=24524bbf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:01.891+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=262ca8b8-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:01.898+00:00" level=info msg="RPC /server.Server/Readiness done in 6.349935ms." request=262ca8b8-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:05.004+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=2807a929-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:05.015+00:00" level=info msg="RPC /server.Server/Readiness done in 10.58949ms." request=2807a929-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:08.205+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=29f009d3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:08.217+00:00" level=info msg="RPC /server.Server/Readiness done in 11.837495ms." request=29f009d3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:09.402+00:00" level=info msg="Downloading advisors from https://check.percona.com ..." component="portal client"
+time="2024-06-11T08:54:10.266+00:00" level=info msg="Executing check: mysql_version_eol_57 with interval: standard" component=checks
+time="2024-06-11T08:54:10.273+00:00" level=info msg="Executing check: mysql_version with interval: standard" component=checks
+time="2024-06-11T08:54:10.274+00:00" level=info msg="Executing check: mysql_unsupported_version_check with interval: standard" component=checks
+time="2024-06-11T08:54:10.276+00:00" level=info msg="Executing check: postgresql_eol_check with interval: standard" component=checks
+time="2024-06-11T08:54:10.279+00:00" level=info msg="Executing check: postgresql_unsupported_check with interval: standard" component=checks
+time="2024-06-11T08:54:10.298+00:00" level=info msg="Executing check: postgresql_cve_check with interval: standard" component=checks
+time="2024-06-11T08:54:10.299+00:00" level=info msg="Executing check: postgresql_extension_check with interval: standard" component=checks
+time="2024-06-11T08:54:10.300+00:00" level=info msg="Executing check: postgresql_version_check with interval: standard" component=checks
+time="2024-06-11T08:54:10.302+00:00" level=info msg="Executing check: mongodb_EOL with interval: standard" component=checks
+time="2024-06-11T08:54:10.304+00:00" level=info msg="Executing check: mongodb_unsupported_version with interval: standard" component=checks
+time="2024-06-11T08:54:10.316+00:00" level=info msg="Executing check: mongodb_version with interval: standard" component=checks
+time="2024-06-11T08:54:10.350+00:00" level=info msg="Executing check: mongodb_cve_version with interval: standard" component=checks
+time="2024-06-11T08:54:11.701+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=2c05882e-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:11.718+00:00" level=info msg="RPC /server.Server/Readiness done in 16.878735ms." request=2c05882e-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:14.854+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=2de6a601-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:14.857+00:00" level=info msg="RPC /server.Server/Readiness done in 2.589501ms." request=2de6a601-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:17.988+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=2fc4d9d9-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:17.990+00:00" level=info msg="RPC /server.Server/Readiness done in 1.77527ms." request=2fc4d9d9-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:21.099+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=319f9122-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:21.106+00:00" level=info msg="RPC /server.Server/Readiness done in 7.286361ms." request=319f9122-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:24.157+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=337215fd-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:24.159+00:00" level=info msg="RPC /server.Server/Readiness done in 2.807889ms." request=337215fd-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:27.244+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=35493d5b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:27.248+00:00" level=info msg="RPC /server.Server/Readiness done in 3.500872ms." request=35493d5b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:30.332+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=37205d23-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:30.335+00:00" level=info msg="RPC /server.Server/Readiness done in 3.009997ms." request=37205d23-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:33.449+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=38fc10df-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:33.453+00:00" level=info msg="RPC /server.Server/Readiness done in 3.576153ms." request=38fc10df-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:36.515+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3acfd1af-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:36.518+00:00" level=info msg="RPC /server.Server/Readiness done in 2.747635ms." request=3acfd1af-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:37.721+00:00" level=info msg="Starting RPC /inventory.Services/ListActiveServiceTypes ..." request=3b87e30d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:37.732+00:00" level=info msg="RPC /inventory.Services/ListActiveServiceTypes done in 10.870173ms." request=3b87e30d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:37.898+00:00" level=info msg="Starting RPC /server.Server/GetSettings ..." request=3ba2d6f5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:37.910+00:00" level=info msg="RPC /server.Server/GetSettings done in 11.900793ms." request=3ba2d6f5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:37.950+00:00" level=info msg="Starting RPC /platform.Platform/UserStatus ..." request=3baad5b5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:37.974+00:00" level=warning msg="RPC /platform.Platform/UserStatus done in 23.67466ms with gRPC error: rpc error: code = Unauthenticated desc = Failed to get user access token. Please sign in using your Percona Portal account." request=3baad5b5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.018+00:00" level=info msg="Starting RPC /management.SecurityChecks/ListAdvisors ..." request=3bb533c3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.021+00:00" level=info msg="RPC /management.SecurityChecks/ListAdvisors done in 3.07521ms." request=3bb533c3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.065+00:00" level=info msg="Starting RPC /user.User/GetUser ..." request=3bbc5f2f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.177+00:00" level=info msg="RPC /user.User/GetUser done in 111.544574ms." request=3bbc5f2f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.228+00:00" level=info msg="Starting RPC /platform.Platform/ServerInfo ..." request=3bd54278-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.230+00:00" level=error msg="Failed to get SSO details: PMM Server is not connected to Portal" component=platform
+time="2024-06-11T08:54:38.231+00:00" level=info msg="RPC /platform.Platform/ServerInfo done in 2.280451ms." request=3bd54278-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.953+00:00" level=info msg="Starting RPC /management.SecurityChecks/ListFailedServices ..." request=3c43ce01-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.956+00:00" level=info msg="RPC /management.SecurityChecks/ListFailedServices done in 2.789065ms." request=3c43ce01-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:38.973+00:00" level=info msg="Starting RPC /server.Server/CheckUpdates ..." request=3c46e59f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:39.610+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3ca80677-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:39.612+00:00" level=info msg="RPC /server.Server/Readiness done in 2.798122ms." request=3ca80677-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:42.690+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=3e7e18a6-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:42.693+00:00" level=info msg="RPC /server.Server/Readiness done in 2.7012ms." request=3e7e18a6-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:45.766+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=405375b3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:45.769+00:00" level=info msg="RPC /server.Server/Readiness done in 2.427192ms." request=405375b3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:47.930+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="POST /v1/ui-events/Store"
+time="2024-06-11T08:54:47.939+00:00" level=info msg="Starting RPC /uievents.UIEvents/Store ..." request=419ef435-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:47.946+00:00" level=info msg="RPC /uievents.UIEvents/Store done in 5.596189ms." request=419ef435-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:48.865+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=422c5aaf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:48.869+00:00" level=info msg="RPC /server.Server/Readiness done in 3.251912ms." request=422c5aaf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:51.926+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=43ff51cf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:51.929+00:00" level=info msg="RPC /server.Server/Readiness done in 3.104983ms." request=43ff51cf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:55.028+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=45d8bd72-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:55.031+00:00" level=info msg="RPC /server.Server/Readiness done in 2.402627ms." request=45d8bd72-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:58.130+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=47b21906-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:54:58.135+00:00" level=info msg="RPC /server.Server/Readiness done in 4.423551ms." request=47b21906-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:01.211+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=49881b21-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:01.215+00:00" level=info msg="RPC /server.Server/Readiness done in 4.029925ms." request=49881b21-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:04.328+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=4b63bbf3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:04.338+00:00" level=info msg="RPC /server.Server/Readiness done in 9.966011ms." request=4b63bbf3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:07.434+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=4d3db789-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:07.436+00:00" level=info msg="RPC /server.Server/Readiness done in 2.341804ms." request=4d3db789-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:08.953+00:00" level=error msg="pmm-update -check output: ProjectName: pmm-update\nVersion: 2.42.0\nPMMVersion: 2.42.0\nTimestamp: 2024-06-06 09:48:19 (UTC)\nFullCommit: 74e57527735bd062c4bd37adbd89c31bb14ebc15\nStarting \"yum --verbose info installed pmm-managed\" ...\nLoaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade\nYUM version: 4.14.0\ncachedir: /var/cache/dnf\nUser-Agent: constructed: 'libdnf (Oracle Linux Server 9.4; server; Linux.x86_64)'\nInstalled Packages\nName         : pmm-managed\nVersion      : 2.42.0\nRelease      : 20.2406060943.74e5752.el9\nArchitecture : x86_64\nSize         : 145 M\nSource       : pmm-managed-2.42.0-20.2406060943.74e5752.el9.src.rpm\nRepository   : @System\nFrom repo    : local\nPackager     : None\nBuildtime    : Thu 06 Jun 2024 09:43:53 AM UTC\nInstall time : Thu 06 Jun 2024 03:38:52 PM UTC\nInstalled by : System <unset>\nSummary      : Percona Monitoring and Management management daemon\nURL          : https://github.com/percona/pmm\nLicense      : AGPLv3\nDescription  : pmm-managed manages configuration of PMM server components (VictoriaMetrics,\n             : Grafana, etc.) and exposes API for that. Those APIs are used by pmm-admin tool.\n             : See PMM docs for more information.\n\nStarting \"yum --verbose info updates pmm-managed\" ...\nLoaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade\nYUM version: 4.14.0\ncachedir: /var/cache/dnf\nUser-Agent: constructed: 'libdnf (Oracle Linux Server 9.4; server; Linux.x86_64)'\nrepo: downloading from remote: ol9_developer_EPEL\nFailed to retrieve a default SELinux context\nFailed to open a SELinux labeling handle: No such file or directory\nOracle Linux 9 EPEL Packages for Development (x 2.9 MB/s |  65 MB     00:22    \n. Error: signal: killed" component=supervisord/pmm-update-checker
+time="2024-06-11T08:55:08.953+00:00" level=warning msg="RPC /server.Server/CheckUpdates done in 30.001411654s with gRPC error: rpc error: code = Unavailable desc = failed to check for updates" request=3c46e59f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:08.970+00:00" level=info msg="Starting RPC /server.Server/CheckUpdates ..." request=4e2817dd-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:08.970+00:00" level=info msg="RPC /server.Server/CheckUpdates done in 59.683µs." request=4e2817dd-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:10.776+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=4f3b9a0a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:10.780+00:00" level=info msg="RPC /server.Server/Readiness done in 4.721181ms." request=4f3b9a0a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:13.853+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=51112ab7-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:13.857+00:00" level=info msg="RPC /server.Server/Readiness done in 4.108076ms." request=51112ab7-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:17.005+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=52f20d02-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:17.037+00:00" level=info msg="RPC /server.Server/Readiness done in 32.093967ms." request=52f20d02-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:17.930+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="POST /v1/ui-events/Store"
+time="2024-06-11T08:55:17.938+00:00" level=info msg="Starting RPC /uievents.UIEvents/Store ..." request=53808e38-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:17.939+00:00" level=info msg="RPC /uievents.UIEvents/Store done in 277.184µs." request=53808e38-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:20.107+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=54cb7276-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:20.109+00:00" level=info msg="RPC /server.Server/Readiness done in 2.340779ms." request=54cb7276-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:23.159+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=569d30d0-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:23.167+00:00" level=info msg="RPC /server.Server/Readiness done in 7.284848ms." request=569d30d0-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:26.242+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=58737fae-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:26.244+00:00" level=info msg="RPC /server.Server/Readiness done in 2.767724ms." request=58737fae-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:27.125+00:00" level=info msg="Starting RPC /management.SecurityChecks/ListFailedServices ..." request=58fa4680-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:27.127+00:00" level=info msg="RPC /management.SecurityChecks/ListFailedServices done in 2.147122ms." request=58fa4680-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:27.139+00:00" level=info msg="Starting RPC /server.Server/CheckUpdates ..." request=58fc6110-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:27.915+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="POST /v1/ui-events/Store"
+time="2024-06-11T08:55:27.917+00:00" level=info msg="Starting RPC /uievents.UIEvents/Store ..." request=59731a62-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:27.917+00:00" level=info msg="RPC /uievents.UIEvents/Store done in 109.483µs." request=59731a62-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:29.303+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5a469acb-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:29.306+00:00" level=info msg="RPC /server.Server/Readiness done in 3.049866ms." request=5a469acb-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:32.387+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5c1d4d0c-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:32.390+00:00" level=info msg="RPC /server.Server/Readiness done in 2.993582ms." request=5c1d4d0c-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:35.571+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5e031da8-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:35.575+00:00" level=info msg="RPC /server.Server/Readiness done in 3.378143ms." request=5e031da8-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:38.659+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=5fda3c6a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:38.665+00:00" level=info msg="RPC /server.Server/Readiness done in 6.115843ms." request=5fda3c6a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:41.741+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=61b084c9-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:41.744+00:00" level=info msg="RPC /server.Server/Readiness done in 3.390468ms." request=61b084c9-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:44.813+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=638541c2-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:44.814+00:00" level=info msg="RPC /server.Server/Readiness done in 1.423211ms." request=638541c2-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:47.885+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=655a1648-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:47.888+00:00" level=info msg="RPC /server.Server/Readiness done in 2.734129ms." request=655a1648-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:50.959+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=672f08b1-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:50.961+00:00" level=info msg="RPC /server.Server/Readiness done in 2.8075ms." request=672f08b1-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:54.015+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=69015317-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:54.018+00:00" level=info msg="RPC /server.Server/Readiness done in 3.263358ms." request=69015317-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:57.100+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=6ad8246e-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:57.105+00:00" level=info msg="RPC /server.Server/Readiness done in 4.701789ms." request=6ad8246e-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:57.119+00:00" level=error msg="pmm-update -check output: ProjectName: pmm-update\nVersion: 2.42.0\nPMMVersion: 2.42.0\nTimestamp: 2024-06-06 09:48:19 (UTC)\nFullCommit: 74e57527735bd062c4bd37adbd89c31bb14ebc15\nStarting \"yum --verbose info installed pmm-managed\" ...\nLoaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade\nYUM version: 4.14.0\ncachedir: /var/cache/dnf\nUser-Agent: constructed: 'libdnf (Oracle Linux Server 9.4; server; Linux.x86_64)'\nInstalled Packages\nName         : pmm-managed\nVersion      : 2.42.0\nRelease      : 20.2406060943.74e5752.el9\nArchitecture : x86_64\nSize         : 145 M\nSource       : pmm-managed-2.42.0-20.2406060943.74e5752.el9.src.rpm\nRepository   : @System\nFrom repo    : local\nPackager     : None\nBuildtime    : Thu 06 Jun 2024 09:43:53 AM UTC\nInstall time : Thu 06 Jun 2024 03:38:52 PM UTC\nInstalled by : System <unset>\nSummary      : Percona Monitoring and Management management daemon\nURL          : https://github.com/percona/pmm\nLicense      : AGPLv3\nDescription  : pmm-managed manages configuration of PMM server components (VictoriaMetrics,\n             : Grafana, etc.) and exposes API for that. Those APIs are used by pmm-admin tool.\n             : See PMM docs for more information.\n\nStarting \"yum --verbose info updates pmm-managed\" ...\nLoaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade\nYUM version: 4.14.0\ncachedir: /var/cache/dnf\nUser-Agent: constructed: 'libdnf (Oracle Linux Server 9.4; server; Linux.x86_64)'\nrepo: using cache for: ol9_developer_EPEL\nol9_developer_EPEL: using metadata from Tue 11 Jun 2024 08:31:20 AM UTC.\nrepo: downloading from remote: ol9_baseos_latest\nFailed to retrieve a default SELinux context\nFailed to open a SELinux labeling handle: No such file or directory\nOracle Linux 9 BaseOS Latest (x86_64)           2.8 MB/s |  27 MB     00:09    \nol9_baseos_latest: using metadata from Tue 11 Jun 2024 12:53:39 AM UTC.\nrepo: downloading from remote: ol9_appstream\nFailed to retrieve a default SELinux context\nFailed to open a SELinux labeling handle: No such file or directory\n. Error: signal: killed" component=supervisord/pmm-update-checker
+time="2024-06-11T08:55:57.119+00:00" level=warning msg="RPC /server.Server/CheckUpdates done in 30.002192508s with gRPC error: rpc error: code = Unavailable desc = failed to check for updates" request=58fc6110-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:57.158+00:00" level=info msg="Starting RPC /server.Server/CheckUpdates ..." request=6ae10d63-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:55:57.158+00:00" level=info msg="RPC /server.Server/CheckUpdates done in 39.598µs." request=6ae10d63-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:00.173+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=6cad09cb-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:00.176+00:00" level=info msg="RPC /server.Server/Readiness done in 2.978075ms." request=6cad09cb-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:03.244+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=6e819c7b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:03.247+00:00" level=info msg="RPC /server.Server/Readiness done in 3.348319ms." request=6e819c7b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:06.346+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=705ae8d7-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:06.350+00:00" level=info msg="RPC /server.Server/Readiness done in 3.932548ms." request=705ae8d7-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:09.422+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7230487d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:09.426+00:00" level=info msg="RPC /server.Server/Readiness done in 4.067913ms." request=7230487d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:12.522+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=74094d55-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:12.525+00:00" level=info msg="RPC /server.Server/Readiness done in 2.893178ms." request=74094d55-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:15.603+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=75df7b04-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:15.606+00:00" level=info msg="RPC /server.Server/Readiness done in 2.612501ms." request=75df7b04-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:18.838+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=77cd23f5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:18.842+00:00" level=info msg="RPC /server.Server/Readiness done in 3.667834ms." request=77cd23f5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:21.909+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=79a1a9ff-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:21.911+00:00" level=info msg="RPC /server.Server/Readiness done in 2.222384ms." request=79a1a9ff-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:24.980+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7b763c37-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:24.982+00:00" level=info msg="RPC /server.Server/Readiness done in 2.37269ms." request=7b763c37-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:27.916+00:00" level=warning msg="No explicit rule, falling back to Grafana admin." component=grafana/auth req="POST /v1/ui-events/Store"
+time="2024-06-11T08:56:27.922+00:00" level=info msg="Starting RPC /uievents.UIEvents/Store ..." request=7d373c5f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:27.922+00:00" level=info msg="RPC /uievents.UIEvents/Store done in 61.582µs." request=7d373c5f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:28.149+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7d59decd-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:28.153+00:00" level=info msg="RPC /server.Server/Readiness done in 3.86182ms." request=7d59decd-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:31.242+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=7f31c7ea-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:31.244+00:00" level=info msg="RPC /server.Server/Readiness done in 2.13304ms." request=7f31c7ea-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:34.309+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8105be2a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:34.311+00:00" level=info msg="RPC /server.Server/Readiness done in 2.400325ms." request=8105be2a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:37.394+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=82dc7d3f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:37.397+00:00" level=info msg="RPC /server.Server/Readiness done in 2.894659ms." request=82dc7d3f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:40.524+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=84ba14b3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:40.526+00:00" level=info msg="RPC /server.Server/Readiness done in 1.799315ms." request=84ba14b3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:43.591+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=868e2963-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:43.594+00:00" level=info msg="RPC /server.Server/Readiness done in 2.258705ms." request=868e2963-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:46.662+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8862ae90-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:46.665+00:00" level=info msg="RPC /server.Server/Readiness done in 3.362153ms." request=8862ae90-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:49.731+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8a37052d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:49.734+00:00" level=info msg="RPC /server.Server/Readiness done in 3.10642ms." request=8a37052d-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:52.788+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8c097a61-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:52.791+00:00" level=info msg="RPC /server.Server/Readiness done in 2.861597ms." request=8c097a61-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:56.032+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8df86365-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:56.036+00:00" level=info msg="RPC /server.Server/Readiness done in 3.868764ms." request=8df86365-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:59.119+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=8fcf7055-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:56:59.122+00:00" level=info msg="RPC /server.Server/Readiness done in 2.973671ms." request=8fcf7055-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:02.211+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=91a73cd5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:02.213+00:00" level=info msg="RPC /server.Server/Readiness done in 2.644477ms." request=91a73cd5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:05.294+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=937db07f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:05.296+00:00" level=info msg="RPC /server.Server/Readiness done in 2.10633ms." request=937db07f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:08.362+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=9551e29a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:08.365+00:00" level=info msg="RPC /server.Server/Readiness done in 2.474567ms." request=9551e29a-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:11.444+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=97281c04-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:11.446+00:00" level=info msg="RPC /server.Server/Readiness done in 2.411338ms." request=97281c04-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:14.520+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=98fd72b6-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:14.523+00:00" level=info msg="RPC /server.Server/Readiness done in 3.464918ms." request=98fd72b6-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:17.590+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=9ad1e3e7-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:17.592+00:00" level=info msg="RPC /server.Server/Readiness done in 2.250641ms." request=9ad1e3e7-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:20.654+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=9ca57fd3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:20.657+00:00" level=info msg="RPC /server.Server/Readiness done in 2.440585ms." request=9ca57fd3-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:20.954+00:00" level=info msg="Starting RPC /inventory.Services/ListActiveServiceTypes ..." request=9cd3293b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:20.955+00:00" level=info msg="RPC /inventory.Services/ListActiveServiceTypes done in 1.746174ms." request=9cd3293b-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:20.962+00:00" level=info msg="Starting RPC /server.Server/GetSettings ..." request=9cd47598-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:20.964+00:00" level=info msg="RPC /server.Server/GetSettings done in 1.64803ms." request=9cd47598-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.082+00:00" level=info msg="Starting RPC /platform.Platform/UserStatus ..." request=9ce6c8e9-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.088+00:00" level=warning msg="RPC /platform.Platform/UserStatus done in 6.145331ms with gRPC error: rpc error: code = Unauthenticated desc = Failed to get user access token. Please sign in using your Percona Portal account." request=9ce6c8e9-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.316+00:00" level=info msg="Starting RPC /management.SecurityChecks/ListAdvisors ..." request=9d0a6dd2-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.317+00:00" level=info msg="RPC /management.SecurityChecks/ListAdvisors done in 1.783227ms." request=9d0a6dd2-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.338+00:00" level=info msg="Starting RPC /user.User/GetUser ..." request=9d0ddf88-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.346+00:00" level=info msg="RPC /user.User/GetUser done in 7.53404ms." request=9d0ddf88-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.415+00:00" level=info msg="Starting RPC /platform.Platform/ServerInfo ..." request=9d199d09-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:21.416+00:00" level=error msg="Failed to get SSO details: PMM Server is not connected to Portal" component=platform
+time="2024-06-11T08:57:21.416+00:00" level=info msg="RPC /platform.Platform/ServerInfo done in 1.016985ms." request=9d199d09-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:23.403+00:00" level=info msg="Starting RPC /user.User/UpdateUser ..." request=9e48f7c5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:23.420+00:00" level=info msg="RPC /user.User/UpdateUser done in 16.368301ms." request=9e48f7c5-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:23.708+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=9e7773c4-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:23.711+00:00" level=info msg="RPC /server.Server/Readiness done in 3.294443ms." request=9e7773c4-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:25.305+00:00" level=info msg="Starting RPC /user.User/UpdateUser ..." request=9f6b1bc0-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:25.316+00:00" level=info msg="RPC /user.User/UpdateUser done in 11.42718ms." request=9f6b1bc0-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:26.781+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a04c4dbf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:26.784+00:00" level=info msg="RPC /server.Server/Readiness done in 3.854348ms." request=a04c4dbf-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:29.871+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a223ea2e-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:29.875+00:00" level=info msg="RPC /server.Server/Readiness done in 3.312815ms." request=a223ea2e-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:32.950+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a3f9ba2f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:32.955+00:00" level=info msg="RPC /server.Server/Readiness done in 4.732575ms." request=a3f9ba2f-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:36.051+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a5d2ccce-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:36.054+00:00" level=info msg="RPC /server.Server/Readiness done in 3.702886ms." request=a5d2ccce-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:39.115+00:00" level=info msg="Starting RPC /server.Server/Readiness ..." request=a7a65930-27d0-11ef-b4f0-0242c0a8b004
+time="2024-06-11T08:57:39.117+00:00" level=info msg="RPC /server.Server/Readiness done in 2.211365ms." request=a7a65930-27d0-11ef-b4f0-0242c0a8b004

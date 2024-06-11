@@ -1,0 +1,104 @@
+2024-06-11T08:39:49.029Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:12	build version: vmalert-20240522-130900-pmm-6401-v1.93.4
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:13	command-line flags
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -datasource.url="secret"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -external.url="http://127.0.0.1:9090/prometheus/"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -httpListenAddr="127.0.0.1:8880"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.password="secret"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.username=""
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.url="http://127.0.0.1:9093/alertmanager"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.ignoreRestoreErrors="false"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.url="secret"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteWrite.url="secret"
+2024-06-11T08:39:49.044Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -rule="/srv/prometheus/rules/*.yml,/etc/ia/rules/*.yml"
+2024-06-11T08:39:49.044Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:109	flag `remoteRead.ignoreRestoreErrors` is deprecated and will be removed in next releases.
+2024-06-11T08:39:49.100Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:172	reading rules configuration file from "/srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml"
+2024-06-11T08:39:49.104Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:39:49.105Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:39:49.105Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:39:49.113Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:96	starting http server at http://127.0.0.1:8880/
+2024-06-11T08:39:49.113Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:97	pprof handlers are exposed at http://127.0.0.1:8880/debug/pprof/
+2024-06-11T08:39:54.563Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/memory/memory.go:42	limiting caches to 4945561190 bytes, leaving 3297040794 bytes to the OS according to -memory.allowedPercent=60
+2024-06-11T08:40:03.224Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/web.go:135	api config reload was called, sending sighup
+2024-06-11T08:40:03.238Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:335	SIGHUP received. Going to reload rules "[/srv/prometheus/rules/*.yml /etc/ia/rules/*.yml]" ...
+2024-06-11T08:40:03.270Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:40:03.273Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:40:03.275Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:41:29.975Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:193	service received signal interrupt
+2024-06-11T08:41:29.975Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/remotewrite/remotewrite.go:152	shutting down remote write client and flushing remained 0 series
+2024-06-11T08:41:45.512Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:12	build version: vmalert-20240522-130900-pmm-6401-v1.93.4
+2024-06-11T08:41:45.512Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:13	command-line flags
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -datasource.url="secret"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -external.url="http://127.0.0.1:9090/prometheus/"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -httpListenAddr="127.0.0.1:8880"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.password="secret"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.username=""
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.url="http://127.0.0.1:9093/alertmanager"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.ignoreRestoreErrors="false"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.url="secret"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteWrite.url="secret"
+2024-06-11T08:41:45.513Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -rule="/srv/prometheus/rules/*.yml,/etc/ia/rules/*.yml"
+2024-06-11T08:41:45.513Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:109	flag `remoteRead.ignoreRestoreErrors` is deprecated and will be removed in next releases.
+2024-06-11T08:41:45.516Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:172	reading rules configuration file from "/srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml"
+2024-06-11T08:41:45.541Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:41:45.541Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:41:45.541Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:41:45.542Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:96	starting http server at http://127.0.0.1:8880/
+2024-06-11T08:41:45.542Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:97	pprof handlers are exposed at http://127.0.0.1:8880/debug/pprof/
+2024-06-11T08:41:49.553Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/memory/memory.go:42	limiting caches to 4945561190 bytes, leaving 3297040794 bytes to the OS according to -memory.allowedPercent=60
+2024-06-11T08:41:51.030Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/web.go:135	api config reload was called, sending sighup
+2024-06-11T08:41:51.031Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:335	SIGHUP received. Going to reload rules "[/srv/prometheus/rules/*.yml /etc/ia/rules/*.yml]" ...
+2024-06-11T08:41:51.036Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:41:51.039Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:41:51.039Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:42:42.107Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:193	service received signal interrupt
+2024-06-11T08:42:42.107Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/remotewrite/remotewrite.go:152	shutting down remote write client and flushing remained 0 series
+2024-06-11T08:43:12.289Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:12	build version: vmalert-20240522-130900-pmm-6401-v1.93.4
+2024-06-11T08:43:12.290Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:13	command-line flags
+2024-06-11T08:43:12.290Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -datasource.url="secret"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -external.url="http://127.0.0.1:9090/prometheus/"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -httpListenAddr="127.0.0.1:8880"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.password="secret"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.username=""
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.url="http://127.0.0.1:9093/alertmanager"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.ignoreRestoreErrors="false"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.url="secret"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteWrite.url="secret"
+2024-06-11T08:43:12.293Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -rule="/srv/prometheus/rules/*.yml,/etc/ia/rules/*.yml"
+2024-06-11T08:43:12.293Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:109	flag `remoteRead.ignoreRestoreErrors` is deprecated and will be removed in next releases.
+2024-06-11T08:43:12.326Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:172	reading rules configuration file from "/srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml"
+2024-06-11T08:43:12.333Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:43:12.334Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:43:12.334Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:43:12.334Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:96	starting http server at http://127.0.0.1:8880/
+2024-06-11T08:43:12.334Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:97	pprof handlers are exposed at http://127.0.0.1:8880/debug/pprof/
+2024-06-11T08:43:18.238Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/web.go:135	api config reload was called, sending sighup
+2024-06-11T08:43:18.238Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:335	SIGHUP received. Going to reload rules "[/srv/prometheus/rules/*.yml /etc/ia/rules/*.yml]" ...
+2024-06-11T08:43:18.300Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:43:18.303Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:43:18.303Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:43:19.557Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/memory/memory.go:42	limiting caches to 4945561190 bytes, leaving 3297040794 bytes to the OS according to -memory.allowedPercent=60
+2024-06-11T08:52:58.354Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:12	build version: vmalert-20240522-130900-pmm-6401-v1.93.4
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:13	command-line flags
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -datasource.url="secret"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -external.url="http://127.0.0.1:9090/prometheus/"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -httpListenAddr="127.0.0.1:8880"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.password="secret"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.basicAuth.username=""
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -notifier.url="http://127.0.0.1:9093/alertmanager"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.ignoreRestoreErrors="false"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteRead.url="secret"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -remoteWrite.url="secret"
+2024-06-11T08:52:58.358Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/logger/flag.go:20	  -rule="/srv/prometheus/rules/*.yml,/etc/ia/rules/*.yml"
+2024-06-11T08:52:58.358Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:109	flag `remoteRead.ignoreRestoreErrors` is deprecated and will be removed in next releases.
+2024-06-11T08:52:58.368Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:172	reading rules configuration file from "/srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml"
+2024-06-11T08:52:58.373Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:52:58.387Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:52:58.387Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
+2024-06-11T08:52:58.391Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:96	starting http server at http://127.0.0.1:8880/
+2024-06-11T08:52:58.395Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/httpserver/httpserver.go:97	pprof handlers are exposed at http://127.0.0.1:8880/debug/pprof/
+2024-06-11T08:53:04.554Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/lib/memory/memory.go:42	limiting caches to 4945561190 bytes, leaving 3297040794 bytes to the OS according to -memory.allowedPercent=60
+2024-06-11T08:53:09.517Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/web.go:135	api config reload was called, sending sighup
+2024-06-11T08:53:09.518Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/main.go:335	SIGHUP received. Going to reload rules "[/srv/prometheus/rules/*.yml /etc/ia/rules/*.yml]" ...
+2024-06-11T08:53:09.519Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/srv/prometheus/rules/*.yml\"}"
+2024-06-11T08:53:09.519Z	info	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:52	found 0 files to read from "Local FS{MatchPattern: \"/etc/ia/rules/*.yml\"}"
+2024-06-11T08:53:09.519Z	warn	/home/builder/rpm/BUILD/VictoriaMetrics-pmm-6401-v1.93.4/app/vmalert/config/log/logger.go:44	no groups found in /srv/prometheus/rules/*.yml;/etc/ia/rules/*.yml
