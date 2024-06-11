@@ -5,7 +5,7 @@ pipeline {
         stage('Setup') {
             steps {
                 script {
-                    sh 'rsync -avzq --exclude=.env --exclude=vendor --delete /var/application/ $WORKSPACE'
+                    sh 'rsync -avzq --exclude=.env --exclude=vendor --delete /var/application/ "$WORKSPACE"'
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Use a PHP Docker image and run commands inside it
-                    docker.image('php-srv').inside("--cpus 1.5 --memory 3g -e HOME=$WORKSPACE -e TMPDIR=$WORKSPACE/tmp") {
+                    docker.image('php-srv').inside('--cpus 1.5 --memory 3g -e HOME="$WORKSPACE" -e TMPDIR="$WORKSPACE/tmp"') {
                         sh 'composer install --prefer-dist --no-ansi --no-interaction'
                         sh 'cp .env.example .env'
                         sh 'php artisan key:generate'
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                    docker.image('php-srv')
-                   .inside("--cpus 1.5 --memory 3g -e HOME=$WORKSPACE -e TMPDIR=$WORKSPACE/tmp") {
+                   .inside('--cpus 1.5 --memory 3g -e HOME="$WORKSPACE" -e TMPDIR="$WORKSPACE/tmp"') {
                      dir('./') {
                        sh 'php artisan test'
                      }

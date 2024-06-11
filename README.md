@@ -44,7 +44,7 @@ After gaining access to the web interface, you will need to create a new pipelin
 
 On the homepage as above, 
 - Click on `Create a job`
-- Give the job a name and choose the `Pipeline` option
+- Give the job a name (No spaces prefered) and choose the `Pipeline` option
 - Click Ok
 - On the new page, give a description or leave it empty
 - Scroll to the end of the page and you'll see a Pipeline script textbox

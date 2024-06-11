@@ -38,10 +38,13 @@ RUN apt -f install -y libgmp-dev re2c libmhash-dev libmcrypt-dev file libtidy-de
     && docker-php-ext-install gd \
     && docker-php-ext-install tidy \
     && docker-php-ext-configure tidy \
-    && docker-php-ext-enable tidy \
+    && docker-php-ext-enable tidy
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Verify installation
+RUN composer --version
 
 # sudo www-data
 RUN echo "www-data ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
