@@ -58,6 +58,59 @@ root /var/www/html/staging/public;
 if you want to serve your production contents on another url, please update the server name details
 and to serve the files in a different folder, update the root directory.
 
+## Jenkins Config
+
+The Jenkinsfile used for this project can be found in the root directory and provides steps for the 
+CI/CD pipeline.
+
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    ...
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                script {
+                    ...
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                script {
+                   ...
+                }
+            }
+        }
+
+        stage ('Deploy') {
+            ...
+
+            steps {
+              ...
+            }
+        }
+    }
+}
+
+```
+
+This defines four steps:
+- Setup - simulates cloning the project to the jenkins workspace
+- Build - runs composer install and env setups etc
+- Test - runs tests on the project
+- Deploy - asks for a server to deploy to and deploys
+
+How to use this file will be mentioned in the setup section of Jenkins.
+
 ## Dockerfile Services Used
 
 The docker file has 7 services running
