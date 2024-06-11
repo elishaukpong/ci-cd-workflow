@@ -15,7 +15,7 @@ pipeline {
                     // Use a PHP Docker image and run commands inside it
                     docker.image('php-srv').inside('--cpus 1.5 --memory 3g -e HOME="$WORKSPACE" -e TMPDIR="$WORKSPACE/tmp"') {
                         sh 'composer install --prefer-dist --no-ansi --no-interaction'
-                        sh 'cp .env.example .env'
+                        sh 'cp .env.deploy .env'
                         sh 'php artisan key:generate'
                     }
                 }
@@ -58,7 +58,7 @@ pipeline {
                 docker.image('php-srv').inside("--cpus 1.5 --memory 3g -e HOME=/var/filesystem/$SERVER") {
                     dir("/var/filesystem/$SERVER") {
                         sh 'composer install --prefer-dist --no-ansi --no-interaction'
-                        sh 'cp .env.example .env'
+                        sh 'cp .env.deploy .env'
                         sh 'php artisan key:generate'
                     }
                 }
