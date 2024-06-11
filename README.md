@@ -14,7 +14,8 @@ choose either the production or staging server and then simulates a deploy to th
 accessed on your browser (see more at SETUP section). 
 
 The filesystem for the staging server can be found at `./filesystem/staging` and production server 
-filesystem at `./filesystem/production`.
+filesystem at `./filesystem/production` all in this same folder but they will be access differently at
+`production.ci-workflow.test:82` and `staging.ci-workflow.test:81` respectfully after we are done setting up.
 
 ## Base Requirements
 While this might sound very intuitive but its worthy of mention that you need to have docker installed
