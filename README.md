@@ -2,7 +2,7 @@
 
 This repo is a containerized workflow of an application, a ci-cd pipeline to deploy the application
 to either a staging or production server and also with monitoring setup using prometheus with 
-data aggregated from cAdvisor and Pecona MMS (for monitoring MySQL instance), visualized with Grafana.
+data aggregated from cAdvisor and MySQLD Exporter (for monitoring MySQL instance), visualized with Grafana.
 
 It starts the simulation from the `./application` folder, this folder simulates a git repo, a folder
 on your machine, basically where you code or store codes, it is the starting point and this code will be
