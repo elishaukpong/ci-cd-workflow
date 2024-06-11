@@ -1,0 +1,1 @@
+composer install --prefer-dist --no-ansi --no-interaction
