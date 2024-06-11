@@ -115,7 +115,7 @@ How to use this file will be mentioned in the setup section of Jenkins.
 
 ## Dockerfile Services Used
 
-The docker file has 7 services running
+The docker file has 8 services running
 
 - Prometheus
 - Grafana
@@ -124,6 +124,7 @@ The docker file has 7 services running
 - 2 instances of Nginx (Staging and Production)
 - PHP
 - MySQL
+- MySQLD Exporter
 
 ## What is cAdvisor?
 
