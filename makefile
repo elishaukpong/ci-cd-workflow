@@ -12,5 +12,8 @@ rebuild: down build
 restart: down up
 
 dev:	
-	@BUILDKIT_PROGRESS=plain docker compose --profile=dev --env-file=flexapp/.env up --build -d --remove-orphans
-	@docker exec  cf-ht-app /etc/01-init.sh
+	@BUILDKIT_PROGRESS=plain docker compose --profile=dev --env-file=application/.env up --build -d --remove-orphans
+	@docker exec  cf-cicd-app /etc/01-init.sh
+
+init:
+	@sh ./init.sh
