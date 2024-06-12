@@ -15,4 +15,4 @@ dev:
 	@BUILDKIT_PROGRESS=plain docker compose --profile=dev --env-file=application/.env up --build -d --remove-orphans
 
 init:
-	@sh ./init.sh
+	@sh ./setup.sh
