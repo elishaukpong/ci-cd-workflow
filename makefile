@@ -11,3 +11,4 @@ rebuild: down build
 
 restart: down up
 
+start: ./setup.sh
